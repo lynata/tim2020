@@ -1,25 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/testSASS.css">
+    <link rel="stylesheet" href="css/accueil.css">
 </head>
 
 <body>
-    <div>
-        <h1 class="text-brown-800">hello my world</h1>
-        <button>
-            <p>ce bouton est complêtement sauté</p>
-        </button>
-        <ul id="listeProfs">
+     <!-- Section de nav jusqu'a la diapo-->
+    <section id="header">
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="/pages/cours.html">Cours</a></li>
+                    <li><a href="/pages/profs.html">Profs</a></li>
+                    <li><a href="/pages/projets.html">Projets</a></li>
+                    <li><a href="index.html">TIM</a></li>
+                    <li><a href="/pages/vieetudiante.html">Vie Etudiante</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- Fin header -->
 
-        </ul>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/storyblok-js-client@3.1.0/dist/index.standalone.js"></script>
+    <!-- Section info sur la technique -->
+    <section id="info">
+        <div id="infoBloc">
+           <h1 class="text-brown-800">Technique d'intégration multimédia </h1>
+            <p>Maisonneuve est le seul cégep sur l’Île de Montréal à offrir ce programme qui vous offre une immersion dans le monde du jeu 2D/3D, du Web, des technologies mobiles et des médias numériques, tout en apprenant différents langages de programmation.
+                Dans ce programme, vous apprendrez à identifier, analyser, imaginer, réaliser et coordonner un projet multimédia et les différentes étapes de production qui y sont liées :</p>
+        </div>
+        <div id="infoBoutons">
+
+        </div>
+    </section>
+    <!-- fin section info -->
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/storyblok-js-client@3.1.0/dist/index.standalone.js"></script>
     <script>
         //petite configuration nécéssaire pour acéder a vos données
         let Storyblok = new StoryblokClient({
@@ -73,9 +96,9 @@
 
         afficherDonnees()
     </script>
-    
+     -->
     <!-- Section Voir Projet (lyn) -->
-    <section>
+    <section id="voirProjets">
         <div>
             <h2>Web</h2>
             <img src="" alt="">
@@ -90,9 +113,10 @@
         </div>
         <button><h3>Voir Projets</h3></button>
     </section>
+    <!-- Fin section voir projets -->
 
     <!-- Section Inscription (lyn) -->
-    <section>
+    <section id="inscription">
         <h2>Inscription</h2>
         <button><a href="https://admission.sram.qc.ca/">Je suis sûr-e!</a></button>
         <button><a href="https://www.cmaisonneuve.qc.ca/accueil/venez-rencontrer/etudiant-dun-jour/">Étudiant d'un jour</a></button>
@@ -100,6 +124,37 @@
         <img src="" alt="">
         <!-- ajouter target="_blank" dans la balise a pour ouvrir le lien sur une autre page -->
     </section>
+    <!-- Fin section inscription -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <div id="contact">
+          <!-- Insert Map -->   
+        </div>
+       
+        <footer>
+            <!-- liens sociaux -->
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+
+            <!-- Footer mini nav -->
+            <ul>
+                <li><a href="">Cours</a></li>
+                <li><a href="">Profs</a></li>
+                <li><a href="">Projets</a></li>
+                <li><a href="">Vie Etudiante</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <p>undefinedvariable2020</p>
+        </footer>
+    </section>
+    <!-- Fin footer -->
 </body>
 
 </html>

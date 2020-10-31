@@ -13,35 +13,9 @@ $bleu:#2CD9FF;
     src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
-#header{
-    background-color: $fond;
-    color:#fff;
-    ul{
-        margin:0 auto;
-        text-align: center;
+//DEBUT CSS - - - MOBILE FIRST
 
-        li{
-            display: inline-block;
-            padding:.5em;
-            font-family:CastIron;
-            font-size: 2em;
-        }
-    }
-}
-#info{
-    background-color:$bleuFond;
-}
-#infoBloc{
-    background-color: $blanc;
-    font-family: Manrope;
-    width:60%;
-    margin-left:2em;
-    padding:1em;
-    h1{
-        font-family: CastIron;
-        font-size: 1.5em;
-    }
-}
+
 #voirProjets{
     background-color: $fond;
 }
@@ -51,3 +25,61 @@ $bleu:#2CD9FF;
 #footer{
     background-color: $fond;
 }
+
+// FIN MOBILE FIRST
+
+//DEBUT TABLETTE
+@media (min-width: 600px) {
+    body {
+      background: red;
+    }
+    #header{
+        background-color: $fond;
+        color:#fff;
+        ul{
+            margin:0 auto;
+            text-align: center;
+    
+            li{
+                display: inline-block;
+                padding:.5em;
+                font-family:CastIron;
+                font-size: 2em;
+            }
+            li:hover{
+                color:$bleu;
+            }
+        }
+    }
+    #info{
+        background-color:$bleuFond;
+    }
+    #infoBloc{
+        background-color: $blanc;
+        font-family: Manrope;
+        width:60%;
+        margin-left:2em;
+        padding:1em;
+        h1{
+            font-family: CastIron;
+            font-size: 1.5em;
+        }
+    }
+    #infoBoutons{
+        display:block;
+        button{
+            background-color: $bleu;
+        }
+    }
+    
+  }
+  //FIN TABLETTE
+
+  //DEBUT GRANDS ECRANS
+@media (min-width: 1200px) {
+    body {
+      background: pink;
+    }
+   
+  }
+  //FIN GRANDS ECRANS

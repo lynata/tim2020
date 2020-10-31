@@ -8,9 +8,9 @@
     <!--Tailwind (css)-->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <!--Librairie UIkit (css + js-->
-    <link rel="stylesheet" href="css/uikit.min.css" />
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/uikit-css.min.css" />
+    <script src="js/uiKit-js/uikit.min.js"></script>
+    <script src="js/uiKit-js/uikit-icons.min.js"></script>
     <!--Feuilles de style-->
     <link rel="stylesheet" href="css/accueil.css">
 </head>
@@ -19,17 +19,32 @@
      <!-- Section de nav jusqu'a la diapo-->
     <section id="header">
         <nav>
-            <ul>
+            <div>
+                <ul>
                     <li><a href="/pages/cours.html">Cours</a></li>
                     <li><a href="/pages/profs.html">Profs</a></li>
                     <li><a href="/pages/projets.html">Projets</a></li>
-                    <div>
                     <li><a href="index.html">TIM</a></li>
                     <li><a href="/pages/vieetudiante.html">Vie Etudiante</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="./medias/images/party1.PNG" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="./medias/images/Copie de photo prof fun.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="./medias/images/Profs_2017_25oct_David_Ross.jpg" alt="" uk-cover>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        </div>
     </section>
     <!-- Fin header -->
 
@@ -45,6 +60,8 @@
         </div>
     </section>
     <!-- fin section info -->
+
+
 
 
     <!-- Section Voir Projet (lyn) -->

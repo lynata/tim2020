@@ -6,7 +6,7 @@ $bleu:#2CD9FF;
 
 @font-face {
     font-family: CastIron;
-    src: url("/medias/fonts/CastIron-Condensed.otf") format("opentype");
+    src: url("/medias/fonts/CastIron.otf") format("opentype");
 }
 @font-face {
     font-family: Manrope;
@@ -22,7 +22,7 @@ $bleu:#2CD9FF;
 
         li{
             display: inline-block;
-            padding:10px;
+            padding:.5em;
             font-family:CastIron;
             font-size: 2em;
         }
@@ -35,7 +35,12 @@ $bleu:#2CD9FF;
     background-color: $blanc;
     font-family: Manrope;
     width:60%;
-    margin-left:10%;
+    margin-left:2em;
+    padding:1em;
+    h1{
+        font-family: CastIron;
+        font-size: 1.5em;
+    }
 }
 #voirProjets{
     background-color: $fond;

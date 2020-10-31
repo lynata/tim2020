@@ -25,6 +25,10 @@
   font-size: 2em;
 }
 
+#header ul li:hover {
+  color: #2CD9FF;
+}
+
 #info {
   background-color: #1C2C5C;
 }
@@ -40,6 +44,14 @@
 #infoBloc h1 {
   font-family: CastIron;
   font-size: 1.5em;
+}
+
+#infoBoutons {
+  display: block;
+}
+
+#infoBoutons button {
+  background-color: #2CD9FF;
 }
 
 #voirProjets {

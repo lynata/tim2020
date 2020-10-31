@@ -26,6 +26,9 @@ $bleu:#2CD9FF;
             font-family:CastIron;
             font-size: 2em;
         }
+        li:hover{
+            color:$bleu;
+        }
     }
 }
 #info{
@@ -40,6 +43,12 @@ $bleu:#2CD9FF;
     h1{
         font-family: CastIron;
         font-size: 1.5em;
+    }
+}
+#infoBoutons{
+    display:block;
+    button{
+        background-color: $bleu;
     }
 }
 #voirProjets{

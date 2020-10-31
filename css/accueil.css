@@ -8,20 +8,35 @@
   src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
+nav {
+  background-color: #101832;
+}
+
 #navMobile {
   background: -webkit-gradient(linear, left top, left bottom, from(#020024), color-stop(20%, #020024), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #020024), color-stop(60%, #020024), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #020024), to(#020024));
   background: linear-gradient(to bottom, #020024 0%, #020024 20%, transparent 20%, transparent 40%, #020024 40%, #020024 60%, transparent 60%, transparent 80%, #020024 80%, #020024 100%);
   height: 48px;
   width: 48px;
   position: absolute;
+  margin: 1%;
+  right: 10px;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   z-index: 999;
 }
 
-#checkNav {
-  display: none;
+#checkNav:checked ~ #navMobile {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
-nav {
+#checkNav ~ #global {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+#checkNav {
   display: none;
 }
 
@@ -72,17 +87,28 @@ nav {
     font-family: Manrope;
     width: 60%;
     margin-left: 2em;
-    padding: 1em;
+    padding: 1em 4em 1em 1em;
+    position: relative;
   }
   #infoBloc h1 {
     font-family: CastIron;
     font-size: 1.5em;
   }
   #infoBoutons {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    position: absolute;
+    right: -5.5em;
+    top: 0;
   }
   #infoBoutons button {
     background-color: #2CD9FF;
+    padding: 10px;
   }
 }
 

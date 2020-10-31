@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,GAAG,AAAC,CACA,gBAAgB,CAAE,SAAS,CAiB9B,AAlBD,AAEI,GAFD,CAEC,EAAE,AAAC,CACC,gBAAgB,CAAE,IAAI,CACtB,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CACvB,KAAK,CDLD,OAAgB,CCMvB,AAPL,AAQI,GARD,CAQC,MAAM,AAAC,CACH,UAAU,CDTJ,OAAiB,CCiB1B,AAjBL,AAUQ,GAVL,CAQC,MAAM,AAED,MAAM,AAAC,CACJ,OAAO,CAAE,UAAU,CACtB,AAZT,AAcQ,GAdL,CAQC,MAAM,AAMD,MAAM,AAAC,CACJ,gBAAgB,CAAE,SAAS,CAC9B",
+    "sources": [
+        "../../css/testSASS.scss",
+        "../../css/_variables.scss",
+        "../../css/_div.scss"
+    ],
+    "names": [],
+    "file": "testSASS.min.css"
+}

@@ -1,10 +1,39 @@
+@font-face {
+  font-family: CastIron;
+  src: url("/medias/fonts/CastIron-Condensed.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+
 #header {
   background-color: #101832;
   color: #fff;
 }
 
+#header ul {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#header ul li {
+  display: inline-block;
+  padding: 10px;
+  font-family: CastIron;
+  font-size: 2em;
+}
+
 #info {
   background-color: #1C2C5C;
+}
+
+#infoBloc {
+  background-color: #E3E3E3;
+  font-family: Manrope;
+  width: 60%;
+  margin-left: 10%;
 }
 
 #voirProjets {

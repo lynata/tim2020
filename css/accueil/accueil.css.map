@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAMA,AAAA,OAAO,CAAA;EACH,gBAAgB,EANb,OAAO;EAOV,KAAK,EAAC,IAAI;CACb;;AACD,AAAA,KAAK,CAAA;EACD,gBAAgB,EATV,OAAO;CAUhB;;AACD,AAAA,YAAY,CAAA;EACR,gBAAgB,EAbb,OAAO;CAcb;;AACD,AAAA,YAAY,CAAA;EACR,gBAAgB,EAfV,OAAO;CAgBhB;;AACD,AAAA,OAAO,CAAA;EACH,gBAAgB,EAnBb,OAAO;CAoBb",
     "sources": [
-        "css/accueil.scss"
+        "accueil.scss"
     ],
     "names": [],
     "file": "accueil.css"

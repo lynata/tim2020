@@ -68,7 +68,7 @@ nav {
   nav {
     display: block;
     background-color: #1C2C5C;
-    margin-top: 3em;
+    /* margin-top: 3em; */
   }
   #header {
     background-color: #101832;
@@ -79,7 +79,7 @@ nav {
     text-align: center;
     position: relative;
   }
-  #header ul li {
+  #header nav ul li {
     display: inline-block;
     padding: .5em;
     font-family: CastIron;

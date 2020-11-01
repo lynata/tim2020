@@ -16,6 +16,7 @@ $bleu:#2CD9FF;
 //DEBUT CSS - - - MOBILE FIRST
 nav{
     background-color: $fond;
+    display:none;
     }
 
 #navMobile{
@@ -34,12 +35,12 @@ nav{
     transform: rotate(90deg);
   }
 
-#checkNav:checked~nav {
-    //visibility: visible;
+#checkNav:checked~#global {
+    transform:translateY(100%)
     }
       
 #checkNav ~ #global {
-    transform: translateX(0%);
+    transform: translateY(0%);
     }
     
 #checkNav{
@@ -66,13 +67,18 @@ nav{
     #navMobile, #checkNav{
         display:none;
     }
-    nav{display: block;}
+    nav{
+        display: block;
+        background-color: $bleuFond;
+        margin-top:3em;
+    }
     #header{
         background-color: $fond;
         color:#fff;
         ul{
             margin:0 auto;
             text-align: center;
+            position:relative;
     
             li{
                 display: inline-block;
@@ -80,13 +86,24 @@ nav{
                 font-family:CastIron;
                 font-size: 2em;
             }
+            li:nth-child(3) {
+                margin-right:9em;
+            }
+            #actif{
+                padding:1em;
+                background-color: #000;
+                position: absolute;
+                left:36%;
+                top:-50%;
+                z-index:2;
+            }
             li:hover{
                 color:$bleu;
             }
         }
     }
     #info{
-        background-color:$bleuFond;
+        background-color:$fond;
     }
     #infoBloc{
         background-color: $blanc;
@@ -107,8 +124,18 @@ nav{
         right:-5.5em;
         top:0;
         button{
-            background-color: $bleu;
+            background-color: $bleuFond;
             padding:10px;
+            margin-top: .5em;
+            font-family: CastIron;
+            font-size:1.5em;
+            color: $blanc;
+            letter-spacing: .08em;
+            box-shadow: -3px 3px 0px 1px $bleu;
+        }
+        button:hover{
+            background-color: $fond;
+            box-shadow: -3px 3px 0px 1px $bleu;
         }
     }
     

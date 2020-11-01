@@ -13,7 +13,10 @@ $bleu:#2CD9FF;
     src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
-//DEBUT CSS - - - MOBILE FIRST
+
+
+//DEBUT CSS - - - MOBILE FIRST      --------------------------------------------------------------------------------------------------------------------------------
+
 nav{
     background-color: $fond;
     display:none;
@@ -59,7 +62,10 @@ nav{
 
 // FIN MOBILE FIRST
 
-//DEBUT TABLETTE
+
+
+//DEBUT TABLETTE    --------------------------------------------------------------------------------------------------------------------------------------
+
 @media (min-width: 600px) {
     body {
       background: red;
@@ -67,40 +73,41 @@ nav{
     #navMobile, #checkNav{
         display:none;
     }
-    nav{
-        display: block;
-        background-color: $bleuFond;
-        margin-top:3em;
-    }
     #header{
         background-color: $fond;
         color:#fff;
-        ul{
-            margin:0 auto;
-            text-align: center;
-            position:relative;
-    
-            li{
-                display: inline-block;
-                padding:.5em;
-                font-family:CastIron;
-                font-size: 2em;
-            }
-            li:nth-child(3) {
-                margin-right:9em;
-            }
-            #actif{
-                padding:1em;
-                background-color: #000;
-                position: absolute;
-                left:36%;
-                top:-50%;
-                z-index:2;
-            }
-            li:hover{
-                color:$bleu;
+        nav{
+            display: block;
+            background-color: $bleuFond;
+            margin-top:3em;
+            ul{
+                margin:0 auto;
+                text-align: center;
+                position:relative;
+        
+                li{
+                    display: inline-block;
+                    padding:.5em;
+                    font-family:CastIron;
+                    font-size: 2em;
+                }
+                li:nth-child(3) {
+                    margin-right:9em;
+                }
+                #actif{
+                    padding:1em;
+                    background-color: #000;
+                    position: absolute;
+                    left:36%;
+                    top:-50%;
+                    z-index:2;
+                }
+                li:hover{
+                    color:$bleu;
+                }
             }
         }
+
     }
     #info{
         background-color:$fond;
@@ -140,8 +147,10 @@ nav{
     }
     
   }
-  //FIN TABLETTE
 
+
+  //FIN TABLETTE        ----------------------------------------------------------------------------------------------------------------------------------------------
+  
   //DEBUT GRANDS ECRANS
 @media (min-width: 1200px) {
     body {

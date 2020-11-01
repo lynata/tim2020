@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
+    <!--CSS-->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/uikit.min.css" >
     <link rel="stylesheet" href="css/accueil.css">
+    <!--JavaScript-->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +25,7 @@
         <nav>
             <div>
                 <ul>
-                    <li><a href="/pages/cours.html">Cours</a></li>
+                    <li class="uk-animation-slide-right"><a href="/pages/cours.html">Cours</a></li>
                     <li><a href="/pages/profs.html">Profs</a></li>
                     <li><a href="/pages/projets.html">Projets</a></li>
                     <li id="actif"><a href="index.html"><img src="/medias/images/logotimgris.png"></a></li>
@@ -29,7 +34,24 @@
                 </ul>
             </div>
         </nav>
-        <img src="medias/images/imgaccueil.png"/>
+      
+        <div uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 3000; pause-on-hover: false">
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="/medias/images/Profs_2017_25oct_David_Ross.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="/medias/images/Copie de photo prof fun.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="/medias/images/Greg.jpg" alt="" uk-cover>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        </div>
+        
+        <!-- <img src="medias/images/imgaccueil.png"/> -->
     </section>
     <!-- Fin header -->
 
@@ -44,7 +66,6 @@
                     <button>Mediatisation</button>
                     <button>Programmation</button>
                     <button>Integration</button>
-                    
                 </div>
             </div>
     </section>

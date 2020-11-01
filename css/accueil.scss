@@ -13,7 +13,10 @@ $bleu:#2CD9FF;
     src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
-//DEBUT CSS - - - MOBILE FIRST
+
+
+//DEBUT CSS - - - MOBILE FIRST      --------------------------------------------------------------------------------------------------------------------------------
+
 nav{
     background-color: $fond;
     display:none;
@@ -59,7 +62,10 @@ nav{
 
 // FIN MOBILE FIRST
 
-//DEBUT TABLETTE
+
+
+//DEBUT TABLETTE    --------------------------------------------------------------------------------------------------------------------------------------
+
 @media (min-width: 600px) {
     body {
       background: red;
@@ -141,8 +147,10 @@ nav{
     }
     
   }
-  //FIN TABLETTE
 
+
+  //FIN TABLETTE        ----------------------------------------------------------------------------------------------------------------------------------------------
+  
   //DEBUT GRANDS ECRANS
 @media (min-width: 1200px) {
     body {

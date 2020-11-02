@@ -151,6 +151,48 @@ nav {
   #info {
     background-color: #101832;
   }
+  #infoBloc {
+    width: 60vw;
+    padding: 1em 4em 1em 1em;
+    margin-left: 2em;
+    position: relative;
+  }
+  #infoBoutons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    position: absolute;
+    right: -5.5em;
+    top: 0;
+  }
+  #infoBoutons button {
+    background-color: #1c2c5c;
+    padding: 10px;
+    margin-top: 0.5em;
+    font-family: CastIron;
+    font-size: 1.5em;
+    color: #e3e3e3;
+    letter-spacing: 0.08em;
+    -webkit-box-shadow: -3px 3px 0px 1px #2cd9ff;
+            box-shadow: -3px 3px 0px 1px #2cd9ff;
+  }
+  #infoBoutons button:hover {
+    background-color: #101832;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background: pink;
+  }
+  #header {
+    background-color: #101832;
+    color: #fff;
+  }
   #header #barreDuHaut {
     height: 55px;
   }
@@ -185,22 +227,19 @@ nav {
     position: absolute;
     z-index: 2;
   }
-}
-
-@media (min-width: 1200px) {
-  body {
-    background: pink;
+  #header nav ul li:hover {
+    color: #2cd9ff;
   }
-  #caroussel {
+  #header #caroussel {
     height: 700px;
   }
-  #caroussel #caroussel-images {
+  #header #caroussel #caroussel-images {
     height: 100%;
   }
-  #caroussel #caroussel-images ul {
+  #header #caroussel #caroussel-images ul {
     height: 100%;
   }
-  #caroussel #caroussel-images ul li {
+  #header #caroussel #caroussel-images ul li {
     height: 300px;
   }
   #header #caroussel body {
@@ -213,7 +252,7 @@ nav {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  #header #voirProjets div:not(button) {
+  #header #voirProjets div {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -222,13 +261,16 @@ nav {
     color: white;
   }
   #header #voirProjets button {
-    padding: 1em 0.5em;
+    padding: 0.5em;
     background-color: #2cd9ff;
     -webkit-box-shadow: #1c2c5c;
             box-shadow: #1c2c5c;
   }
   #header #voirProjets button h3 {
     color: #1c2c5c;
+  }
+  #header #voirProjets button a:hover {
+    color: #2cd9ff;
   }
   #header #inscription div {
     display: -webkit-box;

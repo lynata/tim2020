@@ -210,30 +210,38 @@ nav {
     background-color: #101832;
     color: #fff;
   }
+  #header #barreDuHaut {
+    height: 55px;
+  }
   #header nav {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     background-color: #1c2c5c;
   }
   #header nav ul {
     margin: 0 auto;
     text-align: center;
-    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #header nav ul li {
-    display: inline-block;
     padding: 0.5em;
     font-family: CastIron;
     font-size: 2em;
   }
   #header nav ul li:nth-child(3) {
-    margin-right: 9em;
+    margin-right: 10.5em;
   }
   #header nav ul #actif {
     padding: 1em;
     background-color: #000;
     position: absolute;
-    left: 36%;
-    top: -50%;
     z-index: 2;
   }
   #header nav ul li:hover {
@@ -251,32 +259,32 @@ nav {
   #header #caroussel #caroussel-images ul li {
     height: 300px;
   }
-  #header body {
+  #header #caroussel body {
     background: pink;
   }
-  #voirProjets {
+  #header #voirProjets {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  #voirProjets div:not(button) {
+  #header #voirProjets div:not(button) {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #voirProjets h2 {
+  #header #voirProjets h2 {
     color: white;
   }
-  #voirProjets button {
+  #header #voirProjets button {
     padding: 1em 0.5em;
     background-color: #2cd9ff;
   }
-  #voirProjets button h3 {
+  #header #voirProjets button h3 {
     color: #1c2c5c;
   }
-  #inscription div {
+  #header #inscription div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -285,12 +293,12 @@ nav {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #inscription div button {
+  #header #inscription div button {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  #inscription img {
+  #header #inscription img {
     float: right;
   }
 }

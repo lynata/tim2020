@@ -223,42 +223,6 @@ nav {
     background: pink;
   }
 
-  #header {
-    background-color: $fond;
-    color: #fff;
-    nav {
-      display: block;
-      background-color: $bleuFond;
-      // margin-top:3em;
-      ul {
-        margin: 0 auto;
-        text-align: center;
-        position: relative;
-
-        li {
-          display: inline-block;
-          padding: 0.5em;
-          font-family: CastIron;
-          font-size: 2em;
-        }
-        li:nth-child(3) {
-          margin-right: 9em;
-        }
-        #actif {
-          padding: 1em;
-          background-color: #000;
-          position: absolute;
-          left: 36%;
-          top: -50%;
-          z-index: 2;
-        }
-        li:hover {
-          color: $bleu;
-        }
-      }
-    }
-
-<<<<<<< HEAD
         #caroussel {
             height: 700px;
             #caroussel-images {
@@ -271,24 +235,6 @@ nav {
                     }
                 }
             }
-=======
-    #caroussel {
-      height: 500px;
-      #caroussel-images {
-        height: 100%;
-        ul {
-          height: 100%;
-          li {
-            height: 500px;
-          }
->>>>>>> 300dacb717c7f071dbaec033f02d1b890ed60027
-        }
-      }
-    }
-
-    body {
-      background: pink;
-    }
 
     // #caroussel {
     //     height: 600px;
@@ -348,4 +294,5 @@ nav {
     }
   }
 }
+
 //FIN GRANDS ECRANS

@@ -266,8 +266,16 @@ nav {
     color: white;
   }
   #voirProjets button {
-    padding: 1em 0.5em;
+    padding: 0.5em;
     background-color: #2cd9ff;
+    -webkit-box-shadow: #1c2c5c;
+            box-shadow: #1c2c5c;
+  }
+  #voirProjets button h3 {
+    color: #1c2c5c;
+  }
+  #voirProjets button a:hover {
+    color: #2cd9ff;
   }
   #inscription div {
     display: -webkit-box;

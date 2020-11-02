@@ -1,68 +1,63 @@
-// Variables de couleurs
 $fond: #101832;
 $bleuFond:#1C2C5C;
 $blanc:#E3E3E3;
 $bleu:#2CD9FF;
+$boxBleu:-3px 3px 0px 1px $bleu;
+$boxNoir:-5px 5px 0px 1px #000;
 
 @font-face {
     font-family: CastIron;
     src: url("/medias/fonts/CastIron.otf") format("opentype");
 }
+
 @font-face {
     font-family: Manrope;
     src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
-a{
-    color:$blanc;
+a {
+    color: $blanc;
 }
-a:hover{
-    color:$bleu;
+
+a:hover {
+    color: $bleu;
     text-decoration: none;
 }
 
 //DEBUT CSS - - - MOBILE FIRST      --------------------------------------------------------------------------------------------------------------------------------
 
-nav{
-    background-color: $fond;
-    display:none;
-    }
 
-#navMobile{
-    background: linear-gradient(to bottom,rgba(2,0,36,1) 0%, rgba(2,0,36,1) 20%, transparent 20%, transparent 40%, rgba(2,0,36,1) 40%, rgba(2,0,36,1) 60%, transparent 60%, transparent 80%, rgba(2,0,36,1) 80%, rgba(2,0,36,1) 100%);
-    height: 48px;
-    width: 48px;
-    position : absolute;
-    margin: 1%;
-	right : 10px;
-	cursor: pointer;
-	align-self:  flex-end;
-    z-index : 999;
-    }
-          
-#checkNav:checked~#navMobile {
-    transform: rotate(90deg);
-  }
 
-#checkNav:checked~#global {
-    transform:translateY(100%)
-    }
-    
-#checkNav ~ #global {
-    transform: translateY(0%);
-    }
-    
-#checkNav{
-    display:none;
-    }
-
-#voirProjets{
+#info {
     background-color: $fond;
 }
-#inscription{
-    background-color:$bleuFond;
+
+#infoBloc {
+    width: 80vw;
+    padding: 1em 1em 3em 1em ;
+    margin:0 auto;
+    background-color: $blanc;
+    font-family: Manrope;
+    box-shadow: $boxNoir;
+
+    h1 {
+        font-family: CastIron;
+        font-size: 2em;
+    }
 }
-#footer{
+
+#infoBoutons {
+    display:none;}
+
+#voirProjets {
+    background-color: $fond;
+}
+
+#inscription {
+    background-color: $bleuFond;
+}
+
+#footer {
     background-color: $fond;
 }
 
@@ -74,151 +69,106 @@ nav{
 
 @media (min-width: 600px) {
     body {
-      background: red;
+        background: red;
     }
-    #navMobile, #checkNav{
-        display:none;
-    }
-    #header{
+
+    #header {
         background-color: $fond;
-        color:#fff;
-        nav{
-           
+        color: #fff;
+
+        nav {
             background-color: $bleuFond;
             // margin-top:3em;
-            margin-top:3em; 
-            display:flex;
+            margin-top: 3em;
+            display: flex;
             justify-content: center;
-             width: 100%;
-            ul{
+            width: 100%;
+
+            ul {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
                 justify-content: center;
                 align-items: center;
-                margin:0 auto;
-        
-                li{
+                margin: 0 auto;
+
+                li {
                     display: inline-block;
-                    padding:.5em;
-                    font-family:CastIron;
+                    padding: .5em;
+                    font-family: CastIron;
                     font-size: 2em;
-                   
+
                 }
+
                 // li:nth-child(3) {
                 //     margin-right:9em;
                 // }
-                 #actif{
-                     padding:1em;
-                     background-color: #000;
-                     z-index:2;
-                     align-items: flex-end;
-                 }
+                #actif {
+                    padding: 1em;
+                    background-color: #000;
+                    z-index: 2;
+                    align-items: flex-end;
+                }
             }
         }
 
     }
-    #info{
-        background-color:$fond;
+
+    #infoBloc {
+        width: 60vw;
+        padding: 1em 4em 1em 1em;
+        margin-left: 2em;
+        position: relative;
     }
-    #infoBloc{
-        background-color: $blanc;
-        font-family: Manrope;
-        width:60%;
-        margin-left:2em;
-        padding:1em 4em 1em 1em;
-        position:relative;
-        h1{
-            font-family: CastIron;
-            font-size: 1.5em;
-        }
-    }
-    #infoBoutons{
+
+    #infoBoutons {
         display: flex;
-        flex-flow:column;
-        position:absolute;
-        right:-5.5em;
-        top:0;
-        button{
+        flex-flow: column;
+        position: absolute;
+        right: -5.5em;
+        top: 0;
+
+        button {
             background-color: $bleuFond;
-            padding:10px;
+            padding: 10px;
             margin-top: .5em;
             font-family: CastIron;
-            font-size:1.5em;
+            font-size: 1.5em;
             color: $blanc;
             letter-spacing: .08em;
-            box-shadow: -3px 3px 0px 1px $bleu;
+            box-shadow: $boxBleu;
         }
-        button:hover{
+
+        button:hover {
             background-color: $fond;
-            box-shadow: -3px 3px 0px 1px $bleu;
         }
     }
-    
-  }
+
+}
 
 
-  //FIN TABLETTE        ----------------------------------------------------------------------------------------------------------------------------------------------
-  
-  //DEBUT GRANDS ECRANS
+//FIN TABLETTE        ----------------------------------------------------------------------------------------------------------------------------------------------
+
+//DEBUT GRANDS ECRANS
 @media (min-width: 1200px) {
     body {
-      background: pink;
+        background: pink;
     }
 
-    #header{
-        background-color: $fond;
-        color:#fff;
-        #barreDuHaut {
-            
-        }
-        nav{
-            display: block;
-            background-color: $bleuFond;
-            // margin-top:3em;
-            ul{
-                margin:0 auto;
-                text-align: center;
-                position:relative;
-        
-                li{
-                    display: inline-block;
-                    padding:.5em;
-                    font-family:CastIron;
-                    font-size: 2em;
-                }
-                li:nth-child(3) {
-                    margin-right:9em;
-                }
-                #actif{
-                    padding:1em;
-                    background-color: #000;
-                    position: absolute;
-                    left:36%;
-                    top:-50%;
-                    z-index:2;
-                }
-                li:hover{
-                    color:$bleu;
-                }
-            }
-        }
+    // #caroussel {
+    //     height: 600px;
+    //     #caroussel-images {
+    //         height: 600px;
+    //         ul {
+    //             height: 400px;
+    //             li {
+    //                 height: 400px;
 
-        // #caroussel {
-        //     height: 600px;
-        //     #caroussel-images {
-        //         height: 600px;
-        //         ul {
-        //             height: 400px;
-        //             li {
-        //                 height: 400px;
+    //             }
+    //         }
+    //     }
+    // }
 
-        //             }
-        //         }
-        //     }
-        // }
+}
 
-    }
-   
-  }
-  //FIN GRANDS ECRANS
+//FIN GRANDS ECRANS

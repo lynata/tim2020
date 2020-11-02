@@ -80,6 +80,8 @@ nav {
   }
   #header nav {
     background-color: #1C2C5C;
+    
+
     margin-top: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -169,6 +171,39 @@ nav {
 @media (min-width: 1200px) {
   body {
     background: pink;
+  }
+  #header {
+    background-color: #101832;
+    color: #fff;
+  }
+  #header nav {
+    display: block;
+    background-color: #1C2C5C;
+  }
+  #header nav ul {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  #header nav ul li {
+    display: inline-block;
+    padding: .5em;
+    font-family: CastIron;
+    font-size: 2em;
+  }
+  #header nav ul li:nth-child(3) {
+    margin-right: 9em;
+  }
+  #header nav ul #actif {
+    padding: 1em;
+    background-color: #000;
+    position: absolute;
+    left: 36%;
+    top: -50%;
+    z-index: 2;
+  }
+  #header nav ul li:hover {
+    color: #2CD9FF;
   }
 }
 /*# sourceMappingURL=accueil.css.map */

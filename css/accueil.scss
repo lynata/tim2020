@@ -85,6 +85,8 @@ nav{
         nav{
            
             background-color: $bleuFond;
+            // margin-top:3em;
+
             margin-top:3em; 
             display:flex;
             justify-content: center;
@@ -163,6 +165,60 @@ nav{
 @media (min-width: 1200px) {
     body {
       background: pink;
+    }
+
+    #header{
+        background-color: $fond;
+        color:#fff;
+        #barreDuHaut {
+            
+        }
+        nav{
+            display: block;
+            background-color: $bleuFond;
+            // margin-top:3em;
+            ul{
+                margin:0 auto;
+                text-align: center;
+                position:relative;
+        
+                li{
+                    display: inline-block;
+                    padding:.5em;
+                    font-family:CastIron;
+                    font-size: 2em;
+                }
+                li:nth-child(3) {
+                    margin-right:9em;
+                }
+                #actif{
+                    padding:1em;
+                    background-color: #000;
+                    position: absolute;
+                    left:36%;
+                    top:-50%;
+                    z-index:2;
+                }
+                li:hover{
+                    color:$bleu;
+                }
+            }
+        }
+
+        // #caroussel {
+        //     height: 600px;
+        //     #caroussel-images {
+        //         height: 600px;
+        //         ul {
+        //             height: 400px;
+        //             li {
+        //                 height: 400px;
+
+        //             }
+        //         }
+        //     }
+        // }
+
     }
    
   }

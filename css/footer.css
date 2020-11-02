@@ -1,0 +1,14 @@
+#footer {
+  color: white;
+  background-color: #0b132b;
+}
+
+#footer h1,
+#footer h3 {
+  color: white;
+}
+
+#footer footer div#contact {
+  background-color: #1c2c5c;
+}
+/*# sourceMappingURL=footer.css.map */

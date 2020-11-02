@@ -8,7 +8,7 @@
     display: none;
   }
   nav {
-    background-color: #1C2C5C;
+    background-color: #1c2c5c;
     margin-top: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -42,12 +42,12 @@
   }
   #header ul li {
     display: inline-block;
-    padding: .5em;
+    padding: 0.5em;
     font-family: CastIron;
     font-size: 2em;
   }
   #header ul li:hover {
-    color: #2CD9FF;
+    color: #2cd9ff;
   }
 }
 

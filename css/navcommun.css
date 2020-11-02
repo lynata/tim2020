@@ -1,5 +1,15 @@
-* {
+html {
   background-color: #101832;
+}
+
+@font-face {
+  font-family: CastIron;
+  src: url("/medias/fonts/CastIron.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
 @media (min-width: 600px) {
@@ -8,7 +18,7 @@
     display: none;
   }
   nav {
-    background-color: #1C2C5C;
+    background-color: #1c2c5c;
     margin-top: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -42,12 +52,12 @@
   }
   #header ul li {
     display: inline-block;
-    padding: .5em;
+    padding: 0.5em;
     font-family: CastIron;
     font-size: 2em;
   }
   #header ul li:hover {
-    color: #2CD9FF;
+    color: #2cd9ff;
   }
 }
 
@@ -56,4 +66,4 @@
     background: pink;
   }
 }
-/*# sourceMappingURL=commun.css.map */
+/*# sourceMappingURL=navcommun.css.map */

@@ -9,11 +9,11 @@
 }
 
 a {
-  color: #E3E3E3;
+  color: #e3e3e3;
 }
 
 a:hover {
-  color: #2CD9FF;
+  color: #2cd9ff;
   text-decoration: none;
 }
 
@@ -60,7 +60,38 @@ nav {
 }
 
 #inscription {
-  background-color: #1C2C5C;
+  background-color: #1c2c5c;
+}
+
+#info {
+  background-color: #101832;
+}
+
+#infoBloc {
+  width: 80vw;
+  padding: 1em 1em 3em 1em;
+  margin: 0 auto;
+  background-color: #e3e3e3;
+  font-family: Manrope;
+  -webkit-box-shadow: -5px 5px 0px 1px #000;
+          box-shadow: -5px 5px 0px 1px #000;
+}
+
+#infoBloc h1 {
+  font-family: CastIron;
+  font-size: 2em;
+}
+
+#infoBoutons {
+  display: none;
+}
+
+#voirProjets {
+  background-color: #101832;
+}
+
+#inscription {
+  background-color: #1c2c5c;
 }
 
 #footer {
@@ -71,7 +102,8 @@ nav {
   body {
     background: red;
   }
-  #navMobile, #checkNav {
+  #navMobile,
+  #checkNav {
     display: none;
   }
   #header {
@@ -79,7 +111,7 @@ nav {
     color: #fff;
   }
   #header nav {
-    background-color: #1C2C5C;
+    background-color: #1c2c5c;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -108,7 +140,7 @@ nav {
   }
   #header nav ul li {
     display: inline-block;
-    padding: .5em;
+    padding: 0.5em;
     font-family: CastIron;
     font-size: 2em;
   }
@@ -120,49 +152,54 @@ nav {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  #info {
-    background-color: #101832;
+  #header #actif {
+    padding: 1em;
+    background-color: #000;
+    z-index: 2;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
-  #infoBloc {
-    background-color: #E3E3E3;
-    font-family: Manrope;
-    width: 60%;
-    margin-left: 2em;
-    padding: 1em 4em 1em 1em;
-    position: relative;
-  }
-  #infoBloc h1 {
-    font-family: CastIron;
-    font-size: 1.5em;
-  }
-  #infoBoutons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    position: absolute;
-    right: -5.5em;
-    top: 0;
-  }
-  #infoBoutons button {
-    background-color: #1C2C5C;
-    padding: 10px;
-    margin-top: .5em;
-    font-family: CastIron;
-    font-size: 1.5em;
-    color: #E3E3E3;
-    letter-spacing: .08em;
-    -webkit-box-shadow: -3px 3px 0px 1px #2CD9FF;
-            box-shadow: -3px 3px 0px 1px #2CD9FF;
-  }
-  #infoBoutons button:hover {
-    background-color: #101832;
-    -webkit-box-shadow: -3px 3px 0px 1px #2CD9FF;
-            box-shadow: -3px 3px 0px 1px #2CD9FF;
-  }
+}
+
+#info {
+  background-color: #101832;
+}
+
+#infoBloc {
+  width: 60vw;
+  padding: 1em 4em 1em 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+#infoBoutons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: absolute;
+  right: -5.5em;
+  top: 0;
+}
+
+#infoBoutons button {
+  background-color: #1c2c5c;
+  padding: 10px;
+  margin-top: 0.5em;
+  font-family: CastIron;
+  font-size: 1.5em;
+  color: #e3e3e3;
+  letter-spacing: 0.08em;
+  -webkit-box-shadow: -3px 3px 0px 1px #2cd9ff;
+          box-shadow: -3px 3px 0px 1px #2cd9ff;
+}
+
+#infoBoutons button:hover {
+  background-color: #101832;
 }
 
 @media (min-width: 1200px) {
@@ -172,11 +209,10 @@ nav {
   #header {
     background-color: #101832;
     color: #fff;
-    height: 100vh;
   }
   #header nav {
     display: block;
-    background-color: #1C2C5C;
+    background-color: #1c2c5c;
   }
   #header nav ul {
     margin: 0 auto;
@@ -185,7 +221,7 @@ nav {
   }
   #header nav ul li {
     display: inline-block;
-    padding: .5em;
+    padding: 0.5em;
     font-family: CastIron;
     font-size: 2em;
   }
@@ -201,7 +237,7 @@ nav {
     z-index: 2;
   }
   #header nav ul li:hover {
-    color: #2CD9FF;
+    color: #2cd9ff;
   }
   #header #caroussel {
     height: 700px;
@@ -214,6 +250,48 @@ nav {
   }
   #header #caroussel #caroussel-images ul li {
     height: 300px;
+  }
+  #header body {
+    background: pink;
+  }
+  #voirProjets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #voirProjets div:not(button) {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #voirProjets h2 {
+    color: white;
+  }
+  #voirProjets button {
+    padding: 1em 0.5em;
+    background-color: #2cd9ff;
+  }
+  #voirProjets button h3 {
+    color: #1c2c5c;
+  }
+  #inscription div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #inscription div button {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #inscription img {
+    float: right;
   }
 }
 /*# sourceMappingURL=accueil.css.map */

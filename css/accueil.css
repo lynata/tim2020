@@ -9,11 +9,11 @@
 }
 
 a {
-  color: #E3E3E3;
+  color: #e3e3e3;
 }
 
 a:hover {
-  color: #2CD9FF;
+  color: #2cd9ff;
   text-decoration: none;
 }
 
@@ -45,23 +45,26 @@ a:hover {
 }
 
 #inscription {
-  background-color: #1C2C5C;
-}
-
-#footer {
-  background-color: #101832;
+  background-color: #1c2c5c;
 }
 
 @media (min-width: 600px) {
   body {
     background: red;
   }
+<<<<<<< HEAD
+  #navMobile,
+  #checkNav {
+    display: none;
+  }
+=======
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
   #header {
     background-color: #101832;
     color: #fff;
   }
   #header nav {
-    background-color: #1C2C5C;
+    background-color: #1c2c5c;
     margin-top: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -91,7 +94,7 @@ a:hover {
   }
   #header nav ul li {
     display: inline-block;
-    padding: .5em;
+    padding: 0.5em;
     font-family: CastIron;
     font-size: 2em;
   }
@@ -104,7 +107,14 @@ a:hover {
             align-items: flex-end;
   }
   #infoBloc {
+<<<<<<< HEAD
+    background-color: #e3e3e3;
+    font-family: Manrope;
+    width: 60%;
+    margin-left: 2em;
+=======
     width: 60vw;
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
     padding: 1em 4em 1em 1em;
     margin-left: 2em;
     position: relative;
@@ -122,18 +132,23 @@ a:hover {
     top: 0;
   }
   #infoBoutons button {
-    background-color: #1C2C5C;
+    background-color: #1c2c5c;
     padding: 10px;
-    margin-top: .5em;
+    margin-top: 0.5em;
     font-family: CastIron;
     font-size: 1.5em;
-    color: #E3E3E3;
-    letter-spacing: .08em;
-    -webkit-box-shadow: -3px 3px 0px 1px #2CD9FF;
-            box-shadow: -3px 3px 0px 1px #2CD9FF;
+    color: #e3e3e3;
+    letter-spacing: 0.08em;
+    -webkit-box-shadow: -3px 3px 0px 1px #2cd9ff;
+            box-shadow: -3px 3px 0px 1px #2cd9ff;
   }
   #infoBoutons button:hover {
     background-color: #101832;
+<<<<<<< HEAD
+    -webkit-box-shadow: -3px 3px 0px 1px #2cd9ff;
+            box-shadow: -3px 3px 0px 1px #2cd9ff;
+=======
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
   }
 }
 
@@ -141,5 +156,41 @@ a:hover {
   body {
     background: pink;
   }
+<<<<<<< HEAD
+  #header {
+    background-color: #101832;
+    color: #fff;
+  }
+  #header nav {
+    display: block;
+    background-color: #1c2c5c;
+  }
+  #header nav ul {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  #header nav ul li {
+    display: inline-block;
+    padding: 0.5em;
+    font-family: CastIron;
+    font-size: 2em;
+  }
+  #header nav ul li:nth-child(3) {
+    margin-right: 9em;
+  }
+  #header nav ul #actif {
+    padding: 1em;
+    background-color: #000;
+    position: absolute;
+    left: 36%;
+    top: -50%;
+    z-index: 2;
+  }
+  #header nav ul li:hover {
+    color: #2cd9ff;
+  }
+=======
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
 }
 /*# sourceMappingURL=accueil.css.map */

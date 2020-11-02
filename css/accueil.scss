@@ -138,7 +138,6 @@ nav {
     nav {
       background-color: $bleuFond;
       // margin-top:3em;
-
       display: flex;
       justify-content: center;
       width: 100%;
@@ -158,20 +157,8 @@ nav {
           font-size: 2em;
         }
 
-        // li:nth-child(3) {
-        //     margin-right:9em;
-        // }
-        #actif {
-          padding: 1em;
-          background-color: #000;
-          z-index: 2;
-          align-items: flex-end;
-        }
       }
     }
-    // li:nth-child(3) {
-    //     margin-right:9em;
-    // }
     #actif {
       padding: 1em;
       background-color: #000;

@@ -1,0 +1,47 @@
+$fond: #101832;
+$bleuFond:#1C2C5C;
+$blanc:#E3E3E3;
+$bleu:#2CD9FF;
+$boxBleu:-3px 3px 0px 1px $bleu;
+$boxNoir:-5px 5px 0px 1px #000;
+
+nav {
+    background-color: $fond;
+    display: none;
+}
+
+#navMobile {
+    background: linear-gradient(to bottom, rgba(2, 0, 36, 1) 0%, rgba(2, 0, 36, 1) 20%, transparent 20%, transparent 40%, rgba(2, 0, 36, 1) 40%, rgba(2, 0, 36, 1) 60%, transparent 60%, transparent 80%, rgba(2, 0, 36, 1) 80%, rgba(2, 0, 36, 1) 100%);
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    margin: 1%;
+    right: 10px;
+    cursor: pointer;
+    align-self: flex-end;
+    z-index: 999;
+}
+
+#checkNav:checked~#navMobile {
+    transform: rotate(90deg);
+}
+
+#checkNav:checked~#global {
+    transform: translateY(100vh)
+}
+
+#checkNav~#global {
+    transform: translateY(0%);
+}
+
+#checkNav {
+    display: none;
+}
+
+@media (min-width: 600px) {
+ 
+    #navMobile,
+    #checkNav {
+        display: none;
+    }
+}

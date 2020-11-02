@@ -17,41 +17,26 @@ a:hover {
   text-decoration: none;
 }
 
-nav {
+#info {
   background-color: #101832;
-  display: none;
 }
 
-#navMobile {
-  background: -webkit-gradient(linear, left top, left bottom, from(#020024), color-stop(20%, #020024), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #020024), color-stop(60%, #020024), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #020024), to(#020024));
-  background: linear-gradient(to bottom, #020024 0%, #020024 20%, transparent 20%, transparent 40%, #020024 40%, #020024 60%, transparent 60%, transparent 80%, #020024 80%, #020024 100%);
-  height: 48px;
-  width: 48px;
-  position: absolute;
-  margin: 1%;
-  right: 10px;
-  cursor: pointer;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  z-index: 999;
+#infoBloc {
+  width: 80vw;
+  padding: 1em 1em 3em 1em;
+  margin: 0 auto;
+  background-color: #E3E3E3;
+  font-family: Manrope;
+  -webkit-box-shadow: -5px 5px 0px 1px #000;
+          box-shadow: -5px 5px 0px 1px #000;
 }
 
-#checkNav:checked ~ #navMobile {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+#infoBloc h1 {
+  font-family: CastIron;
+  font-size: 2em;
 }
 
-#checkNav:checked ~ #global {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-}
-
-#checkNav ~ #global {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
-
-#checkNav {
+#infoBoutons {
   display: none;
 }
 
@@ -70,9 +55,6 @@ nav {
 @media (min-width: 600px) {
   body {
     background: red;
-  }
-  #navMobile, #checkNav {
-    display: none;
   }
   #header {
     background-color: #101832;
@@ -121,20 +103,11 @@ nav {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  #info {
-    background-color: #101832;
-  }
   #infoBloc {
-    background-color: #E3E3E3;
-    font-family: Manrope;
-    width: 60%;
-    margin-left: 2em;
+    width: 60vw;
     padding: 1em 4em 1em 1em;
+    margin-left: 2em;
     position: relative;
-  }
-  #infoBloc h1 {
-    font-family: CastIron;
-    font-size: 1.5em;
   }
   #infoBoutons {
     display: -webkit-box;
@@ -161,47 +134,12 @@ nav {
   }
   #infoBoutons button:hover {
     background-color: #101832;
-    -webkit-box-shadow: -3px 3px 0px 1px #2CD9FF;
-            box-shadow: -3px 3px 0px 1px #2CD9FF;
   }
 }
 
 @media (min-width: 1200px) {
   body {
     background: pink;
-  }
-  #header {
-    background-color: #101832;
-    color: #fff;
-  }
-  #header nav {
-    display: block;
-    background-color: #1C2C5C;
-  }
-  #header nav ul {
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-  }
-  #header nav ul li {
-    display: inline-block;
-    padding: .5em;
-    font-family: CastIron;
-    font-size: 2em;
-  }
-  #header nav ul li:nth-child(3) {
-    margin-right: 9em;
-  }
-  #header nav ul #actif {
-    padding: 1em;
-    background-color: #000;
-    position: absolute;
-    left: 36%;
-    top: -50%;
-    z-index: 2;
-  }
-  #header nav ul li:hover {
-    color: #2CD9FF;
   }
 }
 /*# sourceMappingURL=accueil.css.map */

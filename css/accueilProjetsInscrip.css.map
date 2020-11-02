@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,OAAO,EAAE,YAAY;CAKxB;;AAND,AAGI,YAHQ,CAGR,EAAE,CAAA;EACE,KAAK,EAAE,KAAK;CACf",
+    "mappings": "",
     "sources": [
         "accueilProjetsInscrip.scss"
     ],

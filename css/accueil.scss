@@ -218,41 +218,6 @@ nav {
     background: pink;
   }
 
-  #header {
-    background-color: $fond;
-    color: #fff;
-    nav {
-      display: block;
-      background-color: $bleuFond;
-      // margin-top:3em;
-      ul {
-        margin: 0 auto;
-        text-align: center;
-        position: relative;
-
-        li {
-          display: inline-block;
-          padding: 0.5em;
-          font-family: CastIron;
-          font-size: 2em;
-        }
-        li:nth-child(3) {
-          margin-right: 9em;
-        }
-        #actif {
-          padding: 1em;
-          background-color: #000;
-          position: absolute;
-          left: 36%;
-          top: -50%;
-          z-index: 2;
-        }
-        li:hover {
-          color: $bleu;
-        }
-      }
-    }
-
     #caroussel {
       height: 500px;
       #caroussel-images {
@@ -266,9 +231,6 @@ nav {
       }
     }
 
-    body {
-      background: pink;
-    }
 
     // #caroussel {
     //     height: 600px;
@@ -284,5 +246,4 @@ nav {
     //     }
     // }
   }
-}
 //FIN GRANDS ECRANS

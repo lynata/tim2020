@@ -204,7 +204,7 @@ nav {
     color: #2CD9FF;
   }
   #header #caroussel {
-    height: 500px;
+    height: 750px;
   }
   #header #caroussel #caroussel-images {
     height: 100%;
@@ -213,7 +213,7 @@ nav {
     height: 100%;
   }
   #header #caroussel #caroussel-images ul li {
-    height: 500px;
+    height: 300px;
   }
 }
 /*# sourceMappingURL=accueil.css.map */

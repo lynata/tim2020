@@ -47,7 +47,7 @@ nav{
 #checkNav:checked~#global {
     transform:translateY(100%)
     }
-      
+    
 #checkNav ~ #global {
     transform: translateY(0%);
     }

@@ -73,11 +73,16 @@ nav {
 #voirProjets {
   background-color: $fond;
 }
+
 #inscription {
   background-color: $bleuFond;
 }
 
 #info {
+  background-color: $fond;
+}
+
+#trio{
   background-color: $fond;
 }
 
@@ -99,13 +104,13 @@ nav {
   display: none;
 }
 
-#voirProjets {
-  background-color: $fond;
-}
+// #voirProjets {
+//   background-color: $fond;
+// }
 
-#inscription {
-  background-color: $bleuFond;
-}
+// #inscription {
+//   background-color: $bleuFond;
+// }
 
 #footer {
   background-color: $fond;

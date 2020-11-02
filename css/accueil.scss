@@ -101,25 +101,6 @@ nav {
 
 #voirProjets {
   background-color: $fond;
-  display: flex;
-  justify-content: space-around;
-
-  div:not(button){
-    align-items: center;
-  }
-
-  h2{
-    color: white;
-  }
-
-  button{
-    padding: 1em 0.5em;
-    background-color: $bleu;
-  }
-
-  button h3{
-    color: $bleuFond;
-  }
 }
 
 #inscription {
@@ -304,36 +285,37 @@ nav {
     // }
   }
 
-  // #voirProjets{
-  //   display: flex;
-  //   justify-content: space-around;
+  #voirProjets{
+    display: flex;
+    justify-content: space-around;
 
-  //   div:not(button){
-  //     align-items: center;
-  //   }
+    div{
+      align-items: center;
+    }
 
-  //   h2{
-  //     color: white;
-  //   }
+    h2{
+      color: white;
+    }
 
-  //   button{
-  //     padding: 1em 0.5em;
-  //     background-color: $bleu;
-  //   }
+    button{
+      padding: 1em 0.5em;
+      background-color: $bleu;
+    }
 
-  //   button h3{
-  //     color: $bleuFond;
-  //   }
+    // button h3{
+    //   color: $bleuFond;
+    // }
 
-  //   // button a:hover{
-  //   //   color: $bleu;
-  //   // }
-  // }
+    // button a:hover{
+    //   color: $bleu;
+    // }
+  }
 
   #inscription{
     div{
       display: flex;
       flex-direction: column;
+      float: left;
 
       button{
         justify-content: space-evenly;

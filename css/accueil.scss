@@ -253,6 +253,20 @@ nav {
       }
     }
 
+<<<<<<< HEAD
+        #caroussel {
+            height: 700px;
+            #caroussel-images {
+                height: 100%;
+                ul {
+                    height: 100%;
+                    li {
+                        height: 300px;
+
+                    }
+                }
+            }
+=======
     #caroussel {
       height: 500px;
       #caroussel-images {
@@ -262,6 +276,7 @@ nav {
           li {
             height: 500px;
           }
+>>>>>>> 300dacb717c7f071dbaec033f02d1b890ed60027
         }
       }
     }

@@ -240,7 +240,7 @@ nav {
     color: #2cd9ff;
   }
   #header #caroussel {
-    height: 500px;
+    height: 700px;
   }
   #header #caroussel #caroussel-images {
     height: 100%;
@@ -249,7 +249,7 @@ nav {
     height: 100%;
   }
   #header #caroussel #caroussel-images ul li {
-    height: 500px;
+    height: 300px;
   }
   #header body {
     background: pink;

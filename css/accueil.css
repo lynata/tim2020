@@ -189,46 +189,90 @@ nav {
   body {
     background: pink;
   }
-  #caroussel {
+  #header {
+    background-color: #101832;
+    color: #fff;
+  }
+  #header #barreDuHaut {
+    height: 55px;
+  }
+  #header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #1c2c5c;
+  }
+  #header nav ul {
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header nav ul li {
+    padding: 0.5em;
+    font-family: CastIron;
+    font-size: 2em;
+  }
+  #header nav ul li:nth-child(3) {
+    margin-right: 10.5em;
+  }
+  #header nav ul #actif {
+    padding: 1em;
+    background-color: #000;
+    position: absolute;
+    z-index: 2;
+  }
+  #header nav ul li:hover {
+    color: #2cd9ff;
+  }
+  #header #caroussel {
     height: 700px;
   }
-  #caroussel #caroussel-images {
+  #header #caroussel #caroussel-images {
     height: 100%;
   }
-  #caroussel #caroussel-images ul {
+  #header #caroussel #caroussel-images ul {
     height: 100%;
   }
-  #caroussel #caroussel-images ul li {
+  #header #caroussel #caroussel-images ul li {
     height: 300px;
   }
-  #voirProjets {
+  #header #caroussel body {
+    background: pink;
+  }
+  #header #voirProjets {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  #voirProjets div {
+  #header #voirProjets div {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #voirProjets h2 {
+  #header #voirProjets h2 {
     color: white;
   }
-  #voirProjets button {
+  #header #voirProjets button {
     padding: 0.5em;
     background-color: #2cd9ff;
     -webkit-box-shadow: #1c2c5c;
             box-shadow: #1c2c5c;
   }
-  #voirProjets button h3 {
+  #header #voirProjets button h3 {
     color: #1c2c5c;
   }
-  #voirProjets button a:hover {
+  #header #voirProjets button a:hover {
     color: #2cd9ff;
   }
-  #inscription div {
+  #header #inscription div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -238,12 +282,12 @@ nav {
             flex-direction: column;
     float: left;
   }
-  #inscription div button {
+  #header #inscription div button {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  #inscription img {
+  #header #inscription img {
     float: right;
   }
 }

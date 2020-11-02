@@ -215,30 +215,30 @@ nav {
   #header {
     background-color: $fond;
     color: #fff;
+    #barreDuHaut {
+        height: 55px;
+    }
     nav {
-      display: block;
+      display: flex;
       background-color: $bleuFond;
-      // margin-top:3em;
       ul {
         margin: 0 auto;
         text-align: center;
-        position: relative;
+        flex-direction: row;
+        align-items: center;
 
         li {
-          display: inline-block;
           padding: 0.5em;
           font-family: CastIron;
           font-size: 2em;
         }
         li:nth-child(3) {
-          margin-right: 9em;
+          margin-right: 10.5em;
         }
         #actif {
           padding: 1em;
           background-color: #000;
           position: absolute;
-          left: 36%;
-          top: -50%;
           z-index: 2;
         }
         li:hover {
@@ -247,36 +247,23 @@ nav {
       }
     }
 
-    #caroussel {
-      height: 700px;
-      #caroussel-images {
-        height: 100%;
-        ul {
-          height: 100%;
-          li {
-            height: 300px;
-          }
-        }
-      }
-    }
+        #caroussel {
+            height: 700px;
+            #caroussel-images {
+                height: 100%;
+                ul {
+                    height: 100%;
+                    li {
+                        height: 300px;
+
+                    }
+                }
+            }
 
     body {
       background: pink;
     }
 
-    // #caroussel {
-    //     height: 600px;
-    //     #caroussel-images {
-    //         height: 600px;
-    //         ul {
-    //             height: 400px;
-    //             li {
-    //                 height: 400px;
-
-    //             }
-    //         }
-    //     }
-    // }
   }
 
   #voirProjets {
@@ -320,6 +307,6 @@ nav {
     img {
       float: right;
     }
-  }
 }
+} }
 //FIN GRANDS ECRANS

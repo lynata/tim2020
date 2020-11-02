@@ -8,6 +8,15 @@
   src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
+a {
+  color: #E3E3E3;
+}
+
+a:hover {
+  color: #2CD9FF;
+  text-decoration: none;
+}
+
 nav {
   background-color: #101832;
   display: none;
@@ -70,13 +79,35 @@ nav {
     color: #fff;
   }
   #header nav {
-    display: block;
     background-color: #1C2C5C;
+    
+
+    margin-top: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
   #header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
-    text-align: center;
-    position: relative;
   }
   #header nav ul li {
     display: inline-block;
@@ -84,19 +115,13 @@ nav {
     font-family: CastIron;
     font-size: 2em;
   }
-  #header nav ul li:nth-child(3) {
-    margin-right: 9em;
-  }
   #header nav ul #actif {
     padding: 1em;
     background-color: #000;
-    position: absolute;
-    left: 36%;
-    top: -50%;
     z-index: 2;
-  }
-  #header nav ul li:hover {
-    color: #2CD9FF;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   #info {
     background-color: #101832;

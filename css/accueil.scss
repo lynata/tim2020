@@ -124,6 +124,7 @@ nav {
 //DEBUT TABLETTE    --------------------------------------------------------------------------------------------------------------------------------------
 
 @media (min-width: 600px) {
+
   body {
     background: red;
   }
@@ -159,6 +160,7 @@ nav {
 
       }
     }
+
     #actif {
       padding: 1em;
       background-color: #000;
@@ -166,40 +168,40 @@ nav {
       align-items: flex-end;
     }
   }
-}
-
-#info {
-  background-color: $fond;
-}
-
-#infoBloc {
-  width: 60vw;
-  padding: 1em 4em 1em 1em;
-  margin-left: 2em;
-  position: relative;
-}
-
-#infoBoutons {
-  display: flex;
-  flex-flow: column;
-  position: absolute;
-  right: -5.5em;
-  top: 0;
-
-  button {
-    background-color: $bleuFond;
-    padding: 10px;
-    margin-top: 0.5em;
-    font-family: CastIron;
-    font-size: 1.5em;
-    color: $blanc;
-    letter-spacing: 0.08em;
-    box-shadow: $boxBleu;
-  }
-
-  button:hover {
+  #info {
     background-color: $fond;
   }
+  
+  #infoBloc {
+    width: 60vw;
+    padding: 1em 4em 1em 1em;
+    margin-left: 2em;
+    position: relative;
+  }
+  
+  #infoBoutons {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    right: -5.5em;
+    top: 0;
+  
+    button {
+      background-color: $bleuFond;
+      padding: 10px;
+      margin-top: 0.5em;
+      font-family: CastIron;
+      font-size: 1.5em;
+      color: $blanc;
+      letter-spacing: 0.08em;
+      box-shadow: $boxBleu;
+    }
+  
+    button:hover {
+      background-color: $fond;
+    }
+  }
+  
 }
 
 //FIN TABLETTE        ----------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,46 @@
+// Variables de couleurs
+$fond: #101832;
+$bleuFond:#1C2C5C;
+$blanc:#E3E3E3;
+$bleu:#2CD9FF;
+
+@font-face {
+    font-family: CastIron;
+    src: url("/medias/fonts/CastIron.otf") format("opentype");
+}
+@font-face {
+    font-family: Manrope;
+    src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+
+a{
+    color:$blanc;
+}
+a:hover{
+    color:$bleu;
+    text-decoration: none;
+}
+
+//DEBUT CSS - - - MOBILE FIRST      --------------------------------------------------------------------------------------------------------------------------------
+
+// FIN MOBILE FIRST
+
+
+//DEBUT TABLETTE    --------------------------------------------------------------------------------------------------------------------------------------
+@media (min-width: 600px) {
+    body {
+      background: red;
+    }
+   
+    
+  }
+  //FIN TABLETTE        ----------------------------------------------------------------------------------------------------------------------------------------------
+  
+  //DEBUT GRANDS ECRANS
+@media (min-width: 1200px) {
+    body {
+      background: pink;
+    }
+   
+  }
+  //FIN GRANDS ECRANS

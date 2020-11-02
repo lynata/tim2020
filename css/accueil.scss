@@ -13,7 +13,13 @@ $bleu:#2CD9FF;
     src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
-
+a{
+    color:$blanc;
+}
+a:hover{
+    color:$bleu;
+    text-decoration: none;
+}
 
 //DEBUT CSS - - - MOBILE FIRST      --------------------------------------------------------------------------------------------------------------------------------
 
@@ -41,7 +47,7 @@ nav{
 #checkNav:checked~#global {
     transform:translateY(100%)
     }
-      
+    
 #checkNav ~ #global {
     transform: translateY(0%);
     }
@@ -77,34 +83,36 @@ nav{
         background-color: $fond;
         color:#fff;
         nav{
-            display: block;
+           
             background-color: $bleuFond;
-            margin-top:3em;
+            margin-top:3em; 
+            display:flex;
+            justify-content: center;
+             width: 100%;
             ul{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
                 margin:0 auto;
-                text-align: center;
-                position:relative;
         
                 li{
                     display: inline-block;
                     padding:.5em;
                     font-family:CastIron;
                     font-size: 2em;
+                   
                 }
-                li:nth-child(3) {
-                    margin-right:9em;
-                }
-                #actif{
-                    padding:1em;
-                    background-color: #000;
-                    position: absolute;
-                    left:36%;
-                    top:-50%;
-                    z-index:2;
-                }
-                li:hover{
-                    color:$bleu;
-                }
+                // li:nth-child(3) {
+                //     margin-right:9em;
+                // }
+                 #actif{
+                     padding:1em;
+                     background-color: #000;
+                     z-index:2;
+                     align-items: flex-end;
+                 }
             }
         }
 

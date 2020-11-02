@@ -284,5 +284,26 @@ nav {
     //     }
     // }
   }
+
+  #voirProjets{
+    display: flex;
+
+    div:not(button){
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    h2{
+      color: white;
+    }
+
+    button h3{
+      color: $bleuFond;
+    }
+
+    button:hover{
+      color: $bleu;
+    }
+  }
 }
 //FIN GRANDS ECRANS

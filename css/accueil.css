@@ -254,5 +254,27 @@ nav {
   #header body {
     background: pink;
   }
+  #voirProjets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #voirProjets div:not(button) {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #voirProjets h2 {
+    color: white;
+  }
+  #voirProjets button h3 {
+    color: #1c2c5c;
+  }
+  #voirProjets button:hover {
+    color: #2cd9ff;
+  }
 }
 /*# sourceMappingURL=accueil.css.map */

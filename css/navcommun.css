@@ -1,5 +1,15 @@
-* {
+html {
   background-color: #101832;
+}
+
+@font-face {
+  font-family: CastIron;
+  src: url("/medias/fonts/CastIron.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
 @media (min-width: 600px) {
@@ -56,4 +66,4 @@
     background: pink;
   }
 }
-/*# sourceMappingURL=commun.css.map */
+/*# sourceMappingURL=navcommun.css.map */

@@ -1,28 +1,46 @@
-// Variables de couleurs
 $fond: #101832;
+<<<<<<< HEAD
 $bleuFond: #1c2c5c;
 $blanc: #e3e3e3;
 $bleu: #2cd9ff;
+=======
+$bleuFond:#1C2C5C;
+$blanc:#E3E3E3;
+$bleu:#2CD9FF;
+$boxBleu:-3px 3px 0px 1px $bleu;
+$boxNoir:-5px 5px 0px 1px #000;
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
 
 @font-face {
   font-family: CastIron;
   src: url("/medias/fonts/CastIron.otf") format("opentype");
 }
+
 @font-face {
   font-family: Manrope;
   src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
 a {
+<<<<<<< HEAD
   color: $blanc;
 }
 a:hover {
   color: $bleu;
   text-decoration: none;
+=======
+    color: $blanc;
+}
+
+a:hover {
+    color: $bleu;
+    text-decoration: none;
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
 }
 
 //DEBUT CSS - - - MOBILE FIRST      --------------------------------------------------------------------------------------------------------------------------------
 
+<<<<<<< HEAD
 nav {
   background-color: $fond;
   display: none;
@@ -73,6 +91,41 @@ nav {
 }
 #inscription {
   background-color: $bleuFond;
+=======
+
+
+#info {
+    background-color: $fond;
+}
+
+#infoBloc {
+    width: 80vw;
+    padding: 1em 1em 3em 1em ;
+    margin:0 auto;
+    background-color: $blanc;
+    font-family: Manrope;
+    box-shadow: $boxNoir;
+
+    h1 {
+        font-family: CastIron;
+        font-size: 2em;
+    }
+}
+
+#infoBoutons {
+    display:none;}
+
+#voirProjets {
+    background-color: $fond;
+}
+
+#inscription {
+    background-color: $bleuFond;
+}
+
+#footer {
+    background-color: $fond;
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
 }
 // #footer {
 //   background-color: $fond;
@@ -83,6 +136,7 @@ nav {
 //DEBUT TABLETTE    --------------------------------------------------------------------------------------------------------------------------------------
 
 @media (min-width: 600px) {
+<<<<<<< HEAD
   body {
     background: red;
   }
@@ -113,6 +167,50 @@ nav {
           padding: 0.5em;
           font-family: CastIron;
           font-size: 2em;
+=======
+    body {
+        background: red;
+    }
+
+    #header {
+        background-color: $fond;
+        color: #fff;
+
+        nav {
+            background-color: $bleuFond;
+            // margin-top:3em;
+            margin-top: 3em;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+
+                li {
+                    display: inline-block;
+                    padding: .5em;
+                    font-family: CastIron;
+                    font-size: 2em;
+
+                }
+
+                // li:nth-child(3) {
+                //     margin-right:9em;
+                // }
+                #actif {
+                    padding: 1em;
+                    background-color: #000;
+                    z-index: 2;
+                    align-items: flex-end;
+                }
+            }
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
         }
         // li:nth-child(3) {
         //     margin-right:9em;
@@ -125,6 +223,7 @@ nav {
         }
       }
     }
+<<<<<<< HEAD
   }
   #info {
     background-color: $fond;
@@ -164,10 +263,47 @@ nav {
   }
 }
 
+=======
+
+    #infoBloc {
+        width: 60vw;
+        padding: 1em 4em 1em 1em;
+        margin-left: 2em;
+        position: relative;
+    }
+
+    #infoBoutons {
+        display: flex;
+        flex-flow: column;
+        position: absolute;
+        right: -5.5em;
+        top: 0;
+
+        button {
+            background-color: $bleuFond;
+            padding: 10px;
+            margin-top: .5em;
+            font-family: CastIron;
+            font-size: 1.5em;
+            color: $blanc;
+            letter-spacing: .08em;
+            box-shadow: $boxBleu;
+        }
+
+        button:hover {
+            background-color: $fond;
+        }
+    }
+
+}
+
+
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
 //FIN TABLETTE        ----------------------------------------------------------------------------------------------------------------------------------------------
 
 //DEBUT GRANDS ECRANS
 @media (min-width: 1200px) {
+<<<<<<< HEAD
   body {
     background: pink;
   }
@@ -209,6 +345,12 @@ nav {
       }
     }
 
+=======
+    body {
+        background: pink;
+    }
+
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
     // #caroussel {
     //     height: 600px;
     //     #caroussel-images {
@@ -222,6 +364,13 @@ nav {
     //         }
     //     }
     // }
+<<<<<<< HEAD
   }
 }
 //FIN GRANDS ECRANS
+=======
+
+}
+
+//FIN GRANDS ECRANS
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d

@@ -17,41 +17,26 @@ a:hover {
   text-decoration: none;
 }
 
-nav {
+#info {
   background-color: #101832;
-  display: none;
 }
 
-#navMobile {
-  background: -webkit-gradient(linear, left top, left bottom, from(#020024), color-stop(20%, #020024), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #020024), color-stop(60%, #020024), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #020024), to(#020024));
-  background: linear-gradient(to bottom, #020024 0%, #020024 20%, transparent 20%, transparent 40%, #020024 40%, #020024 60%, transparent 60%, transparent 80%, #020024 80%, #020024 100%);
-  height: 48px;
-  width: 48px;
-  position: absolute;
-  margin: 1%;
-  right: 10px;
-  cursor: pointer;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  z-index: 999;
+#infoBloc {
+  width: 80vw;
+  padding: 1em 1em 3em 1em;
+  margin: 0 auto;
+  background-color: #E3E3E3;
+  font-family: Manrope;
+  -webkit-box-shadow: -5px 5px 0px 1px #000;
+          box-shadow: -5px 5px 0px 1px #000;
 }
 
-#checkNav:checked ~ #navMobile {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+#infoBloc h1 {
+  font-family: CastIron;
+  font-size: 2em;
 }
 
-#checkNav:checked ~ #global {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-}
-
-#checkNav ~ #global {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
-
-#checkNav {
+#infoBoutons {
   display: none;
 }
 
@@ -67,10 +52,13 @@ nav {
   body {
     background: red;
   }
+<<<<<<< HEAD
   #navMobile,
   #checkNav {
     display: none;
   }
+=======
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
   #header {
     background-color: #101832;
     color: #fff;
@@ -118,20 +106,18 @@ nav {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  #info {
-    background-color: #101832;
-  }
   #infoBloc {
+<<<<<<< HEAD
     background-color: #e3e3e3;
     font-family: Manrope;
     width: 60%;
     margin-left: 2em;
+=======
+    width: 60vw;
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
     padding: 1em 4em 1em 1em;
+    margin-left: 2em;
     position: relative;
-  }
-  #infoBloc h1 {
-    font-family: CastIron;
-    font-size: 1.5em;
   }
   #infoBoutons {
     display: -webkit-box;
@@ -158,8 +144,11 @@ nav {
   }
   #infoBoutons button:hover {
     background-color: #101832;
+<<<<<<< HEAD
     -webkit-box-shadow: -3px 3px 0px 1px #2cd9ff;
             box-shadow: -3px 3px 0px 1px #2cd9ff;
+=======
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
   }
 }
 
@@ -167,6 +156,7 @@ nav {
   body {
     background: pink;
   }
+<<<<<<< HEAD
   #header {
     background-color: #101832;
     color: #fff;
@@ -200,5 +190,7 @@ nav {
   #header nav ul li:hover {
     color: #2cd9ff;
   }
+=======
+>>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
 }
 /*# sourceMappingURL=accueil.css.map */

@@ -7,17 +7,17 @@
     <title>Accueil</title>
     <!--CSS-->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-<<<<<<< HEAD
+
     <link rel="stylesheet" href="css/uikit.min.css" >
+
     <link rel="stylesheet" href="css/accueil.css">
     <link rel="stylesheet" href="css/footer.css">
-=======
     <link rel="stylesheet" href="/css/uikit.min.css" >
     <link rel="stylesheet" href="/css/accueil.css">
     <link rel="stylesheet" href="/css/navmobile.css">
->>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
+
     <!--JavaScript-->
-    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 </head>
 
@@ -47,16 +47,27 @@
             </div>
         </nav>
       
-        <div id="caroussel" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 3000; pause-on-hover: false">
-            <ul id="caroussel-images" class="uk-slideshow-items">
+        <div id="caroussel" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 6000; pause-on-hover: false">
+            <ul id="caroussel-images" class="uk-slideshow-items" ratio: false;>
+                <div uk-slideshow-parallax="x: 100,-100">
+                    <li>
+                        <img src="/medias/images/GregExplique.PNG" alt="" uk-cover>
+                    </li>
+                </div>
                 <li>
-                    <img src="/medias/images/Profs_2017_25oct_David_Ross.jpg" alt="" uk-cover>
+                    <img src="/medias/images/profsHeureux.PNG" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="/medias/images/Copie de photo prof fun.jpg" alt="" uk-cover>
+                    <img src="/medias/images/elevesEcoutent.PNG" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="/medias/images/Greg.jpg" alt="" uk-cover>
+                    <img src="/medias/images/elevesEcoutent2.PNG" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="/medias/images/ludo.PNG" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="/medias/images/fete.PNG" alt="" uk-cover>
                 </li>
             </ul>
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>

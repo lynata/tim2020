@@ -52,20 +52,18 @@ a:hover {
   body {
     background: red;
   }
-<<<<<<< HEAD
+
   #navMobile,
   #checkNav {
     display: none;
   }
-=======
->>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
   #header {
     background-color: #101832;
     color: #fff;
   }
   #header nav {
-    background-color: #1c2c5c;
-    margin-top: 3em;
+    background-color: #1C2C5C;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -107,14 +105,11 @@ a:hover {
             align-items: flex-end;
   }
   #infoBloc {
-<<<<<<< HEAD
+
     background-color: #e3e3e3;
     font-family: Manrope;
-    width: 60%;
     margin-left: 2em;
-=======
     width: 60vw;
->>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
     padding: 1em 4em 1em 1em;
     margin-left: 2em;
     position: relative;
@@ -144,11 +139,10 @@ a:hover {
   }
   #infoBoutons button:hover {
     background-color: #101832;
-<<<<<<< HEAD
+
     -webkit-box-shadow: -3px 3px 0px 1px #2cd9ff;
             box-shadow: -3px 3px 0px 1px #2cd9ff;
-=======
->>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
+
   }
 }
 
@@ -156,10 +150,11 @@ a:hover {
   body {
     background: pink;
   }
-<<<<<<< HEAD
+
   #header {
     background-color: #101832;
     color: #fff;
+    height: 100vh;
   }
   #header nav {
     display: block;
@@ -190,7 +185,18 @@ a:hover {
   #header nav ul li:hover {
     color: #2cd9ff;
   }
-=======
->>>>>>> ec5ac2c2bb3e53f08e27d6b0bee1d0501108515d
+
+  #header #caroussel {
+    height: 500px;
+  }
+  #header #caroussel #caroussel-images {
+    height: 100%;
+  }
+  #header #caroussel #caroussel-images ul {
+    height: 100%;
+  }
+  #header #caroussel #caroussel-images ul li {
+    height: 500px;
+  }
 }
 /*# sourceMappingURL=accueil.css.map */

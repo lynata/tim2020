@@ -73,11 +73,16 @@ nav {
 #voirProjets {
   background-color: $fond;
 }
+
 #inscription {
   background-color: $bleuFond;
 }
 
 #info {
+  background-color: $fond;
+}
+
+#trio{
   background-color: $fond;
 }
 
@@ -99,13 +104,13 @@ nav {
   display: none;
 }
 
-#voirProjets {
-  background-color: $fond;
-}
+// #voirProjets {
+//   background-color: $fond;
+// }
 
-#inscription {
-  background-color: $bleuFond;
-}
+// #inscription {
+//   background-color: $bleuFond;
+// }
 
 #footer {
   background-color: $fond;
@@ -218,6 +223,54 @@ nav {
     background: pink;
   }
 
+  #header {
+    background-color: $fond;
+    color: #fff;
+    nav {
+      display: block;
+      background-color: $bleuFond;
+      // margin-top:3em;
+      ul {
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+
+        li {
+          display: inline-block;
+          padding: 0.5em;
+          font-family: CastIron;
+          font-size: 2em;
+        }
+        li:nth-child(3) {
+          margin-right: 9em;
+        }
+        #actif {
+          padding: 1em;
+          background-color: #000;
+          position: absolute;
+          left: 36%;
+          top: -50%;
+          z-index: 2;
+        }
+        li:hover {
+          color: $bleu;
+        }
+      }
+    }
+
+        #caroussel {
+            height: 700px;
+            #caroussel-images {
+                height: 100%;
+                ul {
+                    height: 100%;
+                    li {
+                        height: 300px;
+
+                    }
+                }
+            }
+
     #caroussel {
       height: 500px;
       #caroussel-images {
@@ -227,6 +280,7 @@ nav {
           li {
             height: 500px;
           }
+
         }
       }
     }
@@ -246,4 +300,48 @@ nav {
     //     }
     // }
   }
+
+  #voirProjets{
+    display: flex;
+    justify-content: space-around;
+
+    div{
+      align-items: center;
+    }
+
+    h2{
+      color: white;
+    }
+
+    button{
+      padding: 0.5em;
+      background-color: $bleu;
+      box-shadow: $bleuFond;
+    }
+
+    button h3{
+      color: $bleuFond;
+    }
+
+    button a:hover{
+      color: $bleu;
+    }
+  }
+
+  #inscription{
+    div{
+      display: flex;
+      flex-direction: column;
+      float: left;
+
+      button{
+        justify-content: space-evenly;
+      }
+    }
+
+    img{
+      float: right;
+    }
+  }
+}
 //FIN GRANDS ECRANS

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/uikit.min.css" >
     <link rel="stylesheet" href="/css/accueil.css">
     <link rel="stylesheet" href="/css/navmobile.css">
+    <link rel="stylesheet" href="/css/accueilProjetsInscrip.scss">
 
     <!--JavaScript-->
     <script src="js/uikit.js"></script>
@@ -47,27 +48,27 @@
             </div>
         </nav>
       
-        <div id="caroussel" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 6000; pause-on-hover: false">
-            <ul id="caroussel-images" class="uk-slideshow-items" ratio: false;>
-                <div uk-slideshow-parallax="x: 100,-100">
+        <div id="caroussel" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 6000; pause-on-hover: false; ratio: false">
+            <ul id="caroussel-images" class="uk-slideshow-items">
+                <div uk-slideshow-parallax="y: 200,-200">
                     <li>
-                        <img src="/medias/images/GregExplique.PNG" alt="" uk-cover>
+                        <img src="/medias/images/GregExplique_diapo.PNG" alt="" uk-cover>
                     </li>
                 </div>
                 <li>
-                    <img src="/medias/images/profsHeureux.PNG" alt="" uk-cover>
+                    <img src="/medias/images/profsHeureux_diapo.PNG" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="/medias/images/elevesEcoutent.PNG" alt="" uk-cover>
+                    <img src="/medias/images/elevesEcoutent2_diapo.png" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="/medias/images/elevesEcoutent2.PNG" alt="" uk-cover>
+                    <img src="/medias/images/elevesEcoutent2_diapo.png" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="/medias/images/ludo.PNG" alt="" uk-cover>
+                    <img src="/medias/images/ludo_diapo.PNG" alt="" uk-cover>
                 </li>
                 <li>
-                    <img src="/medias/images/fete.PNG" alt="" uk-cover>
+                    <img src="/medias/images/fete_diapo.png" alt="" uk-cover>
                 </li>
             </ul>
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
@@ -155,15 +156,15 @@
     <section id="voirProjets">
         <div>
             <h2>Web</h2>
-            <img src="medias/images/web.png" alt="web">
+            <img src="medias/images/web.png" alt="Web">
         </div>
         <div>
             <h2>Jeu</h2>
-            <img src="medias/images/jeu.png" alt="jeu">
+            <img src="medias/images/jeu.png" alt="Jeu">
         </div>
         <div>
             <h2>3D</h2>
-            <img src="medias/images/3d.png" alt="3d">
+            <img src="medias/images/3d.png" alt="3D">
         </div>
         <button><a href="/pages/projets.html"><h3>Voir Projets</h3></a></button>
     </section>
@@ -172,13 +173,33 @@
     <!-- Section Inscription (lyn) -->
     <section id="inscription">
         <h2>Inscription</h2>
-        <button><a href="https://admission.sram.qc.ca/">Je suis sûr-e!</a></button>
-        <button><a href="https://www.cmaisonneuve.qc.ca/accueil/venez-rencontrer/etudiant-dun-jour/">Étudiant d'un jour</a></button>
-        <button><a href="https://www.cmaisonneuve.qc.ca/vie-etudiante/orientation-emploi/choix-de-carriere-orientation/test-dorientation/">Test d'orientation</a></button>
-        <img src="medias/images/portesouvertes.png" alt="portes ouvertes">
+        <div>
+            <button><a href="https://admission.sram.qc.ca/">Je suis sûr-e!</a></button>
+            <button><a href="https://www.cmaisonneuve.qc.ca/accueil/venez-rencontrer/etudiant-dun-jour/">Étudiant d'un jour</a></button>
+            <button><a href="https://www.cmaisonneuve.qc.ca/vie-etudiante/orientation-emploi/choix-de-carriere-orientation/test-dorientation/">Test d'orientation</a></button>
+        </div>
+        <img src="medias/images/inscription.png" alt="Inscription">
         <!-- ajouter target="_blank" dans la balise a pour ouvrir le lien sur une autre page -->
     </section>
     <!-- Fin section inscription -->
+
+    <!-- Section Trio Cours/Profs/Vie étudiante (Claue) -->
+    <section id="trio">
+        
+        <a href="/pages/cours.html">
+            <div id="ImgCours"><img src="medias/images/EleveClasse.PNG" alt="Photo d'un élève en classe"></div>
+            <button>Voir Cours</button>
+        </a>
+        <a href="/pages/profs.html">
+            <div id="ImgProfs"><img src="medias/images/Rencontre20ans.PNG" alt="Photo d'un professeur avec des anciens étudiants"></div>
+            <button>Voir Profs</button>
+        </a>
+        <a href="/pages/vieetudiante.html">
+            <div id="ImgVie"><img src="medias/images/Manette.PNG" alt="Manette en main"></div>
+            <button>Voir La Vie</button>
+        </a>
+    </section>
+    <!-- Fin Section Trio Cours/Profs/Vie étudiante -->
 
     <!-- Footer -->
     <section id="footer">

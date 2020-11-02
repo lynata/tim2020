@@ -73,11 +73,16 @@ nav {
 #voirProjets {
   background-color: $fond;
 }
+
 #inscription {
   background-color: $bleuFond;
 }
 
 #info {
+  background-color: $fond;
+}
+
+#trio {
   background-color: $fond;
 }
 
@@ -99,13 +104,13 @@ nav {
   display: none;
 }
 
-#voirProjets {
-  background-color: $fond;
-}
+// #voirProjets {
+//   background-color: $fond;
+// }
 
-#inscription {
-  background-color: $bleuFond;
-}
+// #inscription {
+//   background-color: $bleuFond;
+// }
 
 #footer {
   background-color: $fond;
@@ -119,6 +124,7 @@ nav {
 //DEBUT TABLETTE    --------------------------------------------------------------------------------------------------------------------------------------
 
 @media (min-width: 600px) {
+
   body {
     background: red;
   }
@@ -133,7 +139,6 @@ nav {
     nav {
       background-color: $bleuFond;
       // margin-top:3em;
-
       display: flex;
       justify-content: center;
       width: 100%;
@@ -153,20 +158,9 @@ nav {
           font-size: 2em;
         }
 
-        // li:nth-child(3) {
-        //     margin-right:9em;
-        // }
-        #actif {
-          padding: 1em;
-          background-color: #000;
-          z-index: 2;
-          align-items: flex-end;
-        }
       }
     }
-    // li:nth-child(3) {
-    //     margin-right:9em;
-    // }
+
     #actif {
       padding: 1em;
       background-color: #000;
@@ -174,40 +168,40 @@ nav {
       align-items: flex-end;
     }
   }
-}
-
-#info {
-  background-color: $fond;
-}
-
-#infoBloc {
-  width: 60vw;
-  padding: 1em 4em 1em 1em;
-  margin-left: 2em;
-  position: relative;
-}
-
-#infoBoutons {
-  display: flex;
-  flex-flow: column;
-  position: absolute;
-  right: -5.5em;
-  top: 0;
-
-  button {
-    background-color: $bleuFond;
-    padding: 10px;
-    margin-top: 0.5em;
-    font-family: CastIron;
-    font-size: 1.5em;
-    color: $blanc;
-    letter-spacing: 0.08em;
-    box-shadow: $boxBleu;
-  }
-
-  button:hover {
+  #info {
     background-color: $fond;
   }
+  
+  #infoBloc {
+    width: 60vw;
+    padding: 1em 4em 1em 1em;
+    margin-left: 2em;
+    position: relative;
+  }
+  
+  #infoBoutons {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    right: -5.5em;
+    top: 0;
+  
+    button {
+      background-color: $bleuFond;
+      padding: 10px;
+      margin-top: 0.5em;
+      font-family: CastIron;
+      font-size: 1.5em;
+      color: $blanc;
+      letter-spacing: 0.08em;
+      box-shadow: $boxBleu;
+    }
+  
+    button:hover {
+      background-color: $fond;
+    }
+  }
+  
 }
 
 //FIN TABLETTE        ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -272,45 +266,47 @@ nav {
 
   }
 
-  #voirProjets{
+  #voirProjets {
     display: flex;
     justify-content: space-around;
 
-    div:not(button){
+    div {
       align-items: center;
     }
 
-    h2{
+    h2 {
       color: white;
     }
 
-    button{
-      padding: 1em 0.5em;
+    button {
+      padding: 0.5em;
       background-color: $bleu;
+      box-shadow: $bleuFond;
     }
 
-    button h3{
+    button h3 {
       color: $bleuFond;
     }
 
-    // button a:hover{
-    //   color: $bleu;
-    // }
+    button a:hover {
+      color: $bleu;
+    }
   }
 
-  #inscription{
-    div{
+  #inscription {
+    div {
       display: flex;
       flex-direction: column;
+      float: left;
 
-      button{
+      button {
         justify-content: space-evenly;
       }
     }
-        img{
-            float: right;
-        }
+
+    img {
+      float: right;
     }
-    }
+}
 }
 //FIN GRANDS ECRANS

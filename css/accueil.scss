@@ -2,9 +2,8 @@ $fond: #101832;
 $bleuFond: #1c2c5c;
 $blanc: #e3e3e3;
 $bleu: #2cd9ff;
-$boxBleu:-3px 3px 0px 1px $bleu;
-$boxNoir:-5px 5px 0px 1px #000;
-
+$boxBleu: -3px 3px 0px 1px $bleu;
+$boxNoir: -5px 5px 0px 1px #000;
 
 @font-face {
   font-family: CastIron;
@@ -17,7 +16,6 @@ $boxNoir:-5px 5px 0px 1px #000;
 }
 
 a {
-
   color: $blanc;
 }
 a:hover {
@@ -25,9 +23,7 @@ a:hover {
   text-decoration: none;
 }
 
-
 //DEBUT CSS - - - MOBILE FIRST      --------------------------------------------------------------------------------------------------------------------------------
-
 
 nav {
   background-color: $fond;
@@ -79,41 +75,40 @@ nav {
 }
 #inscription {
   background-color: $bleuFond;
-
-
+}
 
 #info {
-    background-color: $fond;
+  background-color: $fond;
 }
 
 #infoBloc {
-    width: 80vw;
-    padding: 1em 1em 3em 1em ;
-    margin:0 auto;
-    background-color: $blanc;
-    font-family: Manrope;
-    box-shadow: $boxNoir;
+  width: 80vw;
+  padding: 1em 1em 3em 1em;
+  margin: 0 auto;
+  background-color: $blanc;
+  font-family: Manrope;
+  box-shadow: $boxNoir;
 
-    h1 {
-        font-family: CastIron;
-        font-size: 2em;
-    }
+  h1 {
+    font-family: CastIron;
+    font-size: 2em;
+  }
 }
 
 #infoBoutons {
-    display:none;}
+  display: none;
+}
 
 #voirProjets {
-    background-color: $fond;
+  background-color: $fond;
 }
 
 #inscription {
-    background-color: $bleuFond;
+  background-color: $bleuFond;
 }
 
 #footer {
-    background-color: $fond;
-
+  background-color: $fond;
 }
 // #footer {
 //   background-color: $fond;
@@ -124,7 +119,6 @@ nav {
 //DEBUT TABLETTE    --------------------------------------------------------------------------------------------------------------------------------------
 
 @media (min-width: 600px) {
-
   body {
     background: red;
   }
@@ -135,13 +129,15 @@ nav {
   #header {
     background-color: $fond;
     color: #fff;
+
     nav {
       background-color: $bleuFond;
       // margin-top:3em;
-      margin-top: 3em;
+
       display: flex;
       justify-content: center;
       width: 100%;
+
       ul {
         display: flex;
         flex-direction: row;
@@ -155,51 +151,8 @@ nav {
           padding: 0.5em;
           font-family: CastIron;
           font-size: 2em;
-
-    body {
-        background: red;
-    }
-
-    #header {
-        background-color: $fond;
-        color: #fff;
-
-        nav {
-            background-color: $bleuFond;
-            // margin-top:3em;
-
-            display:flex;
-            justify-content: center;
-            width: 100%;
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: center;
-                align-items: center;
-                margin: 0 auto;
-
-                li {
-                    display: inline-block;
-                    padding: .5em;
-                    font-family: CastIron;
-                    font-size: 2em;
-
-                }
-
-                // li:nth-child(3) {
-                //     margin-right:9em;
-                // }
-                #actif {
-                    padding: 1em;
-                    background-color: #000;
-                    z-index: 2;
-                    align-items: flex-end;
-                }
-            }
-
         }
+
         // li:nth-child(3) {
         //     margin-right:9em;
         // }
@@ -211,50 +164,56 @@ nav {
         }
       }
     }
-
+    // li:nth-child(3) {
+    //     margin-right:9em;
+    // }
+    #actif {
+      padding: 1em;
+      background-color: #000;
+      z-index: 2;
+      align-items: flex-end;
+    }
   }
-  #info {
+}
+
+#info {
+  background-color: $fond;
+}
+
+#infoBloc {
+  width: 60vw;
+  padding: 1em 4em 1em 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+#infoBoutons {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  right: -5.5em;
+  top: 0;
+
+  button {
+    background-color: $bleuFond;
+    padding: 10px;
+    margin-top: 0.5em;
+    font-family: CastIron;
+    font-size: 1.5em;
+    color: $blanc;
+    letter-spacing: 0.08em;
+    box-shadow: $boxBleu;
+  }
+
+  button:hover {
     background-color: $fond;
   }
-
-
-    #infoBloc {
-        width: 60vw;
-        padding: 1em 4em 1em 1em;
-        margin-left: 2em;
-        position: relative;
-    }
-
-    #infoBoutons {
-        display: flex;
-        flex-flow: column;
-        position: absolute;
-        right: -5.5em;
-        top: 0;
-
-        button {
-            background-color: $bleuFond;
-            padding: 10px;
-            margin-top: .5em;
-            font-family: CastIron;
-            font-size: 1.5em;
-            color: $blanc;
-            letter-spacing: .08em;
-            box-shadow: $boxBleu;
-        }
-
-        button:hover {
-            background-color: $fond;
-        }
-    }
-
 }
 
 //FIN TABLETTE        ----------------------------------------------------------------------------------------------------------------------------------------------
 
 //DEBUT GRANDS ECRANS
 @media (min-width: 1200px) {
-
   body {
     background: pink;
   }
@@ -273,13 +232,11 @@ nav {
         text-align: center;
         position: relative;
 
-
         li {
           display: inline-block;
           padding: 0.5em;
           font-family: CastIron;
           font-size: 2em;
-
         }
         li:nth-child(3) {
           margin-right: 9em;
@@ -298,27 +255,22 @@ nav {
       }
     }
 
-
-        #caroussel {
+    #caroussel {
+      height: 500px;
+      #caroussel-images {
+        height: 100%;
+        ul {
+          height: 100%;
+          li {
             height: 500px;
-            #caroussel-images {
-                height: 100%;
-                ul {
-                    height: 100%;
-                    li {
-                        height: 500px;
-
-                    }
-                }
-            }
+          }
         }
-
-
-    body {
-        background: pink;
-
+      }
     }
 
+    body {
+      background: pink;
+    }
 
     // #caroussel {
     //     height: 600px;
@@ -333,11 +285,6 @@ nav {
     //         }
     //     }
     // }
-
   }
 }
 //FIN GRANDS ECRANS
-
-
-}
-

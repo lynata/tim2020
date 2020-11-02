@@ -17,6 +17,52 @@ a:hover {
   text-decoration: none;
 }
 
+nav {
+  background-color: #101832;
+  display: none;
+}
+
+#navMobile {
+  background: -webkit-gradient(linear, left top, left bottom, from(#020024), color-stop(20%, #020024), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #020024), color-stop(60%, #020024), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #020024), to(#020024));
+  background: linear-gradient(to bottom, #020024 0%, #020024 20%, transparent 20%, transparent 40%, #020024 40%, #020024 60%, transparent 60%, transparent 80%, #020024 80%, #020024 100%);
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  margin: 1%;
+  right: 10px;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  z-index: 999;
+}
+
+#checkNav:checked ~ #navMobile {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#checkNav:checked ~ #global {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+#checkNav ~ #global {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+#checkNav {
+  display: none;
+}
+
+#voirProjets {
+  background-color: #101832;
+}
+
+#inscription {
+  background-color: #1c2c5c;
+}
+
 #info {
   background-color: #101832;
 }
@@ -25,7 +71,7 @@ a:hover {
   width: 80vw;
   padding: 1em 1em 3em 1em;
   margin: 0 auto;
-  background-color: #E3E3E3;
+  background-color: #e3e3e3;
   font-family: Manrope;
   -webkit-box-shadow: -5px 5px 0px 1px #000;
           box-shadow: -5px 5px 0px 1px #000;
@@ -48,11 +94,14 @@ a:hover {
   background-color: #1c2c5c;
 }
 
+#footer {
+  background-color: #101832;
+}
+
 @media (min-width: 600px) {
   body {
     background: red;
   }
-
   #navMobile,
   #checkNav {
     display: none;
@@ -62,8 +111,7 @@ a:hover {
     color: #fff;
   }
   #header nav {
-    background-color: #1C2C5C;
-
+    background-color: #1c2c5c;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -104,57 +152,63 @@ a:hover {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  #infoBloc {
+  #header #actif {
+    padding: 1em;
+    background-color: #000;
+    z-index: 2;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
 
-    background-color: #e3e3e3;
-    font-family: Manrope;
-    margin-left: 2em;
-    width: 60vw;
-    padding: 1em 4em 1em 1em;
-    margin-left: 2em;
-    position: relative;
-  }
-  #infoBoutons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    position: absolute;
-    right: -5.5em;
-    top: 0;
-  }
-  #infoBoutons button {
-    background-color: #1c2c5c;
-    padding: 10px;
-    margin-top: 0.5em;
-    font-family: CastIron;
-    font-size: 1.5em;
-    color: #e3e3e3;
-    letter-spacing: 0.08em;
-    -webkit-box-shadow: -3px 3px 0px 1px #2cd9ff;
-            box-shadow: -3px 3px 0px 1px #2cd9ff;
-  }
-  #infoBoutons button:hover {
-    background-color: #101832;
+#info {
+  background-color: #101832;
+}
 
-    -webkit-box-shadow: -3px 3px 0px 1px #2cd9ff;
-            box-shadow: -3px 3px 0px 1px #2cd9ff;
+#infoBloc {
+  width: 60vw;
+  padding: 1em 4em 1em 1em;
+  margin-left: 2em;
+  position: relative;
+}
 
-  }
+#infoBoutons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: absolute;
+  right: -5.5em;
+  top: 0;
+}
+
+#infoBoutons button {
+  background-color: #1c2c5c;
+  padding: 10px;
+  margin-top: 0.5em;
+  font-family: CastIron;
+  font-size: 1.5em;
+  color: #e3e3e3;
+  letter-spacing: 0.08em;
+  -webkit-box-shadow: -3px 3px 0px 1px #2cd9ff;
+          box-shadow: -3px 3px 0px 1px #2cd9ff;
+}
+
+#infoBoutons button:hover {
+  background-color: #101832;
 }
 
 @media (min-width: 1200px) {
   body {
     background: pink;
   }
-
   #header {
     background-color: #101832;
     color: #fff;
-    height: 100vh;
   }
   #header nav {
     display: block;
@@ -185,7 +239,6 @@ a:hover {
   #header nav ul li:hover {
     color: #2cd9ff;
   }
-
   #header #caroussel {
     height: 500px;
   }
@@ -197,6 +250,9 @@ a:hover {
   }
   #header #caroussel #caroussel-images ul li {
     height: 500px;
+  }
+  #header body {
+    background: pink;
   }
 }
 /*# sourceMappingURL=accueil.css.map */

@@ -67,6 +67,10 @@ nav {
   background-color: #101832;
 }
 
+#trio {
+  background-color: #101832;
+}
+
 #infoBloc {
   width: 80vw;
   padding: 1em 1em 3em 1em;
@@ -84,14 +88,6 @@ nav {
 
 #infoBoutons {
   display: none;
-}
-
-#voirProjets {
-  background-color: #101832;
-}
-
-#inscription {
-  background-color: #1c2c5c;
 }
 
 #footer {

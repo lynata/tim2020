@@ -189,17 +189,53 @@ nav {
   body {
     background: pink;
   }
-  #caroussel {
+  #header {
+    background-color: #101832;
+    color: #fff;
+  }
+  #header nav {
+    display: block;
+    background-color: #1c2c5c;
+  }
+  #header nav ul {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  #header nav ul li {
+    display: inline-block;
+    padding: 0.5em;
+    font-family: CastIron;
+    font-size: 2em;
+  }
+  #header nav ul li:nth-child(3) {
+    margin-right: 9em;
+  }
+  #header nav ul #actif {
+    padding: 1em;
+    background-color: #000;
+    position: absolute;
+    left: 36%;
+    top: -50%;
+    z-index: 2;
+  }
+  #header nav ul li:hover {
+    color: #2cd9ff;
+  }
+  #header #caroussel {
     height: 700px;
   }
-  #caroussel #caroussel-images {
+  #header #caroussel #caroussel-images {
     height: 100%;
   }
-  #caroussel #caroussel-images ul {
+  #header #caroussel #caroussel-images ul {
     height: 100%;
   }
-  #caroussel #caroussel-images ul li {
+  #header #caroussel #caroussel-images ul li {
     height: 300px;
+  }
+  #header body {
+    background: pink;
   }
   #voirProjets {
     display: -webkit-box;

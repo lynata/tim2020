@@ -258,11 +258,10 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   #voirProjets div:not(button) {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -270,11 +269,29 @@ nav {
   #voirProjets h2 {
     color: white;
   }
+  #voirProjets button {
+    padding: 1em 0.5em;
+    background-color: #2cd9ff;
+  }
   #voirProjets button h3 {
     color: #1c2c5c;
   }
-  #voirProjets button:hover {
-    color: #2cd9ff;
+  #inscription div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #inscription div button {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #inscription img {
+    float: right;
   }
 }
 /*# sourceMappingURL=accueil.css.map */

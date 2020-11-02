@@ -1,11 +1,82 @@
-#footer {
+section#footer {
   color: white;
   background-color: #0b132b;
-  h1,
-  h3 {
-    color: white;
-  }
-  footer div#contact {
+
+  #contact {
     background-color: #1c2c5c;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../medias/images/halfTone/Halftone-Effect-Background_2.png");
+    background-size: 17em;
+    background-repeat: repeat-x;
+  }
+  h1 {
+    font-family: CastIron;
+    font-size: 4em;
+  }
+
+  h1,
+  h3,
+  p {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  #footerEnd {
+    background-image: url("../medias/images/halfTone/Halftone-Effect-Background_2.png");
+    background-size: 17em;
+    background-repeat: repeat-x;
+  }
+
+  div img {
+    max-width: 5em;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    filter: invert(1);
+  }
+
+  #liensSociaux {
+    display: flex;
+    justify-content: center;
+
+    li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2em;
+      height: 2em;
+      background-color: #3a506b;
+      border-radius: 50%;
+      margin: 0 0.5em;
+      font-size: 1.25em;
+    }
+  }
+
+  #footerNav {
+    display: none;
+  }
+  #droitAuteur {
+    margin-bottom: 0;
+    padding-bottom: 0.3em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .liste-contact {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+    padding-bottom: 4em;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+      margin: 0;
+    }
   }
 }

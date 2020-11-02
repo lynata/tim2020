@@ -82,7 +82,7 @@ nav {
   background-color: $fond;
 }
 
-#trio{
+#trio {
   background-color: $fond;
 }
 
@@ -210,18 +210,57 @@ nav {
     background: pink;
   }
 
-        #caroussel {
-            height: 700px;
-            #caroussel-images {
-                height: 100%;
-                ul {
-                    height: 100%;
-                    li {
-                        height: 300px;
+  #header {
+    background-color: $fond;
+    color: #fff;
+    nav {
+      display: block;
+      background-color: $bleuFond;
+      // margin-top:3em;
+      ul {
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
 
-                    }
-                }
-            }
+        li {
+          display: inline-block;
+          padding: 0.5em;
+          font-family: CastIron;
+          font-size: 2em;
+        }
+        li:nth-child(3) {
+          margin-right: 9em;
+        }
+        #actif {
+          padding: 1em;
+          background-color: #000;
+          position: absolute;
+          left: 36%;
+          top: -50%;
+          z-index: 2;
+        }
+        li:hover {
+          color: $bleu;
+        }
+      }
+    }
+
+    #caroussel {
+      height: 700px;
+      #caroussel-images {
+        height: 100%;
+        ul {
+          height: 100%;
+          li {
+            height: 300px;
+          }
+        }
+      }
+    }
+
+    body {
+      background: pink;
+    }
 
     // #caroussel {
     //     height: 600px;
@@ -238,45 +277,45 @@ nav {
     // }
   }
 
-  #voirProjets{
+  #voirProjets {
     display: flex;
     justify-content: space-around;
 
-    div{
+    div {
       align-items: center;
     }
 
-    h2{
+    h2 {
       color: white;
     }
 
-    button{
+    button {
       padding: 0.5em;
       background-color: $bleu;
       box-shadow: $bleuFond;
     }
 
-    button h3{
+    button h3 {
       color: $bleuFond;
     }
 
-    button a:hover{
+    button a:hover {
       color: $bleu;
     }
   }
 
-  #inscription{
-    div{
+  #inscription {
+    div {
       display: flex;
       flex-direction: column;
       float: left;
 
-      button{
+      button {
         justify-content: space-evenly;
       }
     }
 
-    img{
+    img {
       float: right;
     }
   }

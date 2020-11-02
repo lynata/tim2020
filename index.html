@@ -42,9 +42,11 @@
       
         <div id="caroussel" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 6000; pause-on-hover: false">
             <ul id="caroussel-images" class="uk-slideshow-items" ratio: false;>
-                <li>
-                    <img src="/medias/images/GregExplique.PNG" alt="" uk-cover>
-                </li>
+                <div uk-slideshow-parallax="x: 100,-100">
+                    <li>
+                        <img src="/medias/images/GregExplique.PNG" alt="" uk-cover>
+                    </li>
+                </div>
                 <li>
                     <img src="/medias/images/profsHeureux.PNG" alt="" uk-cover>
                 </li>

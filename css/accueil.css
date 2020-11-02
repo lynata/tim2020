@@ -80,7 +80,6 @@ nav {
   }
   #header nav {
     background-color: #1C2C5C;
-    margin-top: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -173,6 +172,7 @@ nav {
   #header {
     background-color: #101832;
     color: #fff;
+    height: 100vh;
   }
   #header nav {
     display: block;
@@ -202,6 +202,18 @@ nav {
   }
   #header nav ul li:hover {
     color: #2CD9FF;
+  }
+  #header #caroussel {
+    height: 700px;
+  }
+  #header #caroussel #caroussel-images {
+    height: 100%;
+  }
+  #header #caroussel #caroussel-images ul {
+    height: 100%;
+  }
+  #header #caroussel #caroussel-images ul li {
+    height: 400px;
   }
 }
 /*# sourceMappingURL=accueil.css.map */

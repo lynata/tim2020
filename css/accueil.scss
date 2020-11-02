@@ -86,7 +86,6 @@ nav{
            
             background-color: $bleuFond;
             // margin-top:3em;
-            margin-top:3em; 
             display:flex;
             justify-content: center;
              width: 100%;
@@ -169,6 +168,7 @@ nav{
     #header{
         background-color: $fond;
         color:#fff;
+        height: 100vh;
         #barreDuHaut {
             
         }
@@ -204,19 +204,19 @@ nav{
             }
         }
 
-        // #caroussel {
-        //     height: 600px;
-        //     #caroussel-images {
-        //         height: 600px;
-        //         ul {
-        //             height: 400px;
-        //             li {
-        //                 height: 400px;
+        #caroussel {
+            height: 700px;
+            #caroussel-images {
+                height: 100%;
+                ul {
+                    height: 100%;
+                    li {
+                        height: 400px;
 
-        //             }
-        //         }
-        //     }
-        // }
+                    }
+                }
+            }
+        }
 
     }
    

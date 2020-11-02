@@ -1,14 +1,120 @@
-#footer {
+section#footer {
   color: white;
   background-color: #0b132b;
 }
 
-#footer h1,
-#footer h3 {
-  color: white;
+section#footer #contact {
+  background-color: #1c2c5c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../medias/images/halfTone/Halftone-Effect-Background_2.png");
+  background-size: 17em;
+  background-repeat: repeat-x;
 }
 
-#footer footer div#contact {
-  background-color: #1c2c5c;
+section#footer h1 {
+  font-family: CastIron;
+  font-size: 4em;
+}
+
+section#footer h1,
+section#footer h3,
+section#footer p {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#footer #footerEnd {
+  background-image: url("../medias/images/halfTone/Halftone-Effect-Background_2.png");
+  background-size: 17em;
+  background-repeat: repeat-x;
+}
+
+section#footer div img {
+  max-width: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+section#footer #liensSociaux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#footer #liensSociaux li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2em;
+  height: 2em;
+  background-color: #3a506b;
+  border-radius: 50%;
+  margin: 0 0.5em;
+  font-size: 1.25em;
+}
+
+section#footer #footerNav {
+  display: none;
+}
+
+section#footer #droitAuteur {
+  margin-bottom: 0;
+  padding-bottom: 0.3em;
+}
+
+@media only screen and (min-width: 768px) {
+  .liste-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-bottom: 4em;
+  }
+  .information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .information p {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

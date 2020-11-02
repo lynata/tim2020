@@ -82,7 +82,7 @@ nav {
   background-color: $fond;
 }
 
-#trio{
+#trio {
   background-color: $fond;
 }
 
@@ -258,30 +258,15 @@ nav {
       }
     }
 
-<<<<<<< HEAD
-        #caroussel {
-            height: 700px;
-            #caroussel-images {
-                height: 100%;
-                ul {
-                    height: 100%;
-                    li {
-                        height: 300px;
-
-                    }
-                }
-            }
-=======
     #caroussel {
-      height: 500px;
+      height: 700px;
       #caroussel-images {
         height: 100%;
         ul {
           height: 100%;
           li {
-            height: 500px;
+            height: 300px;
           }
->>>>>>> 300dacb717c7f071dbaec033f02d1b890ed60027
         }
       }
     }
@@ -305,45 +290,45 @@ nav {
     // }
   }
 
-  #voirProjets{
+  #voirProjets {
     display: flex;
     justify-content: space-around;
 
-    div{
+    div {
       align-items: center;
     }
 
-    h2{
+    h2 {
       color: white;
     }
 
-    button{
+    button {
       padding: 0.5em;
       background-color: $bleu;
       box-shadow: $bleuFond;
     }
 
-    button h3{
+    button h3 {
       color: $bleuFond;
     }
 
-    button a:hover{
+    button a:hover {
       color: $bleu;
     }
   }
 
-  #inscription{
-    div{
+  #inscription {
+    div {
       display: flex;
       flex-direction: column;
       float: left;
 
-      button{
+      button {
         justify-content: space-evenly;
       }
     }
 
-    img{
+    img {
       float: right;
     }
   }

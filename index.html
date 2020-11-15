@@ -13,258 +13,33 @@
     <link rel="stylesheet" href="css/accueil.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="/css/uikit.min.css" >
-    <link rel="stylesheet" href="/css/accueil.css">
     <link rel="stylesheet" href="/css/navmobile.css">
-    <link rel="stylesheet" href="/css/accueilProjetsInscrip.scss">
+    <!-- <link rel="stylesheet" href="/css/accueilProjetsInscrip.scss"> -->
 
     <!--JavaScript-->
     <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.min.js"></script>
     <script src="https://kit.fontawesome.com/596efa811d.js" crossorigin="anonymous"></script>
+    <script src="/sass-config/sass.js"></script>
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue-router@3.4.9/dist/vue-router.js"></script>
+<script src="https://unpkg.com/http-vue-loader"></script>
+</script>
 </head>
 
 <body>
+
 <!-- trigger pour nav mobile -->
+<!-- selon moi vous vous compliquez la vie a faire un menu mobile comme ca. Faites juste un v-if -->
 <input type="checkbox" id="checkNav" />
 <label for="checkNav" id="navMobile"></label>
 
 <div id="global">
-     <!-- Section de nav jusqu'a la diapo-->
-    <section id="header">
-
-        <div id="barreDuHaut">
-
-        </div>
-        <nav>
-            <div>
-                <ul>
-                    <li class="uk-animation-slide-right"><a href="/pages/cours.html">Cours</a></li>
-                    <li><a href="/pages/profs.html">Profs</a></li>
-                    <li><a href="/pages/projets.html">Projets</a></li>
-                    <li id="actif"><a href="index.html"><img src="/medias/images/logotimgris.png"></a></li>
-                    <li><a href="/pages/vieetudiante.html">Vie Etudiante</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-      
-        <div id="caroussel" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 6000; pause-on-hover: false; ratio: false">
-            <ul id="caroussel-images" class="uk-slideshow-items">
-                <div uk-slideshow-parallax="y: 200,-200">
-                    <li>
-                        <img src="/medias/images/GregExplique_diapo.PNG" alt="" uk-cover>
-                    </li>
-                </div>
-                <li>
-                    <img src="/medias/images/profsHeureux_diapo.PNG" alt="" uk-cover>
-                </li>
-                <li>
-                    <img src="/medias/images/elevesEcoutent2_diapo.png" alt="" uk-cover>
-                </li>
-                <li>
-                    <img src="/medias/images/elevesEcoutent2_diapo.png" alt="" uk-cover>
-                </li>
-                <li>
-                    <img src="/medias/images/ludo_diapo.PNG" alt="" uk-cover>
-                </li>
-                <li>
-                    <img src="/medias/images/fete_diapo.png" alt="" uk-cover>
-                </li>
-            </ul>
-            
-        </div>
-        
-        <!-- <img src="medias/images/imgaccueil.png"/> -->
-    </section>
-    <!-- Fin header -->
-
-    <!-- Section info sur la technique -->
-    <section id="info">
-        <div id="infoBloc">
-           <h1>Technique d'intÉgration multimÉdia </h1>
-            <p>Maisonneuve est le seul cégep sur l’Île de Montréal à offrir ce programme qui vous offre une immersion dans le monde du jeu 2D/3D, du Web, des technologies mobiles et des médias numériques, tout en apprenant différents langages de programmation.
-                Dans ce programme, vous apprendrez à identifier, analyser, imaginer, réaliser et coordonner un projet multimédia et les différentes étapes de production qui y sont liées :</p>
-                <div id="infoBoutons">
-                    <button>Conception</button>
-                    <button>Mediatisation</button>
-                    <button>Programmation</button>
-                    <button>Integration</button>
-                </div>
-            </div>
-    </section>
-    <!-- fin section info -->
-
-
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/storyblok-js-client@3.1.0/dist/index.standalone.js"></script>
-    <script>
-        //petite configuration nécéssaire pour acéder a vos données
-        let Storyblok = new StoryblokClient({
-            accessToken: 'N98tQRqdb63OJePlzQiCqgtt'
-        })
-
-
-        async function obtenirProfs() {
-
-            //le await et le ascyn est important , car aller chercher les données sur internet
-            //peut prendre un certain temps, donc on doit les "attendres"
-            let lesDonnes = await Storyblok.getAll("cdn/stories", {
-                "starts_with": "professeurs/"
-            });
-
-            // await console.log(lesDonnes)
-
-            console.log("obtenirProfs -> lesDonnes", lesDonnes)
-            return lesDonnes;
-
-
-        }
-
-
-
-        //fonction pour afficher les données dans la page
-        async function afficherDonnees() {
-
-            //on doit await la fonction vu quelle va chercher les données
-            // sur internet dans le cms par ajax
-            let listeProfs = await obtenirProfs();
-
-            let elementUl = document.querySelector("#listeProfs");
-
-            //simple boucle sur la liste des données qu'on a recu
-            for (const prof of listeProfs) {
-
-                let elemLi = document.createElement("li");
-
-                elemLi.innerHTML = `<ul class="border-solid border-green-800 border-opacity-100 border">
-                        <li>${prof.content.nom}<li/>
-                        <li>${prof.content.description}<li/>
-                        <img src=${prof.content.photo.filename}> </img>
-                    </ul>`;
-
-                elementUl.appendChild(elemLi)
-
-            }
-
-        }
-
-        afficherDonnees()
-    </script>
-     -->
-    <!-- Section Voir Projet (lyn) -->
-    <section id="voirProjets">
-        <div>
-            <h2>Web</h2>
-            <img src="medias/images/web.png" alt="Web">
-        </div>
-        <div>
-            <h2>Jeu</h2>
-            <img src="medias/images/jeu.png" alt="Jeu">
-        </div>
-        <div>
-            <h2>3D</h2>
-            <img src="medias/images/3d.png" alt="3D">
-        </div>
-        <button><a href="/pages/projets.html"><h3>Voir Projets</h3></a></button>
-    </section>
-    <!-- Fin section voir projets -->
-
-    <!-- Section Inscription (lyn) -->
-    <section id="inscription">
-        <h2>Inscription</h2>
-        <div>
-            <button><a href="https://admission.sram.qc.ca/">Je suis sûr-e!</a></button>
-            <button><a href="https://www.cmaisonneuve.qc.ca/accueil/venez-rencontrer/etudiant-dun-jour/">Étudiant d'un jour</a></button>
-            <button><a href="https://www.cmaisonneuve.qc.ca/vie-etudiante/orientation-emploi/choix-de-carriere-orientation/test-dorientation/">Test d'orientation</a></button>
-        </div>
-        <img src="medias/images/inscription.png" alt="Inscription">
-        <!-- ajouter target="_blank" dans la balise a pour ouvrir le lien sur une autre page -->
-    </section>
-    <!-- Fin section inscription -->
-
-    <!-- Section Trio Cours/Profs/Vie étudiante (Claue) -->
-    <section id="trio">
-        
-        <a href="/pages/cours.html">
-            <div id="ImgCours"><img src="medias/images/EleveClasse.PNG" alt="Photo d'un élève en classe"></div>
-            <button>Voir Cours</button>
-        </a>
-        <a href="/pages/profs.html">
-            <div id="ImgProfs"><img src="medias/images/Rencontre20ans.PNG" alt="Photo d'un professeur avec des anciens étudiants"></div>
-            <button>Voir Profs</button>
-        </a>
-        <a href="/pages/vieetudiante.html">
-            <div id="ImgVie"><img src="medias/images/Manette.PNG" alt="Manette en main"></div>
-            <button>Voir La Vie</button>
-        </a>
-    </section>
-    <!-- Fin Section Trio Cours/Profs/Vie étudiante -->
-
-    <!-- Footer -->
-    <section id="footer">
-        <footer >
-            <div id="contact">
-                <h1>Nous joindre</h1>
-                <div class="liste-contact">
-                    <div class="information">
-                        <h3>Département TIM</h3>
-                        <p>Premier Étage Secteur B</p>
-                        <p>Bureau B1159</p>
-                        <p>Tél.: 514 254-7131, poste 1010</p>
-                        <p>TimMaisonneuve@cmaisonneuve.qc.ca</p>
-                    </div>
-    
-                    <div class="information">
-                        <h3>Collège Maisonneuve</h3>
-                        <p>Premier Étage Secteur B</p>
-                        <p>Bureau B1159</p>
-                        <p>Tél.: 514 254-7131, poste 1010</p>
-                        <p>TimMaisonneuve@cmaisonneuve.qc.ca</p>
-                    </div>
-    
-                    <div class="information">
-                        <h3>Professeur Pivot</h3>
-                        <p>Premier Étage Secteur B</p>
-                        <p>Bureau B1159</p>
-                        <p>Tél.: 514 254-7131, poste 1010</p>
-                        <p>TimMaisonneuve@cmaisonneuve.qc.ca</p>
-                    </div>
-    
-                </div>
-
-                <!-- Google map -->
-                <div class="map-responsive">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.993657200302!2d-73.55574928416262!3d45.5504531357045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bb5caf62731%3A0xe4ee304f2ed7713c!2sCEGEP%20Maisonneuve!5e0!3m2!1sen!2sca!4v1604280023288!5m2!1sen!2sca"
-                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                    </iframe>
-                </div>
-                
-            </div>
-            <div id="footerEnd">
-                <img src="medias/images/logo/_LogoTIM_carré.png" alt="filter applied">
-                <!-- liens sociaux -->
-                <ul id="liensSociaux">
-                    <li><a href="https://www.facebook.com/maisonneuvetim" class="pastille" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/maisonneuvetim/" target="_blank"><i class="fab fa-instagram"></i></i></a></li>
-                    <li><a href="https://discord.com/invite/53vFvr9" target="_blank"><i class="fab fa-discord"></i></a></li>
-                    <li><a href="https://www.youtube.com/user/TIMaisonneuve" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://ca.linkedin.com/in/tim-maisonneuve-9407b7131" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-    
-                <!-- Footer mini nav -->
-                <ul id="footerNav">
-                    <li><a href="pages/cours.html">Cours</a></li>
-                    <li><a href="pages/profs.html">Profs</a></li>
-                    <li><a href="pages/projets.html">Projets</a></li>
-                    <li><a href="pages/vieetudiante.html">Vie Etudiante</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <p id="droitAuteur">undefinedvariable2020</p>
-            </div>
-        </footer>
-    </section>
-    <!-- Fin footer -->
+     <div id="app">
+        <router-view></router-view>
+    </div>
 </div> <!-- fin global -->
+<script type="module" src="/js/vue-config.js"></script>
 </body>
 
 </html>

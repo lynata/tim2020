@@ -25,6 +25,5 @@ module.exports = {
 }
 </script>
 
-<style lang='scss' scoped>
-
+<style lang='scss' src='css/accueil.scss'>
 </style>

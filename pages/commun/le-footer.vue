@@ -69,6 +69,6 @@ module.exports = {
 }
 </script>
 
-<style>
+<style lang='scss' src='css/footer.scss'>
 
 </style>

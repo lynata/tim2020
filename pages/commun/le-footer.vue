@@ -43,7 +43,7 @@
                 <!-- liens sociaux -->
                 <ul id="liensSociaux">
                     <li><a href="https://www.facebook.com/maisonneuvetim" class="pastille" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/maisonneuvetim/" target="_blank"><i class="fab fa-instagram"></i></i></a></li>
+                    <li><a href="https://www.instagram.com/maisonneuvetim/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                     <li><a href="https://discord.com/invite/53vFvr9" target="_blank"><i class="fab fa-discord"></i></a></li>
                     <li><a href="https://www.youtube.com/user/TIMaisonneuve" target="_blank"><i class="fab fa-youtube"></i></a></li>
                     <li><a href="https://ca.linkedin.com/in/tim-maisonneuve-9407b7131" target="_blank"><i class="fab fa-linkedin"></i></a></li>

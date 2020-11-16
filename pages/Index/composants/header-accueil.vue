@@ -5,10 +5,16 @@
       <div>
         <ul>
           <li class="uk-animation-slide-right">
-            <a href="/pages/cours.html">Cours</a>
+            <router-link to='/cours'>
+            	<a>Cours</a>
+            </router-link>
           </li>
-          <li><a href="/pages/profs.html">Profs</a></li>
-          <li><a href="/pages/projets.html">Projets</a></li>
+          <li><router-link to="/profs">
+            <a >Profs</a>
+          </router-link></li>
+          <li><router-link to="/projets">
+            <a>Projets</a>
+          </router-link></li>
           <li id="actif">
             <a href="index.html"
               ><img src="/medias/images/logotimgris.png"

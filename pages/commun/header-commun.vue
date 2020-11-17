@@ -1,39 +1,43 @@
 <template>
-<div>
- <!-- navigation -->
+  <div>
+    <!-- navigation -->
     <!-- trigger pour nav mobile -->
     <input type="checkbox" id="checkNav" />
-    <label for="checkNav" id="navMobile" v-on:click="clickMenu = !clickMenu"></label>
-  <menu-mobile v-if="clickMenu"></menu-mobile>
+    <label
+      for="checkNav"
+      id="navMobile"
+      v-on:click="clickMenu = !clickMenu"
+    ></label>
+    <menu-mobile v-if="clickMenu"></menu-mobile>
 
     <section id="header">
-        <nav>
-            <div>
-                <ul>
-                    <li><a href="/pages/cours.html">Cours</a></li>
-                    <li><a href="/pages/profs.html">Profs</a></li>
-                    <li><a href="/pages/projets.html">Projets</a></li>
-                    <li><a href="/index.html">TIM</a></li>
-                    <li><a href="/pages/vieetudiante.html">Vie Etudiante</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div>
+          <ul>
+            <li><a href="/pages/cours.html">Cours</a></li>
+            <li><a href="/pages/profs.html">Profs</a></li>
+            <li><a href="/pages/projets.html">Projets</a></li>
+            <li><a href="/index.html">TIM</a></li>
+            <li><a href="/pages/vieetudiante.html">Vie Etudiante</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </section>
-    </div>
+  </div>
 </template>
 
 <script>
 module.exports = {
-  components : {
-     'menu-mobile' : httpVueLoader("/pages/commun/menu-mobile.vue"),
+  components: {
+    "menu-mobile": httpVueLoader("/pages/commun/menu-mobile.vue"),
   },
   data() {
     return {
-      clickMenu: false
-    }
-  }
-}
+      clickMenu: false,
+    };
+  },
+};
 </script>
 
 <style  lang='scss'>
@@ -43,18 +47,18 @@ $blanc: #e3e3e3;
 $bleu: #2cd9ff;
 //DEBUT CSS MOBILE FIRST-----------------------------
 
-html{
-    background-color: $fond;
+html {
+  background-color: $fond;
 }
 @font-face {
-    font-family: CastIron;
-    src: url("/medias/fonts/CastIron.otf") format("opentype");
-  }
-  
-  @font-face {
-    font-family: Manrope;
-    src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
-  }
+  font-family: CastIron;
+  src: url("/medias/fonts/CastIron.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
 //FIN MOBILE FIRST------------------------------------
 //DEBUT TABLETTE---------------------------------------
 @media (min-width: 600px) {
@@ -105,5 +109,4 @@ html{
   }
 }
 //FIN GRANDS ECRANS
-
 </style>

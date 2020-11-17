@@ -5,16 +5,20 @@
       <div>
         <ul>
           <li class="uk-animation-slide-right">
-            <router-link to='/cours'>
-            	<a>Cours</a>
+            <router-link to="/cours">
+              <a>Cours</a>
             </router-link>
           </li>
-          <li><router-link to="/profs">
-            <a >Profs</a>
-          </router-link></li>
-          <li><router-link to="/projets">
-            <a>Projets</a>
-          </router-link></li>
+          <li>
+            <router-link to="/profs">
+              <a>Profs</a>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/projets">
+              <a>Projets</a>
+            </router-link>
+          </li>
           <li id="actif">
             <a href="index.html"
               ><img src="/medias/images/logotimgris.png"
@@ -26,31 +30,61 @@
       </div>
     </nav>
 
+    <input type="checkbox" id="checkNav" />
+    <label
+      for="checkNav"
+      id="navMobile"
+      v-on:click="clickMenu = !clickMenu"
+    ></label>
+    <menu-mobile v-if="clickMenu == true"></menu-mobile>
+
     <div
       id="caroussel"
       uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 6000; pause-on-hover: false; ratio: false"
     >
       <ul id="caroussel-images" class="uk-slideshow-items">
         <li>
-          <img src="/medias/images/Caroussel_Accueil/GregExplique_diapo.PNG" alt="" uk-cover />
+          <img
+            src="/medias/images/Caroussel_Accueil/GregExplique_diapo.PNG"
+            alt=""
+            uk-cover
+          />
         </li>
         <li>
-          <img src="/medias/images/Caroussel_Accueil/profsHeureux_diapo.PNG" alt="" uk-cover />
+          <img
+            src="/medias/images/Caroussel_Accueil/profsHeureux_diapo.PNG"
+            alt=""
+            uk-cover
+          />
         </li>
         <li>
-          <img src="/medias/images/Caroussel_Accueil/elevesEcoutent2_diapo.png" alt="" uk-cover />
+          <img
+            src="/medias/images/Caroussel_Accueil/elevesEcoutent2_diapo.png"
+            alt=""
+            uk-cover
+          />
         </li>
         <li>
-          <img src="/medias/images/Caroussel_Accueil/elevesEcoutent2_diapo.png" alt="" uk-cover />
+          <img
+            src="/medias/images/Caroussel_Accueil/elevesEcoutent2_diapo.png"
+            alt=""
+            uk-cover
+          />
         </li>
         <li>
-          <img src="/medias/images/Caroussel_Accueil/ludo_diapo.PNG" alt="" uk-cover />
+          <img
+            src="/medias/images/Caroussel_Accueil/ludo_diapo.PNG"
+            alt=""
+            uk-cover
+          />
         </li>
         <li>
-          <img src="/medias/images/Caroussel_Accueil/fete_diapo.png" alt="" uk-cover />
+          <img
+            src="/medias/images/Caroussel_Accueil/fete_diapo.png"
+            alt=""
+            uk-cover
+          />
         </li>
-
-
       </ul>
     </div>
 
@@ -60,7 +94,15 @@
 
 <script>
 module.exports = {
-   name : 'header-accueil'
+  name: "header-accueil",
+  components: {
+    "menu-mobile": httpVueLoader("/pages/commun/menu-mobile.vue"),
+  },
+  data() {
+    return {
+      clickMenu: false,
+    };
+  },
 };
 </script>
 
@@ -90,7 +132,9 @@ a:hover {
   text-decoration: none;
 }
 
-
+#header {
+  position: relative;
+}
 
 //DEBUT CSS - - - MOBILE FIRST      --------------------------------------------------------------------------------------------------------------------------------
 
@@ -127,13 +171,13 @@ nav {
   transform: rotate(90deg);
 }
 
-#checkNav:checked ~ #global {
-  transform: translateY(100%);
-}
+// #checkNav:checked ~ #global {
+//   transform: translateY(100%);
+// }
 
-#checkNav ~ #global {
-  transform: translateY(0%);
-}
+// #checkNav ~ #global {
+//   transform: translateY(0%);
+// }
 
 #checkNav {
   display: none;
@@ -349,20 +393,20 @@ nav {
 }
 //FIN GRANDS ECRANS
 
-    #caroussel {
-      height: 700px !important;
-      #caroussel-images {
-        height: 100% !important;
-        ul {
-          height: 100%;
-          li {
-            height: 300px;
-          }
-        }
-      }
-
-      body {
-        background: pink;
+#caroussel {
+  height: 700px !important;
+  #caroussel-images {
+    height: 100% !important;
+    ul {
+      height: 100%;
+      li {
+        height: 300px;
       }
     }
+  }
+
+  body {
+    background: pink;
+  }
+}
 </style>

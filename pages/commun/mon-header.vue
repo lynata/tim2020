@@ -3,7 +3,8 @@
  <!-- navigation -->
     <!-- trigger pour nav mobile -->
     <input type="checkbox" id="checkNav" />
-    <label for="checkNav" id="navMobile"></label>
+    <label for="checkNav" id="navMobile" v-on:click="clickMenu = !clickMenu"></label>
+  <menu-mobile v-if="clickMenu"></menu-mobile>
 
     <section id="header">
         <nav>
@@ -24,7 +25,14 @@
 
 <script>
 module.exports = {
-
+  components : {
+     'menu-mobile' : httpVueLoader("/pages/commun/menu-mobile.vue"),
+  },
+  data() {
+    return {
+      clickMenu: false
+    }
+  }
 }
 </script>
 

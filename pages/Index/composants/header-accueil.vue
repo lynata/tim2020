@@ -36,7 +36,7 @@
       id="navMobile"
       v-on:click="clickMenu = !clickMenu"
     ></label>
-    <menu-mobile v-if="clickMenu == true"></menu-mobile>
+    <menu-mobile-commun v-if="clickMenu == true"></menu-mobile-commun>
 
     <div
       id="caroussel"
@@ -96,7 +96,7 @@
 module.exports = {
   name: "header-accueil",
   components: {
-    "menu-mobile": httpVueLoader("/pages/commun/menu-mobile.vue"),
+    "menu-mobile-commun": httpVueLoader("/pages/commun/menu-mobile-commun.vue"),
   },
   data() {
     return {

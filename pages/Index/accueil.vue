@@ -5,7 +5,7 @@
     <projets-accueil></projets-accueil>
     <inscription-accueil></inscription-accueil>
     <trio-accueil></trio-accueil>
-    <le-footer></le-footer>
+    <footer-commun></footer-commun>
   </div>
 </template>
 
@@ -25,7 +25,7 @@ module.exports = {
       "/pages/Index/composants/inscription-accueil.vue"
     ),
     "trio-accueil": httpVueLoader("/pages/Index/composants/trio-accueil.vue"),
-    "le-footer": httpVueLoader("/pages/commun/le-footer.vue"),
+    "footer-commun": httpVueLoader("/pages/commun/footer-commun.vue"),
   },
 };
 </script>

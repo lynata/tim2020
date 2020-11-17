@@ -8,24 +8,21 @@
                         <h3>Département TIM</h3>
                         <p>Premier Étage Secteur B</p>
                         <p>Bureau B1159</p>
-                        <p>Tél.: 514 254-7131, poste 1010</p>
-                        <p>TimMaisonneuve@cmaisonneuve.qc.ca</p>
                     </div>
     
                     <div class="information">
                         <h3>Collège Maisonneuve</h3>
-                        <p>Premier Étage Secteur B</p>
-                        <p>Bureau B1159</p>
-                        <p>Tél.: 514 254-7131, poste 1010</p>
-                        <p>TimMaisonneuve@cmaisonneuve.qc.ca</p>
+                        <p>Campus 2030 2030, boulevard Pie-IX</p>
+                        <p>Bureau 430</p>
+                        <p>Tél.: 514 254-7131, poste 4800</p>
+                        <p>sfc@cmaisonneuve.qc.ca </p>
                     </div>
     
                     <div class="information">
                         <h3>Professeur Pivot</h3>
-                        <p>Premier Étage Secteur B</p>
-                        <p>Bureau B1159</p>
-                        <p>Tél.: 514 254-7131, poste 1010</p>
-                        <p>TimMaisonneuve@cmaisonneuve.qc.ca</p>
+                        <p>B-1163</p>
+                        <p>Tél.: 254-7131 poste 4714</p>
+                        <p>vtoroussian@cmaisonneuve.qc.ca</p>
                     </div>
     
                 </div>

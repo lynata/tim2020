@@ -24,32 +24,5 @@
 module.exports = {};
 </script>
 
-<style>
-#voirProjets {
-  display: flex;
-  justify-content: space-around;
-  color: white;
-}
 
-#voirProjets div {
-  align-items: center;
-}
-
-#voirProjets div h2 {
-  color: white;
-}
-
-#voirProjets button {
-  padding: 0.5em;
-  background-color: #2cd9ff;
-  box-shadow: #1c2c5c;
-}
-
-#voirProjets button h3 {
-  color: #1c2c5c;
-}
-
-#voirProjets button a:hover {
-  color: #2cd9ff;
-}
 </style>

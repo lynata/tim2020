@@ -36,7 +36,7 @@
       id="navMobile"
       v-on:click="clickMenu = !clickMenu"
     ></label>
-    <menu-mobile v-if="clickMenu == true"></menu-mobile>
+    <menu-mobile-commun v-if="clickMenu == true"></menu-mobile-commun>
 
     <div
       id="caroussel"
@@ -96,7 +96,7 @@
 module.exports = {
   name: "header-accueil",
   components: {
-    "menu-mobile": httpVueLoader("/pages/commun/menu-mobile.vue"),
+    "menu-mobile-commun": httpVueLoader("/pages/commun/menu-mobile-commun.vue"),
   },
   data() {
     return {
@@ -183,15 +183,11 @@ nav {
   display: none;
 }
 
-#voirProjets {
+#info {
   background-color: $fond;
 }
 
 #inscription {
-  background-color: $bleuFond;
-}
-
-#info {
   background-color: $fond;
 }
 
@@ -216,14 +212,6 @@ nav {
 #infoBoutons {
   display: none;
 }
-
-// #voirProjets {
-//   background-color: $fond;
-// }
-
-// #inscription {
-//   background-color: $bleuFond;
-// }
 
 #footer {
   background-color: $fond;
@@ -371,22 +359,6 @@ nav {
 
       body {
         background: rgb(255, 185, 197);
-      }
-    }
-
-    #inscription {
-      div {
-        display: flex;
-        flex-direction: column;
-        float: left;
-
-        button {
-          justify-content: space-evenly;
-        }
-      }
-
-      img {
-        float: right;
       }
     }
   }

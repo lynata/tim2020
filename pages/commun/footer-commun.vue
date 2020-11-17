@@ -8,6 +8,7 @@
                         <h3>Département TIM</h3>
                         <p>Premier Étage Secteur B</p>
                         <p>Bureau B1159</p>
+                        <p><a href="http://tim.cmaisonneuve.qc.ca/" class="pastille" target="_blank">http://tim.cmaisonneuve.qc.ca</a></p>
                     </div>
     
                     <div class="information">
@@ -20,7 +21,8 @@
     
                     <div class="information">
                         <h3>Professeur Pivot</h3>
-                        <p>B-1163</p>
+                        <p>Premier Étage Secteur B</p>
+                        <p>Bureau 1163</p>
                         <p>Tél.: 254-7131 poste 4714</p>
                         <p>vtoroussian@cmaisonneuve.qc.ca</p>
                     </div>

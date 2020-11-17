@@ -24,7 +24,11 @@
               ><img src="/medias/images/logotimgris.png"
             /></a>
           </li>
-          <li><a href="/pages/vieetudiante.html">Vie Etudiante</a></li>
+          <li>
+            <router-link to="/vieetudiante">
+              <a href="/pages/vieetudiante.html">Vie Etudiante</a>
+            </router-link>
+          </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>

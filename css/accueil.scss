@@ -58,13 +58,13 @@ nav {
   transform: rotate(90deg);
 }
 
-#checkNav:checked ~ #global {
-  transform: translateY(100%);
-}
+// #checkNav:checked ~ #global {
+//   transform: translateY(100%);
+// }
 
-#checkNav ~ #global {
-  transform: translateY(0%);
-}
+// #checkNav ~ #global {
+//   transform: translateY(0%);
+// }
 
 #checkNav {
   display: none;

@@ -370,7 +370,7 @@ nav {
       }
 
       body {
-        background: pink;
+        background: rgb(255, 185, 197);
       }
     }
 

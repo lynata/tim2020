@@ -37,14 +37,29 @@ $boxNoir: -5px 5px 0px 1px #000;
 
 div {
   position: absolute;
+  padding-top: 20vh;
   top: 0;
   left: 0;
   background-color: $fond;
   z-index: 99;
   height: 100vh;
   width: 100vw;
+  img {
+    margin: 0 auto;
+    width: 4em;
+    padding-bottom: 0.5em;
+  }
   ul {
     text-align: center;
+    font-size: 2.5em;
+    font-family: CastIron;
+    line-height: 1.5em;
+  }
+  a {
+    color: $bleu;
+  }
+  a:hover {
+    color: $blanc;
   }
 }
 </style>

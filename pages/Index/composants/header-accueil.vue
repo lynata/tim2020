@@ -324,33 +324,6 @@ nav {
       }
     }
 
-    #voirProjets {
-      display: flex;
-      justify-content: space-around;
-
-      div {
-        align-items: center;
-      }
-
-      h2 {
-        color: white;
-      }
-
-      button {
-        padding: 0.5em;
-        background-color: $bleu;
-        box-shadow: $bleuFond;
-      }
-
-      button h3 {
-        color: $bleuFond;
-      }
-
-      button a:hover {
-        color: $bleu;
-      }
-    }
-
     #inscription {
       div {
         display: flex;

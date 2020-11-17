@@ -8,7 +8,7 @@
       id="navMobile"
       v-on:click="clickMenu = !clickMenu"
     ></label>
-    <menu-mobile v-if="clickMenu"></menu-mobile>
+    <menu-mobile v-if="clickMenu == true"></menu-mobile>
 
     <section id="header">
       <nav>
@@ -30,7 +30,7 @@
 <script>
 module.exports = {
   components: {
-    "menu-mobile": httpVueLoader("/pages/commun/menu-mobile.vue"),
+    "menu-mobile": httpVueLoader("/pages/commun/menu-mobile-commun.vue"),
   },
   data() {
     return {

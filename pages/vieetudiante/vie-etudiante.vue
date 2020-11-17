@@ -10,7 +10,7 @@
 module.exports = {
   // name: 'vieetudiante',
   components: {
-    "header-commun": httpVueLoader("/pages/Index/composants/header-commun.vue"),
+    "header-commun": httpVueLoader("/pages/commun/header-commun.vue"),
     "footer-commun": httpVueLoader("/pages/commun/footer-commun.vue"),
   },
 };

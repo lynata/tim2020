@@ -17,6 +17,22 @@ module.exports = {
 }
 </script>
 
-<style>
+<style scoped>
+    #inscription{
+        margin: 0;
+        padding-top: 5%;
+    }
 
+    #inscription div {
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+    #inscription button {
+        justify-content: space-evenly; 
+    }
+
+    /* #inscription img {
+        float: right;
+    } */
 </style>

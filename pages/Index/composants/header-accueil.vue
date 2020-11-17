@@ -183,15 +183,11 @@ nav {
   display: none;
 }
 
-#voirProjets {
+#info {
   background-color: $fond;
 }
 
 #inscription {
-  background-color: $bleuFond;
-}
-
-#info {
   background-color: $fond;
 }
 
@@ -216,14 +212,6 @@ nav {
 #infoBoutons {
   display: none;
 }
-
-// #voirProjets {
-//   background-color: $fond;
-// }
-
-// #inscription {
-//   background-color: $bleuFond;
-// }
 
 #footer {
   background-color: $fond;
@@ -371,22 +359,6 @@ nav {
 
       body {
         background: rgb(255, 185, 197);
-      }
-    }
-
-    #inscription {
-      div {
-        display: flex;
-        flex-direction: column;
-        float: left;
-
-        button {
-          justify-content: space-evenly;
-        }
-      }
-
-      img {
-        float: right;
       }
     }
   }

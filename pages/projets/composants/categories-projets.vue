@@ -2,13 +2,13 @@
   <section id="categories">
     <div>
       <h2 id="projetsWeb">Web</h2>
-      <img src="medias/images/web.png" alt="Web" />
+      <img src="medias/images/projets/web/web.png" alt="Web" />
 
       <h2 id="projetsJeu">Jeu</h2>
-      <img src="medias/images/jeu.png" alt="Jeu" />
+      <img src="medias/images/projets/jeu/jeu.png" alt="Jeu" />
 
       <h2 id="projets3D">3D</h2>
-      <img src="medias/images/3d.png" alt="3D" />
+      <img src="medias/images/projets/3d/bruh.jpg" alt="3D" />
     </div>
   </section>
 </template>

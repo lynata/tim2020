@@ -55,7 +55,10 @@ section#footer {
   }
 
   #footerNav {
-    display: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: white solid 2px;
+    border-bottom: white solid 2px;
   }
   #droitAuteur {
     margin-bottom: 0;
@@ -64,19 +67,25 @@ section#footer {
 }
 
 @media only screen and (min-width: 768px) {
-  .liste-contact {
-    display: flex;
-    align-content: space-between;
-    justify-content: space-evenly;
-    padding-bottom: 4em;
-  }
-  .information {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  section#footer {
+    .liste-contact {
+      display: flex;
+      align-content: space-between;
+      justify-content: space-evenly;
+      padding-bottom: 4em;
+    }
+    .information {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
 
-    p {
-      margin: 0;
+      p {
+        margin: 0;
+      }
+
+      #footerNav li {
+        display: none;
+      }
     }
   }
 }

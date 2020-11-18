@@ -49,7 +49,7 @@
                 </ul>
     
                 <!-- Footer mini nav -->
-                <ul class="footerNav">
+                <ul id="footerNav">
                     <li><a href="pages/cours.html">Cours</a></li>
                     <li><a href="pages/profs.html">Profs</a></li>
                     <li><a href="pages/projets.html">Projets</a></li>
@@ -125,7 +125,7 @@ section#footer {
     }
   }
 
-  .footerNav {
+  #footerNav {
       display:none;
   }
   #droitAuteur {
@@ -151,7 +151,7 @@ section#footer {
         margin: 0;
       }
     }
-    .footerNav{
+    #footerNav{
     display: flex;
     justify-content: space-evenly;
     border-top: white solid 2px;

@@ -22,44 +22,42 @@ module.exports ={
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
-    #voirProjets div h2 {
-        position: absolute;
-        color: white;
-        font-family: CastIron;
-        font-size: 5rem;
-        margin: -2% -1%;
-        padding: 0.5% 2%;
-        background-color: #2cd9ff;
-        /* z-index: 0; */
-    }
-
-    #voirProjets {
+    #voirProjets{
         padding-top: 6%;
         display: flex;
         justify-content: space-around;
-    }
-    
-    #voirProjets div{
-        display: flex;
-        flex-direction: row-reverse;
-    }
 
-    #voirProjets button {
-        border: red 1px solid;
-        padding: 0 2rem;
-        background-color: #2cd9ff;
-        box-shadow: #1c2c5c;
-    }
-
-    #voirProjets button h3 {
-        font-family: CastIron;
-        font-size: 2rem;
-        color: #1c2c5c;
-    }
-
-    #voirProjets button:hover {
-        color: #2cd9ff;
+        div{
+            display: flex;
+            flex-direction: row-reverse;
+            
+            h2 {
+                position: absolute;
+                color: white;
+                font-family: CastIron;
+                font-size: 5rem;
+                margin: -2% -1%;
+                padding: 0.5% 2%;
+                background-color: #2cd9ff;
+                /* z-index: 0; */
+            }
+        }
+        button {
+            // border: red 1px solid;
+            padding: 0 2rem;
+            background-color: #2cd9ff;
+            box-shadow: #1c2c5c;
+            
+            h3 {
+                font-family: CastIron;
+                font-size: 2rem;
+                color: #1c2c5c;
+            }
+            button:hover {
+                color: #2cd9ff;
+            }
+        }
     }
 </style>

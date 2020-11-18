@@ -49,7 +49,7 @@
                 </ul>
     
                 <!-- Footer mini nav -->
-                <ul id="footerNav">
+                <ul class="footerNav">
                     <li><a href="pages/cours.html">Cours</a></li>
                     <li><a href="pages/profs.html">Profs</a></li>
                     <li><a href="pages/projets.html">Projets</a></li>
@@ -68,6 +68,97 @@ module.exports = {
 }
 </script>
 
-<style lang='scss' src='css/footer.scss'>
+<style lang='scss'>
+section#footer {
+  color: white;
+  background-color: #0b132b;
+
+  #contact {
+    background-color: #1c2c5c;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../medias/images/halfTone/Halftone-Effect-Background_2.png");
+    background-size: 17em;
+    background-repeat: repeat-x;
+  }
+  h1 {
+    font-family: CastIron;
+    font-size: 4em;
+  }
+
+  h1,
+  h3,
+  p {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  #footerEnd {
+    background-image: url("../medias/images/halfTone/Halftone-Effect-Background_2.png");
+    background-size: 17em;
+    background-repeat: repeat-x;
+  }
+
+  div img {
+    max-width: 5em;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    filter: invert(1);
+  }
+
+  #liensSociaux {
+    display: flex;
+    justify-content: center;
+
+    li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2em;
+      height: 2em;
+      background-color: #3a506b;
+      border-radius: 50%;
+      margin: 0 0.5em;
+      font-size: 1.25em;
+    }
+  }
+
+  .footerNav {
+      display:none;
+  }
+  #droitAuteur {
+    margin-bottom: 0;
+    padding-bottom: 0.3em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section#footer {
+    .liste-contact {
+      display: flex;
+      align-content: space-between;
+      justify-content: space-evenly;
+      padding-bottom: 4em;
+    }
+    .information {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      p {
+        margin: 0;
+      }
+    }
+    .footerNav{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: white solid 2px;
+    border-bottom: white solid 2px;
+    }
+  }
+}
+
 
 </style>

@@ -81,6 +81,41 @@ html {
   font-family: Manrope;
   src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
+nav {
+  display: none;
+}
+#navMobile {
+  background: linear-gradient(
+    to bottom,
+    $bleu 0%,
+    rgba(2, 0, 36, 1) 20%,
+    transparent 20%,
+    transparent 40%,
+    $bleu 40%,
+    rgba(2, 0, 36, 1) 60%,
+    transparent 60%,
+    transparent 80%,
+    $bleu 80%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  height: 48px;
+  width: 48px;
+  position: fixed;
+  margin: 1%;
+  right: 10px;
+  top: 2%;
+  cursor: pointer;
+  align-self: flex-end;
+  z-index: 999;
+}
+
+#checkNav:checked ~ #navMobile {
+  transform: rotate(90deg);
+}
+#checkNav {
+  display: none;
+}
+
 //FIN MOBILE FIRST------------------------------------
 //DEBUT TABLETTE---------------------------------------
 @media (min-width: 600px) {

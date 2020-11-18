@@ -9,12 +9,12 @@
               <a>Cours</a>
             </router-link>
           </li>
-          <li>
+          <li class="uk-animation-slide-right">
             <router-link to="/profs">
               <a>Profs</a>
             </router-link>
           </li>
-          <li>
+          <li class="uk-animation-slide-right">
             <router-link to="/projets">
               <a>Projets</a>
             </router-link>
@@ -24,12 +24,14 @@
               ><img src="/medias/images/logotimgris.png"
             /></a>
           </li>
-          <li>
+          <li class="uk-animation-slide-left">
             <router-link to="/vieetudiante">
               <a href="/pages/vieetudiante.html">Vie Etudiante</a>
             </router-link>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="uk-animation-slide-left">
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>

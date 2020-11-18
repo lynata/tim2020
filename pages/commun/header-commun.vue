@@ -29,7 +29,7 @@
                 <a>Projets</a>
               </router-link>
             </li>
-            <li id="actif">
+            <li>
               <a href="index.html"
                 ><img src="/medias/images/logotimgris.png"
               /></a>
@@ -98,6 +98,7 @@ html {
   }
   img {
     width: 4em;
+    background: none;
   }
 
   #header {

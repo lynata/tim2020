@@ -77,9 +77,17 @@ section#footer {
     background-color: #1c2c5c;
     display: flex;
     flex-direction: column;
-    background-image: url("../medias/images/halfTone/Halftone-Effect-Background_2.png");
+    background-image: url("/medias/images/halfTone/Halftone-Effect-Background_2.png");
     background-size: 17em;
     background-repeat: repeat-x;
+
+    .information:nth-child(2){
+        background-color: #0b132b;
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+    }
+
   }
   h1 {
     font-family: CastIron;
@@ -95,7 +103,7 @@ section#footer {
   }
 
   #footerEnd {
-    background-image: url("../medias/images/halfTone/Halftone-Effect-Background_2.png");
+    background-image: url("/medias/images/halfTone/Halftone-Effect-Background_2.png");
     background-size: 17em;
     background-repeat: repeat-x;
   }
@@ -136,20 +144,27 @@ section#footer {
 
 @media only screen and (min-width: 768px) {
   section#footer {
-    .liste-contact {
-      display: flex;
-      align-content: space-between;
-      justify-content: space-evenly;
-      padding-bottom: 4em;
-    }
-    .information {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      #contact{
+        .liste-contact {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-evenly;
+        padding-bottom: 4em;
+        }
+        .information {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
-      p {
-        margin: 0;
+        p {
+            margin: 0;
+        }
+        }
+        .information:nth-child(2){
+        background-color: inherit;
+          
       }
+
     }
     #footerNav{
     display: flex;

@@ -8,7 +8,7 @@
 
 <script>
 module.exports = {
-  // name: 'vieetudiante',
+  // name: 'vie-etudiante',
   components: {
     "header-commun": httpVueLoader("/pages/commun/header-commun.vue"),
     "footer-commun": httpVueLoader("/pages/commun/footer-commun.vue"),

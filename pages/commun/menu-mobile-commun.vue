@@ -36,13 +36,13 @@ $boxBleu: -3px 3px 0px 1px $bleu;
 $boxNoir: -5px 5px 0px 1px #000;
 
 div {
-  position: absolute;
+  position: fixed;
   padding-top: 20vh;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   background-color: $fond;
   z-index: 99;
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
   img {
     margin: 0 auto;

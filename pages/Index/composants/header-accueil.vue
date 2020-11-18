@@ -159,22 +159,23 @@ nav {
 #navMobile {
   background: linear-gradient(
     to bottom,
-    rgba(2, 0, 36, 1) 0%,
+    $bleu 0%,
     rgba(2, 0, 36, 1) 20%,
     transparent 20%,
     transparent 40%,
-    rgba(2, 0, 36, 1) 40%,
+    $bleu 40%,
     rgba(2, 0, 36, 1) 60%,
     transparent 60%,
     transparent 80%,
-    rgba(2, 0, 36, 1) 80%,
+    $bleu 80%,
     rgba(2, 0, 36, 1) 100%
   );
   height: 48px;
   width: 48px;
-  position: absolute;
+  position: fixed;
   margin: 1%;
   right: 10px;
+  top: 2%;
   cursor: pointer;
   align-self: flex-end;
   z-index: 999;

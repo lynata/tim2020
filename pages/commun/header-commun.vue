@@ -14,16 +14,34 @@
       <nav>
         <div>
           <ul>
-            <li><a href="/pages/cours.html">Cours</a></li>
-            <li><a href="/pages/profs.html">Profs</a></li>
-            <li><a href="/pages/projets.html">Projets</a></li>
-            <li>
-              <a href="/index.html"
+            <li class="uk-animation-slide-right">
+              <router-link to="/cours">
+                <a>Cours</a>
+              </router-link>
+            </li>
+            <li class="uk-animation-slide-right">
+              <router-link to="/profs">
+                <a>Profs</a>
+              </router-link>
+            </li>
+            <li class="uk-animation-slide-right">
+              <router-link to="/projets">
+                <a>Projets</a>
+              </router-link>
+            </li>
+            <li id="actif">
+              <a href="index.html"
                 ><img src="/medias/images/logotimgris.png"
               /></a>
             </li>
-            <li><a href="/pages/vieetudiante.html">Vie Etudiante</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="uk-animation-slide-left">
+              <router-link to="/vieetudiante">
+                <a href="/pages/vieetudiante.html">Vie Etudiante</a>
+              </router-link>
+            </li>
+            <li class="uk-animation-slide-left">
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>

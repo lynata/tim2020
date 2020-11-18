@@ -17,7 +17,11 @@
             <li><a href="/pages/cours.html">Cours</a></li>
             <li><a href="/pages/profs.html">Profs</a></li>
             <li><a href="/pages/projets.html">Projets</a></li>
-            <li><a href="/index.html">TIM</a></li>
+            <li>
+              <a href="/index.html"
+                ><img src="/medias/images/logotimgris.png"
+              /></a>
+            </li>
             <li><a href="/pages/vieetudiante.html">Vie Etudiante</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -74,6 +78,9 @@ html {
     justify-content: center;
     width: 100%;
   }
+  img {
+    width: 4em;
+  }
 
   #header {
     background-color: $fond;
@@ -93,8 +100,10 @@ html {
         font-family: CastIron;
         font-size: 2em;
       }
-
-      li:hover {
+      a {
+        color: $blanc;
+      }
+      a:hover {
         color: $bleu;
       }
     }

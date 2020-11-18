@@ -1,6 +1,13 @@
 <template>
   <section id="header">
-    <div id="barreDuHaut"></div>
+    <div id="barreDuHaut">
+      <img class="test" src="/medias/images/logo_college_maisonneuve.png" />
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+      >
+        Button
+      </button>
+    </div>
     <nav>
       <div>
         <ul>
@@ -320,7 +327,13 @@ nav {
     background-color: $fond;
     color: #fff;
     #barreDuHaut {
+      display: flex;
+      justify-content: space-between;
+
       height: 55px;
+      .test {
+        height: 80%;
+      }
     }
     nav {
       display: flex;

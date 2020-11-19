@@ -119,7 +119,7 @@ module.exports = {
 };
 </script>
 
-<style lang='scss' >
+<style lang='scss' scoped>
 $fond: #101832;
 $bleuFond: #1c2c5c;
 $blanc: #e3e3e3;

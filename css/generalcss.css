@@ -1,0 +1,156 @@
+/* 
+Couleurs
+#1C2C5C
+#2CD9FF
+#000000
+#FFFFFF
+*/
+
+/*~°~°Bienvenue dans mon humble demeure!°~°~*/
+
+
+/*bouton bleu pâle | hover bleu foncé | accent à la droite-----------------------------------------------------------*/
+.boutonPaleDroit{
+    -webkit-box-shadow: 3px 3px 0px 1px #1C2C5C;
+    -moz-box-shadow: 3px 3px 0px 1px #1C2C5C;
+    box-shadow: 3px 3px 0px 1px #1C2C5C;
+    color:#ffffff;
+    background-color: #2CD9FF;
+    padding:0.3em;
+}
+
+
+.boutonPaleDroit:hover{
+    -webkit-box-shadow: 3px 3px 0px 1px #2CD9FF;
+    -moz-box-shadow: 3px 3px 0px 1px #2CD9FF;
+    box-shadow: 3px 3px 0px 1px #2CD9FF;
+    color:#2CD9FF;
+    background-color: #1C2C5C;
+}
+
+/*bouton bleu foncé | hover bleu pâle | accent à la droite-----------------------------------------------------------*/
+.boutonFonceDroit{
+    -webkit-box-shadow: 3px 3px 0px 1px  #2CD9FF;
+    -moz-box-shadow: 3px 3px 0px 1px  #2CD9FF;
+    box-shadow: 3px 3px 0px 1px  #2CD9FF;
+    color:#2CD9FF;
+    background-color: #1C2C5C;
+    padding:0.3em;
+}
+
+
+.boutonFonceDroit:hover{
+    -webkit-box-shadow: 3px 3px 0px 1px  #1C2C5C;
+    -moz-box-shadow: 3px 3px 0px 1px  #1C2C5C;
+    box-shadow: 3px 3px 0px 1px  #1C2C5C;
+    color:#ffffff;
+    background-color: #2CD9FF;
+}
+
+/*bouton bleu pâle | hover bleu foncé | accent à la gauche-----------------------------------------------------------*/
+.boutonPaleGauche{
+    -webkit-box-shadow: -4px -4px 0px 1px #1C2C5C;
+    -moz-box-shadow: -4px -4px 0px 1px #1C2C5C;
+    box-shadow: -4px -4px 0px 1px #1C2C5C;
+    color:#ffffff;
+    background-color: #2CD9FF;
+    padding:0.3em;
+}
+
+
+.boutonPaleGauche:hover{
+    -webkit-box-shadow: -4px -4px 0px 1px #2CD9FF;
+    -moz-box-shadow: -4px -4px 0px 1px #2CD9FF;
+    box-shadow: -4px -4px 0px 1px #2CD9FF;
+    color:#2CD9FF;
+    background-color: #1C2C5C;
+}
+
+/*bouton bleu foncé | hover bleu pâle | accent à la gauche-----------------------------------------------------------*/
+.boutonFonceGauche{
+    -webkit-box-shadow: -4px -4px 0px 1px  #2CD9FF;
+    -moz-box-shadow: -4px -4px 0px 1px  #2CD9FF;
+    box-shadow: -4px -4px 0px 1px #2CD9FF;
+    color:#2CD9FF;
+    background-color: #1C2C5C;
+    padding:0.3em;
+}
+
+
+.boutonFonceGauche:hover{
+    -webkit-box-shadow: -4px -4px 0px 1px #1C2C5C;
+    -moz-box-shadow: -4px -4px 0px 1px #1C2C5C;
+    box-shadow: -4px -4px 0px 1px #1C2C5C;
+    color:#ffffff;
+    background-color: #2CD9FF;
+}
+
+/*bouton bleu pâle | hover bleu foncé | accent à la droite et noir-----------------------------------------------------------*/
+.boutonNoirDroit{
+    -webkit-box-shadow: 3px 3px 0px 1px  #000000;
+    -moz-box-shadow: 3px 3px 0px 1px  #000000;
+    box-shadow: 3px 3px 0px 1px  #000000;
+    color: #ffffff;
+    background-color:  #2CD9FF;
+    padding:0.3em;
+}
+
+
+.boutonNoirDroit:hover{
+    color:#2CD9FF;
+    background-color: #1C2C5C;
+}
+
+/*bouton bleu pâle | hover bleu foncé | accent à la gauche et noir-----------------------------------------------------------*/
+.boutonNoirGauche{
+    -webkit-box-shadow: -4px -4px 0px 1px  #000000;
+    -moz-box-shadow: -4px -4px 0px 1px  #000000;
+    box-shadow: -4px -4px 0px 1px #000000;
+    color: #ffffff;
+    background-color:  #2CD9FF;
+    padding:0.3em;
+}
+
+
+.boutonNoirGauche:hover{
+    color:#2CD9FF;
+    background-color: #1C2C5C;
+}
+
+/*accent à la gauche et noir-----------------------------------------------------------*/
+.accentNoirGauche{
+    -webkit-box-shadow: -10px -1px 0px 1px  #000000;
+    -moz-box-shadow: -10px -1px 0px 1px  #000000;
+    box-shadow: -10px -1px 0px 1px #000000;
+}
+
+/*accent à la droite et noir-----------------------------------------------------------*/
+.accentNoirDroit{
+    -webkit-box-shadow: 10px 1px 0px 1px  #000000;
+    -moz-box-shadow: 10px 1px 0px 1px  #000000;
+    box-shadow: 10px 1px 0px 1px  #000000;
+}
+
+/*bouton bleu foncé | hover bleu pâle | accent à la gauche et noir | coins arrondis-----------------------------------------------------------*/
+.boutonArrondi{
+    color:#ffffff;
+    background-color: #1C2C5C;
+    border: solid  #2CD9FF 5px;
+    padding: 0.5em;
+    border-radius: 15em;
+    font-family: manrope;
+    letter-spacing: 0.2em;
+    font-size: 1em;
+    font-weight: 100;
+    text-transform: uppercase;
+    -webkit-box-shadow: -10px -3px 0px 1px  #000000;
+    -moz-box-shadow: -10px -3px 0px 1px  #000000;
+    box-shadow: -10px -3px 0px 1px  #000000;
+}
+
+.boutonArrondi:hover{
+    color: #1C2C5C;
+    background-color: #2CD9FF;
+    border: solid  #1C2C5C 5px;
+    
+}

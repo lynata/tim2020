@@ -26,7 +26,7 @@ module.exports = {};
 
 <style  lang="scss" scoped>
 #voirProjets {
-  margin-top: 7em;
+  // margin-top: 7em;
   padding-top: 6%;
   display: flex;
   justify-content: space-around;

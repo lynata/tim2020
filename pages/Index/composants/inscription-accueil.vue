@@ -3,9 +3,9 @@
         <h2>Inscription</h2>
         <img src="medias/images/inscription.png" alt="Inscription">
         <div>
-            <a href="https://admission.sram.qc.ca/">Je suis sûr-e!</a>
-            <a href="https://www.cmaisonneuve.qc.ca/accueil/venez-rencontrer/etudiant-dun-jour/">Étudiant d'un jour</a>
-            <a href="https://www.cmaisonneuve.qc.ca/vie-etudiante/orientation-emploi/choix-de-carriere-orientation/test-dorientation/">Test d'orientation</a>
+            <a href="https://admission.sram.qc.ca/" class="boutonArrondi">Je suis sûr-e!</a>
+            <a href="https://www.cmaisonneuve.qc.ca/accueil/venez-rencontrer/etudiant-dun-jour/" class="boutonArrondi">Étudiant d'un jour</a>
+            <a href="https://www.cmaisonneuve.qc.ca/vie-etudiante/orientation-emploi/choix-de-carriere-orientation/test-dorientation/" class="boutonArrondi">Test d'orientation</a>
         </div>
         <!-- ajouter target="_blank" dans la balise a pour ouvrir le lien sur une autre page -->
     </section>

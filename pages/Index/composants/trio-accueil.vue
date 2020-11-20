@@ -39,29 +39,30 @@ module.exports = {};
 
 <style lang='scss' scoped>
 /*MOBILE FIRST-----------------------------------------------------*/
+#trio {
+  #imgCours,
+  #imgProfs,
+  #imgVie {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .uneImage {
+    float: center;
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0;
+  }
 
-#imgCours,
-#imgProfs,
-#imgVie {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.uneImage {
-  float: center;
-  width: 500px;
-  height: 250px;
-  object-fit: cover;
-  margin: 0;
-}
+  // .boutonArrondi{
 
-// .boutonArrondi{
+  // }
 
-// }
-
-a {
-  color: #000000;
-  text-decoration: none;
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
 }
 
 /*DEBUT TABLETTE-----------------------------------------------------*/
@@ -117,7 +118,7 @@ a {
     bottom: 0;
   }
 
-  a {
+  #trio a {
     color: #000000;
     text-decoration: none;
     cursor: default;

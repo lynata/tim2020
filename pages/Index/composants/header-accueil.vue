@@ -1,7 +1,9 @@
 <template>
   <section id="header">
     <div id="barreDuHaut">
-      <img class="test" src="/medias/images/logo_college_maisonneuve.png" />
+      <a href="https://www.cmaisonneuve.qc.ca/"
+        ><img class="test" src="/medias/images/logo_college_maisonneuve.png"
+      /></a>
       <button
         class="bg-blue-600 hover:bg-blue-800 text-blue-100 font-bold py-2 px-4 rounded-full"
       >
@@ -252,6 +254,7 @@ nav {
 
     nav {
       background-color: $bleuFond;
+      box-shadow: 0px 0px 4px 1px #000000;
       // margin-top:3em;
       display: flex;
       justify-content: center;
@@ -279,6 +282,7 @@ nav {
       background-color: #000;
       z-index: 2;
       align-items: flex-end;
+      box-shadow: 0px 0px 4px 1px #000000;
     }
   }
   #info {
@@ -331,7 +335,10 @@ nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      background-image: url("../../../medias/images/halfTone/halftone.png");
+      background-size: 50vw;
+      background-repeat: repeat-x;
+      background-blend-mode: multiply;
       height: 60px;
       * {
         height: 80%;

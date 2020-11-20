@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>la vie</h1>
     <header-commun></header-commun>
+    <info-vieetudiante></info-vieetudiante>
     <footer-commun></footer-commun>
   </div>
 </template>
@@ -12,6 +12,9 @@ module.exports = {
   components: {
     "header-commun": httpVueLoader("/pages/commun/header-commun.vue"),
     "footer-commun": httpVueLoader("/pages/commun/footer-commun.vue"),
+    "info-vieetudiante": httpVueLoader(
+      "/pages/vieetudiante/composants/info.vieetudiante.vue"
+    ),
   },
 };
 </script>

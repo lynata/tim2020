@@ -19,7 +19,7 @@
             color: black;
             width: 7vw;
             border-radius: 20px;
-            font-family: Manrope;
+            // font-family: Manrope;
         }
         // button:nth-child(1) p{
         //     font-size: 50%;

@@ -51,7 +51,11 @@
         </div>
       </div>
       <div id="footerEnd">
-        <img src="medias/images/logo/_LogoTIM_carré.png" alt="filter applied" />
+        <a href="#"
+          ><img
+            src="medias/images/logo/_LogoTIM_carré.png"
+            alt="filter applied"
+        /></a>
         <!-- liens sociaux -->
         <ul id="liensSociaux">
           <li>
@@ -173,6 +177,7 @@ section#footer {
   #droitAuteur {
     margin-bottom: 0;
     padding-bottom: 0.3em;
+    opacity: 0.6;
   }
 }
 

@@ -254,6 +254,7 @@ nav {
 
     nav {
       background-color: $bleuFond;
+      box-shadow: 0px 0px 4px 1px #000000;
       // margin-top:3em;
       display: flex;
       justify-content: center;
@@ -281,6 +282,7 @@ nav {
       background-color: #000;
       z-index: 2;
       align-items: flex-end;
+      box-shadow: 0px 0px 4px 1px #000000;
     }
   }
   #info {

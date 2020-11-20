@@ -68,6 +68,7 @@ module.exports = {};
   #infoBloc {
     position: absolute;
     top: -30vh;
+    box-shadow: 0px 0px 4px 1px #000000;
   }
 }
 </style>

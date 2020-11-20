@@ -12,7 +12,7 @@
         <button>Mediatisation</button>
         <button>Integration</button>
       </div>
-      <div
+      <!-- <div
         uk-switcher="animation: uk-animation-fade; toggle: > *"
         id="infoBoutons"
         class="uk-button-group"
@@ -21,7 +21,7 @@
         <button>Conception</button>
         <button>Mediatisation</button>
         <button>Integration</button>
-      </div>
+      </div> -->
 
       <!-- bloc d'info -->
       <ul class="uk-switcher">

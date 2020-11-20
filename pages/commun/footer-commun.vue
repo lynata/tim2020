@@ -201,6 +201,7 @@ section#footer {
       }
       .information:nth-child(2) {
         background-color: inherit;
+        padding: 0;
       }
     }
     #footerNav {

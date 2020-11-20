@@ -291,6 +291,7 @@ nav {
 
   #infoBloc {
     width: 60vw;
+    min-height: 300px;
     padding: 1em 4em 1em 1em;
     margin-left: 2em;
     position: relative;
@@ -384,10 +385,6 @@ nav {
           }
         }
       }
-
-      body {
-        background: rgb(255, 185, 197);
-      }
     }
   }
 }
@@ -403,10 +400,6 @@ nav {
         height: 300px;
       }
     }
-  }
-
-  body {
-    background: pink;
   }
 }
 </style>

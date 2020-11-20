@@ -21,7 +21,7 @@
               <a>Profs</a>
             </router-link>
           </li>
-          <li class="uk-animation-slide-right">
+          <li id="li3accueil" class="uk-animation-slide-right">
             <router-link to="/projets">
               <a>Projets</a>
             </router-link>
@@ -32,8 +32,8 @@
             /></a>
           </li>
           <li class="uk-animation-slide-left">
-            <router-link to="/vieetudiante">
-              <a href="/pages/vieetudiante.html">Vie Etudiante</a>
+            <router-link to="/vie-etudiante">
+              <a>Vie Etudiante</a>
             </router-link>
           </li>
           <li class="uk-animation-slide-left">
@@ -351,7 +351,7 @@ nav {
           font-family: CastIron;
           font-size: 2em;
         }
-        li:nth-child(3) {
+        #li3accueil {
           margin-right: 10.5em;
         }
         #actif {

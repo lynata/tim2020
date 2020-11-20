@@ -1,7 +1,7 @@
 <template>
   <section id="inscription">
     <h2>Inscription</h2>
-    <img src="medias/images/inscription.png" alt="Inscription" />
+    <!-- <img src="medias/images/inscription.png" alt="Inscription" /> -->
     <div>
       <a href="https://admission.sram.qc.ca/" class="boutonArrondi"
         >Je suis sûr-e!</a
@@ -28,8 +28,11 @@ module.exports = {};
 <style scoped lang="scss">
 #inscription {
   margin: 0;
-  padding-top: 5%;
+  margin: 5% 0;
   display: block;
+  background-image: url("/../medias/images/inscription.png");
+  background-repeat: no-repeat;
+  background-position: 80%;
 
   h2 {
     font-family: CastIron;
@@ -38,12 +41,12 @@ module.exports = {};
     margin-left: 5%;
   }
 
-  img {
-    position: absolute;
-    right: 0;
-    padding-bottom: 5%;
-    // border: red 1px solid;
-  }
+  //   img {
+  //     position: absolute;
+  //     right: 0;
+  //     padding-bottom: 5%;
+  //     // border: red 1px solid;
+  //   }
 
   div {
     display: flex;

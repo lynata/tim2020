@@ -81,16 +81,17 @@ a {
 /*DEBUT DESKTOP-----------------------------------------------------*/
 @media (min-width: 1200px) {
   #trio {
+    margin-top: 3em;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: relative;
   }
   #imgCours,
   #imgProfs,
   #imgVie {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -113,8 +114,7 @@ a {
     font-family: CastIron;
     letter-spacing: 0.2em;
     font-size: 1.5em;
-    top: 27em;
-    left: 13em;
+    bottom: 0;
   }
 
   a {

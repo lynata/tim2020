@@ -2,7 +2,7 @@
   <section id="session">
     <div>
       <h2>Cours 1</h2>
-      <label class="flecheCours" v-on:click="cours1 = !cours1">cliiiiick</label>
+      <span class="flecheCours" v-on:click="cours1 = !cours1">cliiiiick</span>
 
       <cours-1 v-if="cours1 == true"></cours-1>
     </div>
@@ -22,4 +22,7 @@ module.exports = {
 </script>
 
 <style lang="scss" scoped>
+h2 {
+  color: #fff;
+}
 </style>

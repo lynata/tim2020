@@ -17,5 +17,8 @@
 .coursPopup {
   position: absolute;
   background-color: #fff;
+  h2 {
+    color: #000;
+  }
 }
 </style>

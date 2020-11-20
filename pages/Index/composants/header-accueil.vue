@@ -333,7 +333,10 @@ nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      background-image: url("../../../medias/images/halfTone/halftone.png");
+      background-size: 50vw;
+      background-repeat: repeat-x;
+      background-blend-mode: multiply;
       height: 60px;
       * {
         height: 80%;

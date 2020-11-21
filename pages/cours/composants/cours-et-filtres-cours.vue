@@ -16,15 +16,15 @@
         justify-content: center;
         button{
             font-size: 2vw;
-            background-color: gray;
-            color: white;
+            background-color: rgb(209, 209, 209);
+            color: black;
             width: 5vw;
-            border-radius: 20px;
-            font-family: Manrope;
+            border-radius: 15px;
             margin: 0 1vw;
         }
         button:nth-child(1){
-            font-size: 1.5vw;
+            font-size: 1.8vw;
+            font-family: Manrope;
         }
         button:hover{
             color: #2cd9ff;

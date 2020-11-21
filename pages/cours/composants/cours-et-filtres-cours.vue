@@ -1,6 +1,6 @@
 <template>
     <section id="filtre">
-        <button><p>Tous</p></button>
+        <button>Tous</button>
         <button><i class="fas fa-palette"></i></button> <!-- art -->
         <button><i class="fas fa-pencil-ruler"></i></button> <!-- design -->
         <button><i class="fas fa-code"></i></button> <!-- prog -->
@@ -12,20 +12,22 @@
 <style lang="scss" scoped>
     #filtre{
         background-color: #101832;
-
+        display: flex;
+        justify-content: center;
         button{
-            font-size: 3vw;
+            font-size: 2vw;
             background-color: gray;
-            color: black;
-            width: 7vw;
-            border-radius: 20px;
-            // font-family: Manrope;
-        }
-        // button:nth-child(1) p{
-        //     font-size: 50%;
-        // }
-        button:hover{
             color: white;
+            width: 5vw;
+            border-radius: 20px;
+            font-family: Manrope;
+            margin: 0 1vw;
+        }
+        button:nth-child(1){
+            font-size: 1.5vw;
+        }
+        button:hover{
+            color: #2cd9ff;
         }
     }
 </style>

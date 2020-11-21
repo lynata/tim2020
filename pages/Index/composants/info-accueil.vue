@@ -67,7 +67,22 @@ module.exports = {};
   }
   #infoBloc {
     position: absolute;
-    top: -30vh;
+    top: -40vh;
+    box-shadow: 0px 0px 4px 1px #000000;
+  }
+}
+@media (min-width: 1200px) {
+  #infoBoutons {
+    display: flex;
+    flex-flow: row;
+    position: absolute;
+    right: 1em;
+    top: 30vh;
+    justify-content: space-between;
+  }
+  #infoBoutons button {
+    margin: 0 0.7em;
+    min-width: 100px;
   }
 }
 </style>

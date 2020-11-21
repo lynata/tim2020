@@ -39,29 +39,30 @@ module.exports = {};
 
 <style lang='scss' scoped>
 /*MOBILE FIRST-----------------------------------------------------*/
+#trio {
+  #imgCours,
+  #imgProfs,
+  #imgVie {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .uneImage {
+    float: center;
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0;
+  }
 
-#imgCours,
-#imgProfs,
-#imgVie {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.uneImage {
-  float: center;
-  width: 500px;
-  height: 250px;
-  object-fit: cover;
-  margin: 0;
-}
+  // .boutonArrondi{
 
-// .boutonArrondi{
+  // }
 
-// }
-
-a {
-  color: #000000;
-  text-decoration: none;
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
 }
 
 /*DEBUT TABLETTE-----------------------------------------------------*/
@@ -81,16 +82,17 @@ a {
 /*DEBUT DESKTOP-----------------------------------------------------*/
 @media (min-width: 1200px) {
   #trio {
+    margin-top: 3em;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: relative;
   }
   #imgCours,
   #imgProfs,
   #imgVie {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -113,11 +115,10 @@ a {
     font-family: CastIron;
     letter-spacing: 0.2em;
     font-size: 1.5em;
-    top: 27em;
-    left: 13em;
+    bottom: 0;
   }
 
-  a {
+  #trio a {
     color: #000000;
     text-decoration: none;
     cursor: default;

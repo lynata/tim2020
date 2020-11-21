@@ -35,8 +35,8 @@
               /></a>
             </li>
             <li class="uk-animation-slide-left">
-              <router-link to="/vieetudiante">
-                <a href="/pages/vieetudiante.html">Vie Etudiante</a>
+              <router-link to="/vie-etudiante">
+                <a>Vie Etudiante</a>
               </router-link>
             </li>
             <li class="uk-animation-slide-left">

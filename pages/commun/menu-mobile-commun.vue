@@ -19,7 +19,11 @@
           <a>Projets</a>
         </router-link>
       </li>
-      <li><a href="/pages/vieetudiante.html">Vie Etudiante</a></li>
+      <router-link to="/vie-etudiante">
+        <a
+          ><li><a>Vie Etudiante</a></li></a
+        >
+      </router-link>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>

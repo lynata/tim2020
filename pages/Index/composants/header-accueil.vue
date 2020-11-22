@@ -5,8 +5,7 @@
         ><img class="test" src="/medias/images/logo_college_maisonneuve.png"
       /></a>
       <button
-        id="btnActuDessous"
-        class="hover:bg-blue-800 text-blue-100 font-bold p-0.5 pr-8 rounded-full"
+        class="btnActuDessous hover:bg-blue-800 text-blue-100 font-bold p-0.5 pr-8 rounded-full"
       >
         <span
           id="btnActu"
@@ -14,7 +13,7 @@
           ><div class="icon"></div>
           Actualités</span
         >
-        <span>Jonhatan reviens à la vie</span>
+        <span class="titreActu">Jonhatan reviens à la vie</span>
       </button>
     </div>
     <nav>
@@ -349,7 +348,7 @@ nav {
         * {
           height: 80%;
         }
-        #btnActuDessous {
+        .btnActuDessous {
           padding: 2px 30px 2px 2px;
           width: 10%;
           display: flex;
@@ -377,12 +376,18 @@ nav {
               background: red;
             }
           }
-          span {
+          .titreActu {
+            display: none;
             color: black;
           }
         }
-        #btnActuDessous:hover {
+        .btnActuDessous:hover {
           width: 30%;
+        }
+        .btnActuDessous:hover .titreActu {
+          display: block;
+          transform: translate(10px);
+          animation: anim-titreActu 0.5s ease;
         }
       }
     }
@@ -451,6 +456,17 @@ nav {
   100% {
     transform: translate(-50px);
     transform-origin: 100% 100%;
+  }
+}
+
+@keyframes anim-titreActu {
+  0% {
+    transform: translate(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(10px);
+    opacity: 1;
   }
 }
 </style>

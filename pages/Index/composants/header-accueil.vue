@@ -5,16 +5,16 @@
         ><img class="test" src="/medias/images/logo_college_maisonneuve.png"
       /></a>
       <button
-        id="btnActu"
-        class="bg-blue-600 hover:bg-blue-800 text-blue-100 font-bold py-2 px-1 pr-6 rounded-full"
+        id="btnActuDessous"
+        class="hover:bg-blue-800 text-blue-100 font-bold p-0.5 pr-8 rounded-full"
       >
-        <span id="btnActuDessous">
-          <span
-            id="btnActuDessous2"
-            class="bg-black hover:bg-blue-900 text-blue-100 font-bold py-5 px-3 rounded-full"
-            >Actualités</span
-          >
-        </span>
+        <span
+          id="btnActu"
+          class="bg-black hover:bg-blue-900 text-blue-100 px-2 font-bold rounded-full"
+          ><div class="icon"></div>
+          Actualités</span
+        >
+        <span>Jonhatan reviens à la vie</span>
       </button>
     </div>
     <nav>
@@ -243,9 +243,9 @@ nav {
 //   background-color: $fond;
 // }
 
-// FIN MOBILE FIRST
+// FIN MOBILE FIRST -------------------------------------------------------------------------------------------------------------------------------------------
 
-//DEBUT TABLETTE    --------------------------------------------------------------------------------------------------------------------------------------
+//DEBUT TABLETTE
 
 @media (min-width: 600px) {
   body {
@@ -349,60 +349,108 @@ nav {
         * {
           height: 80%;
         }
-        #btnActu {
+        #btnActuDessous {
+          padding: 2px 30px 2px 2px;
+          width: 10%;
           display: flex;
-          flex-direction: row;
-          flex-wrap: nowrap;
           justify-content: flex-start;
           align-items: center;
-          align-content: stretch;
-        }
-        #sousBtnActu {
-          left: 5%;
-        }
-      }
-      nav {
-        display: flex;
-        background-color: $bleuFond;
-        ul {
-          margin: 0 auto;
-          text-align: center;
-          flex-direction: row;
-          align-items: center;
+          background-color: rgb(227, 227, 227);
+          opacity: 0.7;
 
-          li {
-            padding: 0.5em;
-            font-family: CastIron;
-            font-size: 2em;
+          transition: width 0.3s;
+          #btnActu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 130px;
+
+            .icon {
+              border-radius: 50%;
+              width: 10px;
+              height: 10px;
+              border: 2px solid red;
+              text-align: center;
+              position: relative;
+              animation: anim-glow 2s ease infinite;
+              background: red;
+            }
           }
-          #li3accueil {
-            margin-right: 10.5em;
-          }
-          #actif {
-            padding: 1em;
-            background-color: #000;
-            position: absolute;
-            z-index: 2;
-          }
-          li:hover {
-            color: $bleu;
+          span {
+            color: black;
           }
         }
+        #btnActuDessous:hover {
+          width: 30%;
+        }
       }
-      #caroussel {
-        height: 700px !important;
-        #caroussel-images {
-          height: 100% !important;
-          ul {
-            height: 100%;
-            li {
-              height: 300px;
-            }
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      background-color: $bleuFond;
+      ul {
+        margin: 0 auto;
+        text-align: center;
+        flex-direction: row;
+        align-items: center;
+
+        li {
+          padding: 0.5em;
+          font-family: CastIron;
+          font-size: 2em;
+        }
+        #li3accueil {
+          margin-right: 10.5em;
+        }
+        #actif {
+          padding: 1em;
+          background-color: #000;
+          position: absolute;
+          z-index: 2;
+        }
+        li:hover {
+          color: $bleu;
+        }
+      }
+    }
+    #caroussel {
+      height: 700px !important;
+      #caroussel-images {
+        height: 100% !important;
+        ul {
+          height: 100%;
+          li {
+            height: 300px;
           }
         }
       }
     }
   }
 }
-//FIN GRANDS ECRANS
+
+//FIN GRANDS ECRANS -----------------------------------------------------------------------------------------------------------------------
+
+// ANIMATIONS
+@keyframes anim-glow {
+  0% {
+    box-shadow: 0 0 rgba(255, 0, 0, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px 15px transparent;
+    border-width: 2px;
+  }
+}
+
+@keyframes elargissement {
+  0% {
+    transform: translate(-20px);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: translate(-50px);
+    transform-origin: 100% 100%;
+  }
+}
 </style>

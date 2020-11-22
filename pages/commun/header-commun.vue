@@ -14,17 +14,17 @@
       <nav>
         <div>
           <ul>
-            <li class="uk-animation-slide-right">
+            <li>
               <router-link to="/cours">
                 <a>Cours</a>
               </router-link>
             </li>
-            <li class="uk-animation-slide-right">
+            <li>
               <router-link to="/profs">
                 <a>Profs</a>
               </router-link>
             </li>
-            <li class="uk-animation-slide-right">
+            <li>
               <router-link to="/projets">
                 <a>Projets</a>
               </router-link>
@@ -34,12 +34,12 @@
                 ><img src="/medias/images/logotimgris.png"
               /></a>
             </li>
-            <li class="uk-animation-slide-left">
+            <li>
               <router-link to="/vie-etudiante">
                 <a>Vie Etudiante</a>
               </router-link>
             </li>
-            <li class="uk-animation-slide-left">
+            <li>
               <a href="#contact">Contact</a>
             </li>
           </ul>

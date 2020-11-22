@@ -5,9 +5,16 @@
         ><img class="test" src="/medias/images/logo_college_maisonneuve.png"
       /></a>
       <button
-        class="bg-blue-600 hover:bg-blue-800 text-blue-100 font-bold py-2 px-4 rounded-full"
+        id="btnActu"
+        class="bg-blue-600 hover:bg-blue-800 text-blue-100 font-bold py-2 px-1 pr-6 rounded-full"
       >
-        Actualités
+        <span id="btnActuDessous">
+          <span
+            id="btnActuDessous2"
+            class="bg-black hover:bg-blue-900 text-blue-100 font-bold py-5 px-3 rounded-full"
+            >Actualités</span
+          >
+        </span>
       </button>
     </div>
     <nav>
@@ -327,61 +334,70 @@ nav {
 @media (min-width: 1200px) {
   body {
     background: pink;
-  }
-
-  #header {
-    background-color: $fond;
-    color: #fff;
-    #barreDuHaut {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-image: url("../../../medias/images/halfTone/halftone.png");
-      background-size: 50vw;
-      background-repeat: repeat-x;
-      background-blend-mode: multiply;
-      height: 60px;
-      * {
-        height: 80%;
-      }
-    }
-    nav {
-      display: flex;
-      background-color: $bleuFond;
-      ul {
-        margin: 0 auto;
-        text-align: center;
-        flex-direction: row;
+    #header {
+      background-color: $fond;
+      color: #fff;
+      #barreDuHaut {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-
-        li {
-          padding: 0.5em;
-          font-family: CastIron;
-          font-size: 2em;
+        background-image: url("../../../medias/images/halfTone/halftone.png");
+        background-size: 50vw;
+        background-repeat: repeat-x;
+        background-blend-mode: multiply;
+        height: 60px;
+        * {
+          height: 80%;
         }
-        #li3accueil {
-          margin-right: 10.5em;
+        #btnActu {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: flex-start;
+          align-items: center;
+          align-content: stretch;
         }
-        #actif {
-          padding: 1em;
-          background-color: #000;
-          position: absolute;
-          z-index: 2;
-        }
-        li:hover {
-          color: $bleu;
+        #sousBtnActu {
+          left: 5%;
         }
       }
-    }
-
-    #caroussel {
-      height: 700px !important;
-      #caroussel-images {
-        height: 100% !important;
+      nav {
+        display: flex;
+        background-color: $bleuFond;
         ul {
-          height: 100%;
+          margin: 0 auto;
+          text-align: center;
+          flex-direction: row;
+          align-items: center;
+
           li {
-            height: 300px;
+            padding: 0.5em;
+            font-family: CastIron;
+            font-size: 2em;
+          }
+          #li3accueil {
+            margin-right: 10.5em;
+          }
+          #actif {
+            padding: 1em;
+            background-color: #000;
+            position: absolute;
+            z-index: 2;
+          }
+          li:hover {
+            color: $bleu;
+          }
+        }
+      }
+      #caroussel {
+        height: 700px !important;
+        #caroussel-images {
+          height: 100% !important;
+          ul {
+            height: 100%;
+            li {
+              height: 300px;
+            }
           }
         }
       }
@@ -389,17 +405,4 @@ nav {
   }
 }
 //FIN GRANDS ECRANS
-
-#caroussel {
-  height: 700px !important;
-  #caroussel-images {
-    height: 100% !important;
-    ul {
-      height: 100%;
-      li {
-        height: 300px;
-      }
-    }
-  }
-}
 </style>

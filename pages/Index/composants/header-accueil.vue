@@ -8,11 +8,13 @@
         id="btnActu"
         class="bg-blue-600 hover:bg-blue-800 text-blue-100 font-bold py-2 px-1 pr-6 rounded-full"
       >
-        <span
-          id="sousBtnActu"
-          class="bg-black hover:bg-blue-900 text-blue-100 font-bold py-5 px-3 rounded-full"
-          >Actualités</span
-        >
+        <span id="btnActuDessous">
+          <span
+            id="btnActuDessous2"
+            class="bg-black hover:bg-blue-900 text-blue-100 font-bold py-5 px-3 rounded-full"
+            >Actualités</span
+          >
+        </span>
       </button>
     </div>
     <nav>

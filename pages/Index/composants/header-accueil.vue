@@ -5,9 +5,16 @@
         ><img class="test" src="/medias/images/logo_college_maisonneuve.png"
       /></a>
       <button
-        class="bg-blue-600 hover:bg-blue-800 text-blue-100 font-bold py-2 px-4 rounded-full"
+        id="btnActuDessous"
+        class="hover:bg-blue-800 text-blue-100 font-bold p-0.5 pr-8 rounded-full"
       >
-        Actualités
+        <span
+          id="btnActu"
+          class="bg-black hover:bg-blue-900 text-blue-100 px-2 font-bold rounded-full"
+          ><div class="icon"></div>
+          Actualités</span
+        >
+        <span>Jonhatan reviens à la vie</span>
       </button>
     </div>
     <nav>
@@ -236,9 +243,9 @@ nav {
 //   background-color: $fond;
 // }
 
-// FIN MOBILE FIRST
+// FIN MOBILE FIRST -------------------------------------------------------------------------------------------------------------------------------------------
 
-//DEBUT TABLETTE    --------------------------------------------------------------------------------------------------------------------------------------
+//DEBUT TABLETTE
 
 @media (min-width: 600px) {
   body {
@@ -327,26 +334,61 @@ nav {
 @media (min-width: 1200px) {
   body {
     background: pink;
-  }
+    #header {
+      background-color: $fond;
+      color: #fff;
+      #barreDuHaut {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url("../../../medias/images/halfTone/halftone.png");
+        background-size: 50vw;
+        background-repeat: repeat-x;
+        background-blend-mode: multiply;
+        height: 60px;
+        * {
+          height: 80%;
+        }
+        #btnActuDessous {
+          padding: 2px 30px 2px 2px;
+          width: 10%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          background-color: rgb(227, 227, 227);
+          opacity: 0.7;
 
-  #header {
-    background-color: $fond;
-    color: #fff;
-    #barreDuHaut {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-image: url("../../../medias/images/halfTone/halftone.png");
-      background-size: 50vw;
-      background-repeat: repeat-x;
-      background-blend-mode: multiply;
-      height: 60px;
-      * {
-        height: 80%;
+          transition: width 0.3s;
+          #btnActu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 130px;
+
+            .icon {
+              border-radius: 50%;
+              width: 10px;
+              height: 10px;
+              border: 2px solid red;
+              text-align: center;
+              position: relative;
+              animation: anim-glow 2s ease infinite;
+              background: red;
+            }
+          }
+          span {
+            color: black;
+          }
+        }
+        #btnActuDessous:hover {
+          width: 30%;
+        }
       }
     }
     nav {
       display: flex;
+      align-items: center;
       background-color: $bleuFond;
       ul {
         margin: 0 auto;
@@ -373,7 +415,6 @@ nav {
         }
       }
     }
-
     #caroussel {
       height: 700px !important;
       #caroussel-images {
@@ -388,18 +429,28 @@ nav {
     }
   }
 }
-//FIN GRANDS ECRANS
 
-#caroussel {
-  height: 700px !important;
-  #caroussel-images {
-    height: 100% !important;
-    ul {
-      height: 100%;
-      li {
-        height: 300px;
-      }
-    }
+//FIN GRANDS ECRANS -----------------------------------------------------------------------------------------------------------------------
+
+// ANIMATIONS
+@keyframes anim-glow {
+  0% {
+    box-shadow: 0 0 rgba(255, 0, 0, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px 15px transparent;
+    border-width: 2px;
+  }
+}
+
+@keyframes elargissement {
+  0% {
+    transform: translate(-20px);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: translate(-50px);
+    transform-origin: 100% 100%;
   }
 }
 </style>

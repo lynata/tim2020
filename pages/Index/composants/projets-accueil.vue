@@ -1,22 +1,23 @@
 <template>
   <section id="voirProjets">
-    <div>
-      <h2 id="Web">Web</h2>
+    <div id="Web">
+      <h2 id="TitreWeb">Web</h2>
       <img src="medias/images/projets/web/web.png" alt="Web" />
     </div>
-    <div>
-      <h2 id="Jeu">Jeu</h2>
+    <div id="Jeu">
+      <h2 id="TitreJeu">Jeu</h2>
       <img src="medias/images/projets/jeu/jeu.png" alt="Jeu" />
     </div>
-    <div>
-      <h2 id="3D">3D</h2>
+    <div id="3D">
+      <h2 id="Titre3D">3D</h2>
       <img src="medias/images/projets/3d.png" alt="3D" />
-    </div>
-    <router-link to="/projets">
+      <router-link to="/projets">
       <button class="boutonNoirGauche">
         <a href="/pages/projets.html">Voir Projets</a>
       </button>
     </router-link>
+    </div>
+    
   </section>
 </template>
 
@@ -25,7 +26,6 @@ module.exports = {};
 </script>
 
 <style lang="scss" scoped>
-
 //MOBILE---------------------------------------------------------------------------------------
 
 #voirProjets {
@@ -34,10 +34,16 @@ module.exports = {};
   flex-direction: column;
   margin: 5% 0;
 
-  #Web,
-  #Jeu,
-  #3D {
+  #TitreWeb,
+  #TitreJeu,
+  #Titre3D {
+    position: absolute;
+    color: white;
+    font-family: "CastIron";
     font-size: 2rem;
+    margin: -2% -1%;
+    padding: 0.5% 2%;
+    background-color: #2cd9ff;
   }
 
   .boutonNoirGauche {
@@ -52,40 +58,30 @@ module.exports = {};
     justify-content: center;
     flex-direction: column;
     margin: 4em auto;
+
+    #TitreWeb,
+    #TitreJeu,
+    #Titre3D {
+      font-size: 15em;
+    }
   }
 }
 
 // DESKTOP--------------------------------------------------------------------------------------
 @media (min-width: 1200px) {
   #voirProjets {
-<<<<<<< HEAD
-  // margin-top: 5em;
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  div {
-    display: flex;
-    flex-direction: row;
-=======
+    justify-content: space-around !important;
     flex-direction: row !important;
-    justify-content: space-between;
->>>>>>> 7f9f5c210309041e5226d791bb01098d888537ef
-
+    margin: 0;
     #Web,
     #Jeu,
     #3D {
-    position: absolute;
-    color: white;
-    font-family: "CastIron";
-    font-size: 10rem;
-    margin: -2% -1%;
-    padding: 0.5% 2%;
-    background-color: #2cd9ff;
-    }
 
-    .boutonNoirGauche {
-      width: 10em;
-      font-size: 3em;
+      .boutonNoirGauche {
+        align-self: center;
+        width: 10em;
+        font-size: 3em;
+      }
     }
   }
 }

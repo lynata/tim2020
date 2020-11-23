@@ -1,7 +1,6 @@
 <template>
   <section id="inscription">
     <h2 id="TitreInscription">Inscription</h2>
-    <!-- <img src="medias/images/inscription.png" alt="Inscription" /> -->
     <div id="boutonsInscription">
       <a href="https://admission.sram.qc.ca/" class="boutonArrondi"
         >Je suis sûr-e!</a>
@@ -23,7 +22,7 @@ module.exports = {};
 </script>
 
 <style  lang="scss" scoped>
-/*MOBILE FIRST-----------------------------------------------------*/
+//MOBILE FIRST----------------------------------------------------------------------
 #inscription {
   width: 100%;
   height: 50%;
@@ -48,8 +47,13 @@ module.exports = {};
     }
 }
 
+// DEBUT TABLETTE--------------------------------------------------------------------
+@media (min-width: 600px){
+    
+}
 
-/*DEBUT DESKTOP-----------------------------------------------------*/
+
+//DEBUT DESKTOP----------------------------------------------------------------------
 @media (min-width: 1200px) {
 
   #TitreInscription {
@@ -94,14 +98,4 @@ module.exports = {};
 }
 
 }
-
-<<<<<<< HEAD
-// //Tablette
-// @media (min-width: 600px){
-//     a{
-        
-//     }
-// }
-=======
->>>>>>> b6c248b8206e05738d397484c4c0565da4c80032
 </style>

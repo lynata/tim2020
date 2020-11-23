@@ -12,7 +12,7 @@
           class="bg-black hover:bg-blue-900 text-blue-100 px-2 font-bold rounded-full"
           ><div class="icon"></div>
           Actualités
-          </span>
+        </span>
         <span class="titreActu">Johnatan reviens à la vie</span>
       </button>
     </div>
@@ -197,7 +197,6 @@ nav {
   display: none;
 }
 
-
 #infoBloc {
   width: 80vw;
   padding: 1em 1em 3em 1em;
@@ -221,10 +220,14 @@ nav {
 //DEBUT TABLETTE
 
 @media (min-width: 600px) {
-  
   #navMobile,
   #checkNav {
     display: none;
+  }
+  #barreDuHaut {
+    background-image: url("../../../medias/images/halfTone/halftone.png");
+    background-size: 50vw;
+    background-repeat: repeat-x;
   }
   #header {
     color: #fff;
@@ -293,6 +296,19 @@ nav {
       background-color: $fond;
     }
   }
+
+  #caroussel {
+    height: 700px !important;
+    #caroussel-images {
+      height: 100% !important;
+      ul {
+        height: 100%;
+        li {
+          height: 300px;
+        }
+      }
+    }
+  }
 }
 
 //FIN TABLETTE        ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -300,103 +316,103 @@ nav {
 //DEBUT GRANDS ECRANS
 @media (min-width: 1200px) {
   body {
-      #barreDuHaut {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-image: url("../../../medias/images/halfTone/halftone.png");
-        background-size: 50vw;
-        background-repeat: repeat-x;
-        background-blend-mode: multiply;
-        height: 60px;
-        * {
-          height: 80%;
-        }
-        .btnActuDessous {
-          padding: 2px 30px 2px 2px;
-          width: 10%;
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          background-color: rgb(227, 227, 227);
-          opacity: 0.7;
-
-          transition: width 0.3s;
-          #btnActu {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100%;
-            width: 130px;
-
-            .icon {
-              border-radius: 50%;
-              width: 10px;
-              height: 10px;
-              border: 2px solid red;
-              text-align: center;
-              position: relative;
-              animation: anim-glow 2s ease infinite;
-              background: red;
-            }
-          }
-          .titreActu {
-            display: none;
-            color: black;
-          }
-        }
-        .btnActuDessous:hover {
-          width: 30%;
-        }
-        .btnActuDessous:hover .titreActu {
-          display: block;
-          transform: translate(10px);
-          animation: anim-titreActu 0.5s ease;
-        }
-      }
-    }
-    nav {
+    #barreDuHaut {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      background-color: $bleuFond;
-      ul {
-        margin: 0 auto;
-        text-align: center;
-        flex-direction: row;
-        align-items: center;
-
-        li {
-          padding: 0.5em;
-          font-family: "CastIron";
-          font-size: 2em;
-        }
-        #li3accueil {
-          margin-right: 10.5em;
-        }
-        #actif {
-          padding: 1em;
-          background-color: #000;
-          position: absolute;
-          z-index: 2;
-        }
-        li:hover {
-          color: $bleu;
-        }
+      // background-image: url("../../../medias/images/halfTone/halftone.png");
+      // background-size: 50vw;
+      // background-repeat: repeat-x;
+      // background-blend-mode: multiply;
+      height: 60px;
+      * {
+        height: 80%;
       }
-    }
-    #caroussel {
-      height: 700px !important;
-      #caroussel-images {
-        height: 100% !important;
-        ul {
+      .btnActuDessous {
+        padding: 2px 30px 2px 2px;
+        width: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgb(227, 227, 227);
+        opacity: 0.7;
+
+        transition: width 0.3s;
+        #btnActu {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
           height: 100%;
-          li {
-            height: 300px;
+          width: 130px;
+
+          .icon {
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            border: 2px solid red;
+            text-align: center;
+            position: relative;
+            animation: anim-glow 2s ease infinite;
+            background: red;
           }
         }
+        .titreActu {
+          display: none;
+          color: black;
+        }
+      }
+      .btnActuDessous:hover {
+        width: 30%;
+      }
+      .btnActuDessous:hover .titreActu {
+        display: block;
+        transform: translate(10px);
+        animation: anim-titreActu 0.5s ease;
       }
     }
   }
+  nav {
+    display: flex;
+    align-items: center;
+    background-color: $bleuFond;
+    ul {
+      margin: 0 auto;
+      text-align: center;
+      flex-direction: row;
+      align-items: center;
+
+      li {
+        padding: 0.5em;
+        font-family: "CastIron";
+        font-size: 2em;
+      }
+      #li3accueil {
+        margin-right: 10.5em;
+      }
+      #actif {
+        padding: 1em;
+        background-color: #000;
+        position: absolute;
+        z-index: 2;
+      }
+      li:hover {
+        color: $bleu;
+      }
+    }
+  }
+  // #caroussel {
+  //   height: 700px !important;
+  //   #caroussel-images {
+  //     height: 100% !important;
+  //     ul {
+  //       height: 100%;
+  //       li {
+  //         height: 300px;
+  //       }
+  //     }
+  //   }
+  // }
+}
 
 //FIN GRANDS ECRANS -----------------------------------------------------------------------------------------------------------------------
 

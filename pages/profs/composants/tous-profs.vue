@@ -11,10 +11,8 @@
     <!-- Les reste a afficher dynamiquement -->
     <div>
       <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+        ><img src="/medias/images/Professeurs/Manon.jpg" alt="Manon" />Manon
+        Bertrand</a
       >
     </div>
     <div>
@@ -144,12 +142,15 @@ $boxNoir: -5px 5px 0px 1px #000;
   flex-wrap: wrap;
   justify-content: center;
   div {
-    width: 10vw;
     margin: 0.5em 1em;
     text-align: center;
   }
 
   img {
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    overflow: hidden;
     -webkit-box-shadow: -5px 5px 0px 2px $bleu;
     box-shadow: -5px 5px 0px 2px $bleu;
   }

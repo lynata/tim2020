@@ -57,22 +57,23 @@ module.exports = {};
       margin-left: 5%;
       background-color: #101832;
       border: #2cd9ff 6px solid;
-      border-radius: 50px;
-      padding: 10px;
+      // border-radius: 50px;
+      // padding: 10px;
       display: block;
-      font-size: 1em;
-      z-index: 2;
-    }
-    a:nth-child(1) {
+      // font-size: 1em;
+      // z-index: 2;
       width: 20%;
+    }
+    a:nth-child(1):hover {
+      width: 30%;
       margin-bottom: 1%;
     }
-    a:nth-child(2) {
+    a:nth-child(2):hover {
       width: 40%;
       margin-bottom: 1%;
     }
-    a:nth-child(3) {
-      width: 30%;
+    a:nth-child(3):hover {
+      width: 50%;
     }
 
     a:hover {

@@ -23,7 +23,8 @@ a:hover {
   text-decoration: none;
 }
 
-//DEBUT CSS - - - MOBILE FIRST      --------------------------------------------------------------------------------------------------------------------------------
+//DEBUT CSS - - - MOBILE FIRST      -------------------------------------------------------------------------------------------------------------------------------
+
 body{
   background-color: $fond;
 }
@@ -147,7 +148,7 @@ nav {
       background-color: $bleuFond;
       padding: 10px;
       margin-top: 0.5em;
-      font-family: CastIron;
+      font-family: "CastIron";
       font-size: 1.5em;
       color: $blanc;
       letter-spacing: 0.08em;

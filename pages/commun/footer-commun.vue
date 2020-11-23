@@ -1,4 +1,5 @@
 <template>
+
    <section id="footer">
         <footer >
             <div id="contact">
@@ -90,6 +91,10 @@ section#footer {
       background-color: #0b132b;
       padding-top: 1em;
       padding-bottom: 1em;
+    }
+    .btnScroll {
+      position: absolute;
+      margin: 0;
     }
   }
   h1 {

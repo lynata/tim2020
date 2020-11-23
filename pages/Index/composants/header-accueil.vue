@@ -1,7 +1,7 @@
 <template>
   <section id="header">
     <div id="barreDuHaut">
-      <a href="https://www.cmaisonneuve.qc.ca/" target="blank"
+      <a href="https://www.cmaisonneuve.qc.ca/" target="_blank"
         ><img class="test" src="/medias/images/logo_college_maisonneuve.png"
       /></a>
       <button
@@ -11,9 +11,9 @@
           id="btnActu"
           class="bg-black hover:bg-blue-900 text-blue-100 px-2 font-bold rounded-full"
           ><div class="icon"></div>
-          Actualités</span
-        >
-        <span class="titreActu">Jonhatan reviens à la vie</span>
+          Actualités
+          </span>
+        <span class="titreActu">Johnatan reviens à la vie</span>
       </button>
     </div>
     <nav>
@@ -193,29 +193,10 @@ nav {
   transform: rotate(90deg);
 }
 
-// #checkNav:checked ~ #global {
-//   transform: translateY(100%);
-// }
-
-// #checkNav ~ #global {
-//   transform: translateY(0%);
-// }
-
 #checkNav {
   display: none;
 }
 
-#info {
-  background-color: $fond;
-}
-
-#inscription {
-  background-color: $fond;
-}
-
-#trio {
-  background-color: $fond;
-}
 
 #infoBloc {
   width: 80vw;
@@ -235,27 +216,17 @@ nav {
   display: none;
 }
 
-#footer {
-  background-color: $fond;
-}
-// #footer {
-//   background-color: $fond;
-// }
-
 // FIN MOBILE FIRST -------------------------------------------------------------------------------------------------------------------------------------------
 
 //DEBUT TABLETTE
 
 @media (min-width: 600px) {
-  body {
-    background: red;
-  }
+  
   #navMobile,
   #checkNav {
     display: none;
   }
   #header {
-    background-color: $fond;
     color: #fff;
 
     nav {
@@ -290,9 +261,6 @@ nav {
       align-items: flex-end;
       box-shadow: 0px 0px 4px 1px #000000;
     }
-  }
-  #info {
-    background-color: $fond;
   }
 
   #infoBloc {
@@ -332,10 +300,6 @@ nav {
 //DEBUT GRANDS ECRANS
 @media (min-width: 1200px) {
   body {
-    background: pink;
-    #header {
-      background-color: $fond;
-      color: #fff;
       #barreDuHaut {
         display: flex;
         justify-content: space-between;
@@ -403,7 +367,7 @@ nav {
 
         li {
           padding: 0.5em;
-          font-family: CastIron;
+          font-family: "CastIron";
           font-size: 2em;
         }
         #li3accueil {
@@ -433,7 +397,6 @@ nav {
       }
     }
   }
-}
 
 //FIN GRANDS ECRANS -----------------------------------------------------------------------------------------------------------------------
 

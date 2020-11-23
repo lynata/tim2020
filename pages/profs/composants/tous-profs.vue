@@ -140,23 +140,33 @@ $boxNoir: -5px 5px 0px 1px #000;
   display: flex;
   flex-direction: row;
   align-content: space-around;
-  width: 10vw;
-  margin: 0 0;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  div {
+    width: 10vw;
+    margin: 0.5em 1em;
+    text-align: center;
+  }
 
   img {
-    margin: 1em 1em 0.3em 1em;
     -webkit-box-shadow: -5px 5px 0px 2px $bleu;
     box-shadow: -5px 5px 0px 2px $bleu;
   }
   a {
     text-decoration: none;
     color: #fff;
-    text-align: center;
     font-family: "CastIron";
     font-size: 2em;
+    text-align: center;
   }
   a:hover {
     color: $bleu;
+  }
+}
+@media (min-width: 1200px) {
+  #tousProfs {
+    margin: 0 10vw;
   }
 }
 </style>

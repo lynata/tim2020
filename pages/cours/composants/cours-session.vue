@@ -65,6 +65,7 @@ $boxNoir: -5px 5px 0px 1px #000;
 #session {
   position: relative;
   font-family: "ManRope";
+  background-color: $bleuFond;
   .coursPopup {
     position: absolute;
     background-color: $bleuFond;

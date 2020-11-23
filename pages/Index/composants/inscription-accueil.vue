@@ -83,6 +83,7 @@ module.exports = {};
   }
 }
 
+// //Tablette
 // @media (min-width: 600px){
 //     a{
         

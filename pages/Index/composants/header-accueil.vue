@@ -16,7 +16,9 @@
           ><div class="icon"></div>
           Actualités
         </span>
-        <span class="titreActu">Jonhatan reviens à la vie</span>
+        <span class="titreActu"
+          >Le Game Jam aura lieu à distance cette année!</span
+        >
       </router-link>
     </div>
     <nav>
@@ -344,6 +346,9 @@ nav {
       * {
         height: 80%;
       }
+      .imgMaisonneuve {
+        height: 100%;
+      }
       .btnActuDessous {
         padding: 2px 30px 2px 2px;
         width: 170px;
@@ -378,7 +383,7 @@ nav {
         }
       }
       .btnActuDessous:hover {
-        width: 30%;
+        width: 35%;
       }
       .btnActuDessous:hover .titreActu {
         display: block;

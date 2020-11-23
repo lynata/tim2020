@@ -25,4 +25,7 @@ module.exports = {
 body {
   background-color: #101832;
 }
+div {
+  background-color: #1c2c5c;
+}
 </style>

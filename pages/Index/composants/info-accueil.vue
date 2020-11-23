@@ -37,7 +37,10 @@
         </li>
         <li>
           <h1>Conception</h1>
-          La conception est la conceptualisation de concept conceptable.
+
+          La conceptualisation est plus que le design d'interface: il faut
+          comprendre et modéliser un site attrayant, adaptable et efficace qui
+          répond aux besoins du client
         </li>
         <li>
           <h1>Mediatisation</h1>
@@ -72,12 +75,15 @@ module.exports = {};
   }
 }
 @media (min-width: 1200px) {
+  #infoBloc {
+    min-height: 250px;
+  }
   #infoBoutons {
     display: flex;
     flex-flow: row;
     position: absolute;
-    right: 1em;
-    top: 30vh;
+    right: -3em;
+    top: 13em;
     justify-content: space-between;
   }
   #infoBoutons button {

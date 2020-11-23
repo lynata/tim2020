@@ -11,6 +11,7 @@
     <menu-mobile v-if="clickMenu == true"></menu-mobile>
 
     <section id="header">
+      <div id="bgHautNav"></div>
       <nav>
         <div>
           <ul>
@@ -123,17 +124,21 @@ nav {
   #checkNav {
     display: none;
   }
-
+  #bgHautNav {
+    height: 3em;
+    background-image: url("../../medias/images/halfTone/halftone.png");
+    background-size: 50vw;
+    background-repeat: repeat-x;
+  }
   nav {
     background-color: $bleuFond;
-    margin-top: 3em;
     display: flex;
     justify-content: center;
     width: 100%;
-  }
-  img {
-    width: 4em;
-    background: none;
+    img {
+      width: 4em;
+      background: none;
+    }
   }
 
   #header {

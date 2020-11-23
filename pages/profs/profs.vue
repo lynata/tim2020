@@ -1,6 +1,7 @@
 <template>
   <div>
     <header-commun></header-commun>
+    <tous-profs></tous-profs>
     <footer-commun></footer-commun>
   </div>
 </template>
@@ -12,6 +13,7 @@ module.exports = {
   components: {
     "header-commun": httpVueLoader("/pages/commun/header-commun.vue"),
     "footer-commun": httpVueLoader("/pages/commun/footer-commun.vue"),
+    "tous-profs": httpVueLoader("pages/profs/composants/tous-profs.vue"),
   },
 };
 </script>

@@ -224,6 +224,11 @@ nav {
   #checkNav {
     display: none;
   }
+  #barreDuHaut {
+    background-image: url("../../../medias/images/halfTone/halftone.png");
+    background-size: 50vw;
+    background-repeat: repeat-x;
+  }
   #header {
     color: #fff;
 
@@ -315,10 +320,10 @@ nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-image: url("../../../medias/images/halfTone/halftone.png");
-      background-size: 50vw;
-      background-repeat: repeat-x;
-      background-blend-mode: multiply;
+      // background-image: url("../../../medias/images/halfTone/halftone.png");
+      // background-size: 50vw;
+      // background-repeat: repeat-x;
+      // background-blend-mode: multiply;
       height: 60px;
       * {
         height: 80%;

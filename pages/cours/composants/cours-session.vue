@@ -1,32 +1,38 @@
 <template>
   <section id="session">
-    <div>
-      <h2>Création vidéo</h2>
-      <span class="flecheCours" v-on:click="cours1 = !cours1"
-        >Voir ce cours</span
-      >
-    </div>
+    <ul class="js-filter">
+      <li data-tags="scena">
+        <h2>Création vidéo</h2>
+        <span class="flecheCours" v-on:click="cours1 = !cours1"
+          >Voir ce cours</span
+        >
+      </li>
+      <li data-tags="art">
+        <h2>Conception graphique et imagerie matricielle</h2>
+        <span class="flecheCours" v-on:click="cours2 = !cours2">
+          Voir ce cours</span
+        >
+      </li>
+      <li data-tags="prog">
+        <h2>Mise en page web</h2>
+        <span class="flecheCours" v-on:click="cours3 = !cours3">
+          Voir ce cours</span
+        >
+      </li>
+      <li data-tags="art scena">
+        <h2>Animation et interactivité en jeu</h2>
+        <span class="flecheCours" v-on:click="cours4 = !cours4">
+          Voir ce cours</span
+        >
+      </li>
+    </ul>
+
     <cours-1 v-if="cours1 == true"></cours-1>
-    <div>
-      <h2>Conception graphique et imagerie matricielle</h2>
-      <span class="flecheCours" v-on:click="cours2 = !cours2">
-        Voir ce cours</span
-      >
-    </div>
+
     <cours-2 v-if="cours2 == true"></cours-2>
-    <div>
-      <h2>Mise en page web</h2>
-      <span class="flecheCours" v-on:click="cours3 = !cours3">
-        Voir ce cours</span
-      >
-    </div>
+
     <cours-3 v-if="cours3 == true"></cours-3>
-    <div>
-      <h2>Animation et interactivité en jeu</h2>
-      <span class="flecheCours" v-on:click="cours4 = !cours4">
-        Voir ce cours</span
-      >
-    </div>
+
     <cours-4 v-if="cours4 == true"></cours-4>
   </section>
 </template>
@@ -62,13 +68,18 @@ $boxNoir: -5px 5px 0px 1px #000;
   .coursPopup {
     position: absolute;
     background-color: $bleuFond;
-    div {
+    width: 50%;
+    top: -1em;
+    left: 25%;
+    padding: 1em 2em;
+    color: #fff;
+    li {
       background-color: $bleuFond;
       box-shadow: none;
       color: #fff;
     }
   }
-  div {
+  li {
     background-color: $blanc;
     box-shadow: $boxNoir;
     margin: 1em;

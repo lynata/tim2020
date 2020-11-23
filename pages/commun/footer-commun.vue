@@ -63,9 +63,7 @@
 </template>
 
 <script>
-module.exports = {
-
-}
+module.exports = {};
 </script>
 
 <style lang='scss'>
@@ -81,13 +79,11 @@ section#footer {
     background-size: 17em;
     background-repeat: repeat-x;
 
-    .information:nth-child(2){
-        background-color: #0b132b;
-        padding-top: 1em;
-        padding-bottom: 1em;
-
+    .information:nth-child(2) {
+      background-color: #0b132b;
+      padding-top: 1em;
+      padding-bottom: 1em;
     }
-
   }
   h1 {
     font-family: CastIron;
@@ -134,46 +130,44 @@ section#footer {
   }
 
   #footerNav {
-      display:none;
+    display: none;
   }
   #droitAuteur {
     margin-bottom: 0;
     padding-bottom: 0.3em;
+    opacity: 0.6;
   }
 }
 
 @media only screen and (min-width: 768px) {
   section#footer {
-      #contact{
-        .liste-contact {
+    #contact {
+      .liste-contact {
         display: flex;
         align-content: space-between;
         justify-content: space-evenly;
         padding-bottom: 4em;
-        }
-        .information {
+      }
+      .information {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
 
         p {
-            margin: 0;
+          margin: 0;
         }
-        }
-        .information:nth-child(2){
-        background-color: inherit;
-          
       }
-
+      .information:nth-child(2) {
+        background-color: inherit;
+        padding: 0;
+      }
     }
-    #footerNav{
-    display: flex;
-    justify-content: space-evenly;
-    border-top: white solid 2px;
-    border-bottom: white solid 2px;
+    #footerNav {
+      display: flex;
+      justify-content: space-evenly;
+      border-top: white solid 2px;
+      border-bottom: white solid 2px;
     }
   }
 }
-
-
 </style>

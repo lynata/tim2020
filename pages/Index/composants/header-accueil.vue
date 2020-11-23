@@ -1,6 +1,21 @@
 <template>
   <section id="header">
-    <div id="barreDuHaut"></div>
+    <div id="barreDuHaut">
+      <a href="https://www.cmaisonneuve.qc.ca/" target="blank"
+        ><img class="test" src="/medias/images/logo_college_maisonneuve.png"
+      /></a>
+      <button
+        class="btnActuDessous hover:bg-blue-800 text-blue-100 font-bold p-0.5 pr-8 rounded-full"
+      >
+        <span
+          id="btnActu"
+          class="bg-black hover:bg-blue-900 text-blue-100 px-2 font-bold rounded-full"
+          ><div class="icon"></div>
+          Actualités</span
+        >
+        <span class="titreActu">Jonhatan reviens à la vie</span>
+      </button>
+    </div>
     <nav>
       <div>
         <ul>
@@ -14,7 +29,7 @@
               <a>Profs</a>
             </router-link>
           </li>
-          <li class="uk-animation-slide-right">
+          <li id="li3accueil" class="uk-animation-slide-right">
             <router-link to="/projets">
               <a>Projets</a>
             </router-link>
@@ -25,8 +40,8 @@
             /></a>
           </li>
           <li class="uk-animation-slide-left">
-            <router-link to="/vieetudiante">
-              <a href="/pages/vieetudiante.html">Vie Etudiante</a>
+            <router-link to="/vie-etudiante">
+              <a>Vie Etudiante</a>
             </router-link>
           </li>
           <li class="uk-animation-slide-left">
@@ -112,7 +127,7 @@ module.exports = {
 };
 </script>
 
-<style lang='scss' >
+<style lang='scss' scoped>
 $fond: #101832;
 $bleuFond: #1c2c5c;
 $blanc: #e3e3e3;
@@ -152,22 +167,23 @@ nav {
 #navMobile {
   background: linear-gradient(
     to bottom,
-    rgba(2, 0, 36, 1) 0%,
+    $bleu 0%,
     rgba(2, 0, 36, 1) 20%,
     transparent 20%,
     transparent 40%,
-    rgba(2, 0, 36, 1) 40%,
+    $bleu 40%,
     rgba(2, 0, 36, 1) 60%,
     transparent 60%,
     transparent 80%,
-    rgba(2, 0, 36, 1) 80%,
+    $bleu 80%,
     rgba(2, 0, 36, 1) 100%
   );
   height: 48px;
   width: 48px;
-  position: absolute;
+  position: fixed;
   margin: 1%;
   right: 10px;
+  top: 2%;
   cursor: pointer;
   align-self: flex-end;
   z-index: 999;
@@ -226,9 +242,9 @@ nav {
 //   background-color: $fond;
 // }
 
-// FIN MOBILE FIRST
+// FIN MOBILE FIRST -------------------------------------------------------------------------------------------------------------------------------------------
 
-//DEBUT TABLETTE    --------------------------------------------------------------------------------------------------------------------------------------
+//DEBUT TABLETTE
 
 @media (min-width: 600px) {
   body {
@@ -244,6 +260,7 @@ nav {
 
     nav {
       background-color: $bleuFond;
+      box-shadow: 0px 0px 4px 1px #000000;
       // margin-top:3em;
       display: flex;
       justify-content: center;
@@ -271,6 +288,7 @@ nav {
       background-color: #000;
       z-index: 2;
       align-items: flex-end;
+      box-shadow: 0px 0px 4px 1px #000000;
     }
   }
   #info {
@@ -279,6 +297,7 @@ nav {
 
   #infoBloc {
     width: 60vw;
+    min-height: 300px;
     padding: 1em 4em 1em 1em;
     margin-left: 2em;
     position: relative;
@@ -314,16 +333,67 @@ nav {
 @media (min-width: 1200px) {
   body {
     background: pink;
-  }
+    #header {
+      background-color: $fond;
+      color: #fff;
+      #barreDuHaut {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url("../../../medias/images/halfTone/halftone.png");
+        background-size: 50vw;
+        background-repeat: repeat-x;
+        background-blend-mode: multiply;
+        height: 60px;
+        * {
+          height: 80%;
+        }
+        .btnActuDessous {
+          padding: 2px 30px 2px 2px;
+          width: 10%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          background-color: rgb(227, 227, 227);
+          opacity: 0.7;
 
-  #header {
-    background-color: $fond;
-    color: #fff;
-    #barreDuHaut {
-      height: 55px;
+          transition: width 0.3s;
+          #btnActu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 130px;
+
+            .icon {
+              border-radius: 50%;
+              width: 10px;
+              height: 10px;
+              border: 2px solid red;
+              text-align: center;
+              position: relative;
+              animation: anim-glow 2s ease infinite;
+              background: red;
+            }
+          }
+          .titreActu {
+            display: none;
+            color: black;
+          }
+        }
+        .btnActuDessous:hover {
+          width: 30%;
+        }
+        .btnActuDessous:hover .titreActu {
+          display: block;
+          transform: translate(10px);
+          animation: anim-titreActu 0.5s ease;
+        }
+      }
     }
     nav {
       display: flex;
+      align-items: center;
       background-color: $bleuFond;
       ul {
         margin: 0 auto;
@@ -336,7 +406,7 @@ nav {
           font-family: CastIron;
           font-size: 2em;
         }
-        li:nth-child(3) {
+        #li3accueil {
           margin-right: 10.5em;
         }
         #actif {
@@ -350,7 +420,6 @@ nav {
         }
       }
     }
-
     #caroussel {
       height: 700px !important;
       #caroussel-images {
@@ -362,29 +431,42 @@ nav {
           }
         }
       }
-
-      body {
-        background: rgb(255, 185, 197);
-      }
     }
   }
 }
-//FIN GRANDS ECRANS
 
-#caroussel {
-  height: 700px !important;
-  #caroussel-images {
-    height: 100% !important;
-    ul {
-      height: 100%;
-      li {
-        height: 300px;
-      }
-    }
+//FIN GRANDS ECRANS -----------------------------------------------------------------------------------------------------------------------
+
+// ANIMATIONS
+@keyframes anim-glow {
+  0% {
+    box-shadow: 0 0 rgba(255, 0, 0, 1);
   }
+  100% {
+    box-shadow: 0 0 10px 15px transparent;
+    border-width: 2px;
+  }
+}
 
-  body {
-    background: pink;
+@keyframes elargissement {
+  0% {
+    transform: translate(-20px);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: translate(-50px);
+    transform-origin: 100% 100%;
+  }
+}
+
+@keyframes anim-titreActu {
+  0% {
+    transform: translate(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(10px);
+    opacity: 1;
   }
 }
 </style>

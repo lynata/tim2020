@@ -19,7 +19,11 @@
           <a>Projets</a>
         </router-link>
       </li>
-      <li><a href="/pages/vieetudiante.html">Vie Etudiante</a></li>
+      <router-link to="/vie-etudiante">
+        <a
+          ><li><a>Vie Etudiante</a></li></a
+        >
+      </router-link>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -36,13 +40,13 @@ $boxBleu: -3px 3px 0px 1px $bleu;
 $boxNoir: -5px 5px 0px 1px #000;
 
 div {
-  position: absolute;
+  position: fixed;
   padding-top: 20vh;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   background-color: $fond;
   z-index: 99;
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
   img {
     margin: 0 auto;

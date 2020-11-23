@@ -55,10 +55,6 @@ module.exports = {};
     margin: 0;
   }
 
-  // .boutonArrondi{
-
-  // }
-
   a {
     color: #000000;
     text-decoration: none;

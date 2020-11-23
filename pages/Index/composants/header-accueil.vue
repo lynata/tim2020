@@ -1,7 +1,7 @@
 <template>
   <section id="header">
     <div id="barreDuHaut">
-      <a href="https://www.cmaisonneuve.qc.ca/"
+      <a href="https://www.cmaisonneuve.qc.ca/" target="blank"
         ><img class="test" src="/medias/images/logo_college_maisonneuve.png"
       /></a>
       <button

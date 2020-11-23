@@ -13,7 +13,7 @@
     
                     <div class="information">
                         <h3>Collège Maisonneuve</h3>
-                        <p>Campus 2030 2030, boulevard Pie-IX</p>
+                        <p>Campus 2030, boulevard Pie-IX</p>
                         <p>Bureau 430</p>
                         <p>Tél.: 514 254-7131, poste 4800</p>
                         <p>sfc@cmaisonneuve.qc.ca </p>
@@ -23,7 +23,7 @@
                         <h3>Professeur Pivot</h3>
                         <p>Premier Étage Secteur B</p>
                         <p>Bureau 1163</p>
-                        <p>Tél.: 254-7131 poste 4714</p>
+                        <p>Tél.:514 254-7131 poste 4714</p>
                         <p>vtoroussian@cmaisonneuve.qc.ca</p>
                     </div>
     
@@ -50,10 +50,10 @@
     
                 <!-- Footer mini nav -->
                 <ul id="footerNav">
-                    <li><a href="pages/cours.html">Cours</a></li>
-                    <li><a href="pages/profs.html">Profs</a></li>
-                    <li><a href="pages/projets.html">Projets</a></li>
-                    <li><a href="pages/vieetudiante.html">Vie Etudiante</a></li>
+                    <li><a href="/pages/cours.html">Cours</a></li>
+                    <li><a href="/pages/profs.html">Profs</a></li>
+                    <li><a href="/pages/projets.html">Projets</a></li>
+                    <li><a href="/pages/vieetudiante.html">Vie Etudiante</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <p id="droitAuteur">undefinedvariable2020</p>

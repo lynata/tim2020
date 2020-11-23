@@ -80,7 +80,7 @@ module.exports = {};
     flex-flow: row;
     position: absolute;
     right: -3em;
-    top: 30vh;
+    top: 13em;
     justify-content: space-between;
   }
   #infoBoutons button {

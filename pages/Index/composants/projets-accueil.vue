@@ -72,7 +72,7 @@ module.exports = {};
   #voirProjets {
     justify-content: space-around !important;
     flex-direction: row !important;
-    margin: 0;
+    margin: 0 !important;
     #Web,
     #Jeu,
     #3D {

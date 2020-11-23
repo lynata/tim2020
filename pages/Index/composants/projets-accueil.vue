@@ -1,20 +1,20 @@
 <template>
   <section id="voirProjets">
     <div>
-      <h2>Web</h2>
+      <h2 id="Web">Web</h2>
       <img src="medias/images/projets/web/web.png" alt="Web" />
     </div>
     <div>
-      <h2>Jeu</h2>
+      <h2 id="Jeu">Jeu</h2>
       <img src="medias/images/projets/jeu/jeu.png" alt="Jeu" />
     </div>
     <div>
-      <h2>3D</h2>
+      <h2 id="3D">3D</h2>
       <img src="medias/images/projets/3d.png" alt="3D" />
     </div>
     <router-link to="/projets">
-      <button>
-        <a href="/pages/projets.html"><h3>Voir Projets</h3></a>
+      <button class="boutonNoirGauche">
+        <a href="/pages/projets.html">Voir Projets</a>
       </button>
     </router-link>
   </section>
@@ -24,137 +24,69 @@
 module.exports = {};
 </script>
 
-<style  lang="scss" scoped>
-//MOBILE
-//   #voirProjets {
-//   // margin-top: 5em;
-//   // display: flex;
-//   justify-content: center;
+<style lang="scss" scoped>
 
-  div {
-    // display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 5% 0;
+//MOBILE---------------------------------------------------------------------------------------
 
-    h2 {
-      position: absolute;
-      color: white;
-      font-family: CastIron;
-      font-size: 5rem;
-      margin: -2% -1%;
-      padding: 0.5% 2%;
-      background-color: #2cd9ff;
-    }
-  }
-  button {
-    display: absolute;
-    padding: 1rem 4rem;
-    background-color: #2cd9ff;
-    box-shadow: #1c2c5c;
-    // margin-top: 100%;
-    right: 0;
+#voirProjets {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5% 0;
+
+  #Web,
+  #Jeu,
+  #3D {
+    font-size: 2rem;
   }
 
-    h3 {
-      font-family: CastIron;
-      font-size: 2rem;
-      color: #1c2c5c;
-      margin: 0;
-    }
-    
-  
-  button:hover {
-    background-color: #1c2c5c;
-    color: white;
+  .boutonNoirGauche {
+    width: 5em;
+    font-family: "CastIron";
+    font-size: 2em;
   }
-// }
-
-// TABLETTE
+}
+// TABLETTE----------------------------------------------------------------------------------
 @media (min-width: 600px) {
   #voirProjets {
-  // margin-top: 5em;
-  // display: flex;
-  justify-content: center;
-
-  div{
+    justify-content: center;
     flex-direction: column;
     margin: 4em auto;
-
-      h2 {
-        position: absolute;
-        color: white;
-        font-family: CastIron;
-        font-size: 5rem;
-        margin: -2% -1%;
-        padding: 0.5% 2%;
-        background-color: #2cd9ff;
-        // right: 0;
-      }
-    } 
-    button {
-      display: absolute;
-      padding: 1rem 5rem;
-      background-color: #2cd9ff;
-      box-shadow: #1c2c5c;
-      right: 0;
-      margin: auto;
-
-      h3 {
-        font-family: CastIron;
-        font-size: 2rem;
-        color: #1c2c5c;
-        margin: 0;
-      }
-    }
-    button:hover {
-      background-color: #1c2c5c;
-      color: white;
-    }
   }
 }
 
-// DESKTOP
+// DESKTOP--------------------------------------------------------------------------------------
 @media (min-width: 1200px) {
   #voirProjets {
+<<<<<<< HEAD
   // margin-top: 5em;
   display: flex;
   justify-content: space-around;
-
+  margin: 0;
   div {
     display: flex;
     flex-direction: row;
+=======
+    flex-direction: row !important;
+    justify-content: space-between;
+>>>>>>> 7f9f5c210309041e5226d791bb01098d888537ef
 
-    h2 {
-      position: absolute;
-      color: white;
-      font-family: CastIron;
-      font-size: 5rem;
-      margin: -2% -1%;
-      padding: 0.5% 2%;
-      background-color: #2cd9ff;
-      /* z-index: 0; */
-    }
-  }
-  button {
-    display: absolute;
-    padding: 1rem 4rem;
-    background-color: #2cd9ff;
-    box-shadow: #1c2c5c;
-    margin-top: 100%;
-
-    h3 {
-      font-family: CastIron;
-      font-size: 2rem;
-      color: #1c2c5c;
-      margin: 0;
-    }
-    
-  }
-  button:hover {
-    background-color: #1c2c5c;
+    #Web,
+    #Jeu,
+    #3D {
+    position: absolute;
     color: white;
-  }
+    font-family: "CastIron";
+    font-size: 10rem;
+    margin: -2% -1%;
+    padding: 0.5% 2%;
+    background-color: #2cd9ff;
+    }
+
+    .boutonNoirGauche {
+      width: 10em;
+      font-size: 3em;
+    }
   }
 }
 </style>

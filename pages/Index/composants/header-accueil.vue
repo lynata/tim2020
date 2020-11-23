@@ -39,7 +39,7 @@
           </li>
           <li id="actif">
             <a href="index.html"
-              ><img src="/medias/images/logotimgris.png"
+              ><img class="logoTIM" src="/medias/images/logotimgris.png"
             /></a>
           </li>
           <li class="uk-animation-slide-left">
@@ -130,7 +130,7 @@ module.exports = {
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 $fond: #101832;
 $bleuFond: #1c2c5c;
 $blanc: #e3e3e3;
@@ -139,12 +139,12 @@ $boxBleu: -3px 3px 0px 1px $bleu;
 $boxNoir: -5px 5px 0px 1px #000;
 
 @font-face {
-  font-family: CastIron;
+  font-family: "CastIron";
   src: url("/medias/fonts/CastIron.otf") format("opentype");
 }
 
 @font-face {
-  font-family: Manrope;
+  font-family: "Manrope";
   src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
@@ -223,6 +223,20 @@ nav {
 //DEBUT TABLETTE
 
 @media (min-width: 600px) {
+
+  .logoTIM {
+    filter: none;
+    padding: 0.1em;
+    transition: padding 0.2s ease-out;
+  }
+
+  .logoTIM:hover {
+    filter: invert(66%) sepia(66%) saturate(1497%) hue-rotate(160deg)
+      brightness(106%) contrast(102%) drop-shadow(2px 2px 15px rgb(28, 44, 92));
+      padding: 0.2em;
+      transition: padding 0.2s ease-in;
+  }
+
   #navMobile,
   #checkNav {
     display: none;
@@ -238,7 +252,6 @@ nav {
     nav {
       background-color: $bleuFond;
       box-shadow: 0px 0px 4px 1px #000000;
-      // margin-top:3em;
       display: flex;
       justify-content: center;
       width: 100%;
@@ -266,6 +279,7 @@ nav {
       z-index: 2;
       align-items: flex-end;
       box-shadow: 0px 0px 4px 1px #000000;
+      transition: padding 0.2s ease-out;
     }
   }
 

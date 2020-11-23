@@ -58,8 +58,18 @@ module.exports = {};
 // DESKTOP--------------------------------------------------------------------------------------
 @media (min-width: 1200px) {
   #voirProjets {
+<<<<<<< HEAD
+  // margin-top: 5em;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  div {
+    display: flex;
+    flex-direction: row;
+=======
     flex-direction: row !important;
     justify-content: space-between;
+>>>>>>> 7f9f5c210309041e5226d791bb01098d888537ef
 
     #Web,
     #Jeu,

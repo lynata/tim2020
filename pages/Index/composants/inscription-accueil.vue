@@ -95,4 +95,13 @@ module.exports = {};
 
 }
 
+<<<<<<< HEAD
+// //Tablette
+// @media (min-width: 600px){
+//     a{
+        
+//     }
+// }
+=======
+>>>>>>> b6c248b8206e05738d397484c4c0565da4c80032
 </style>

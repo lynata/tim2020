@@ -22,8 +22,7 @@ module.exports = {
 </script>
 
 <style scoped>
-/* h1 {
-  background-color: white;
-  color: brown;
-} */
+body {
+  background-color: #101832;
+}
 </style>

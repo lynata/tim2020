@@ -17,106 +17,60 @@
     </div>
     <div>
       <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+        ><img src="/medias/images/Professeurs/Eddy.jpg" alt="" />Eddy Martin</a
       >
     </div>
     <div>
       <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+        ><img src="/medias/images/Professeurs/Ahmed.jpeg" alt="" />Ahmed
+        Boudjani</a
       >
     </div>
     <div>
       <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+        ><img src="/medias/images/Professeurs/Denis.jpg" alt="" />Denis
+        Pellerin</a
       >
     </div>
     <div>
       <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+        ><img src="/medias/images/Professeurs/Dominic.jpg" alt="" />Dominic
+        Girard</a
       >
     </div>
     <div>
       <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+        ><img src="/medias/images/Professeurs/Greg.jpg" alt="" />GrÉgory Bony</a
       >
     </div>
     <div>
       <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+        ><img src="/medias/images/Professeurs/Johanne.jpg" alt="" />Johanne
+        MassÉ</a
       >
     </div>
     <div>
       <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+        ><img src="/medias/images/Professeurs/Martin.jpg" alt="" />Martin
+        St-Pierre</a
       >
     </div>
     <div>
       <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+        ><img src="/medias/images/Professeurs/Mathieu.jpg" alt="" />Mathieu
+        Dionne</a
       >
     </div>
     <div>
       <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+        ><img src="/medias/images/Professeurs/Vahik.jpg" alt="" />Vahik
+        Toroussian</a
       >
     </div>
     <div>
       <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+        ><img src="/medias/images/Professeurs/Vincent.jpg" alt="" />Vincent
+        Leblanc</a
       >
     </div>
   </section>
@@ -133,6 +87,13 @@ $blanc: #e3e3e3;
 $bleu: #2cd9ff;
 $boxBleu: -3px 3px 0px 1px $bleu;
 $boxNoir: -5px 5px 0px 1px #000;
+section {
+  background-color: $fond;
+}
+
+html {
+  background-color: $fond;
+}
 
 #tousProfs {
   display: flex;
@@ -153,6 +114,14 @@ $boxNoir: -5px 5px 0px 1px #000;
     overflow: hidden;
     -webkit-box-shadow: -5px 5px 0px 2px $bleu;
     box-shadow: -5px 5px 0px 2px $bleu;
+    filter: opacity(80%);
+    -webkit-filter: opacity(80%);
+    -moz-filter: opacity(80%);
+  }
+  img:hover {
+    filter: none;
+    -webkit-filter: none;
+    -moz-filter: none;
   }
   a {
     text-decoration: none;
@@ -167,7 +136,7 @@ $boxNoir: -5px 5px 0px 1px #000;
 }
 @media (min-width: 1200px) {
   #tousProfs {
-    margin: 0 10vw;
+    padding: 0 10vw;
   }
 }
 </style>

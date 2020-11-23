@@ -142,7 +142,7 @@ nav {
   }
   nav {
     background-color: $bleuFond;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     width: 100%;
     img {

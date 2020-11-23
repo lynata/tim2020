@@ -120,7 +120,7 @@ module.exports = {};
   // margin-top: 5em;
   display: flex;
   justify-content: space-around;
-
+  margin: 0;
   div {
     display: flex;
     flex-direction: row;

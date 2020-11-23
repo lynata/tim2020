@@ -81,4 +81,10 @@ module.exports = {};
     }
   }
 }
+
+// @media (min-width: 600px){
+//     a{
+        
+//     }
+// }
 </style>

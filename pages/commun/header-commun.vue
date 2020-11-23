@@ -26,9 +26,9 @@
               </router-link>
             </li>
             <li>
-              <router-link to="/projets">
-                <a>Projets</a>
-              </router-link>
+              <!-- <router-link to="/projets"> -->
+              <a>Projets</a>
+              <!-- </router-link> -->
             </li>
             <li>
               <a href="index.html"
@@ -36,9 +36,9 @@
               /></a>
             </li>
             <li>
-              <router-link to="/vie-etudiante">
-                <a>Vie Etudiante</a>
-              </router-link>
+              <!-- <router-link to="/vie-etudiante"> -->
+              <a>Vie Etudiante</a>
+              <!-- </router-link> -->
             </li>
             <li>
               <a href="#contact">Contact</a>

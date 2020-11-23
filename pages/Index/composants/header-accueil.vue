@@ -33,9 +33,9 @@
             </router-link>
           </li>
           <li id="li3accueil" class="uk-animation-slide-right">
-            <router-link to="/projets">
-              <a>Projets</a>
-            </router-link>
+            <!-- <router-link to="/projets"> -->
+            <a>Projets</a>
+            <!-- </router-link> -->
           </li>
           <li id="actif">
             <a href="index.html"
@@ -43,9 +43,9 @@
             /></a>
           </li>
           <li class="uk-animation-slide-left">
-            <router-link to="/vie-etudiante">
-              <a>Vie Etudiante</a>
-            </router-link>
+            <!-- <router-link to="/vie-etudiante"> -->
+            <a>Vie Etudiante</a>
+            <!-- </router-link> -->
           </li>
           <li class="uk-animation-slide-left">
             <a href="#contact">Contact</a>
@@ -223,7 +223,6 @@ nav {
 //DEBUT TABLETTE
 
 @media (min-width: 600px) {
-
   .logoTIM {
     filter: none;
     padding: 0.1em;
@@ -233,8 +232,8 @@ nav {
   .logoTIM:hover {
     filter: invert(66%) sepia(66%) saturate(1497%) hue-rotate(160deg)
       brightness(106%) contrast(102%) drop-shadow(2px 2px 15px rgb(28, 44, 92));
-      padding: 0.2em;
-      transition: padding 0.2s ease-in;
+    padding: 0.2em;
+    transition: padding 0.2s ease-in;
   }
 
   #navMobile,

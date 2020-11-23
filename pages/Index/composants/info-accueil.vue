@@ -72,11 +72,14 @@ module.exports = {};
   }
 }
 @media (min-width: 1200px) {
+  #infoBloc {
+    min-height: 250px;
+  }
   #infoBoutons {
     display: flex;
     flex-flow: row;
     position: absolute;
-    right: 1em;
+    right: -3em;
     top: 30vh;
     justify-content: space-between;
   }

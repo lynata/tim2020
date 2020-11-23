@@ -2,6 +2,9 @@
   <section id="footer">
     <footer>
       <div id="contact">
+        <a class="btnScroll uk-button uk-button-primary" href="#top" uk-scroll
+          >Scroll Up</a
+        >
         <h1>Nous joindre</h1>
         <div class="liste-contact">
           <div class="information">
@@ -125,6 +128,10 @@ section#footer {
       background-color: #0b132b;
       padding-top: 1em;
       padding-bottom: 1em;
+    }
+    .btnScroll {
+      position: absolute;
+      margin: 0;
     }
   }
   h1 {

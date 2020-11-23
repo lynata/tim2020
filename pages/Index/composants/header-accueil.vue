@@ -358,7 +358,7 @@ nav {
         }
         .btnActuDessous {
           padding: 2px 30px 2px 2px;
-          width: 10%;
+          width: 170px;
           display: flex;
           justify-content: flex-start;
           align-items: center;

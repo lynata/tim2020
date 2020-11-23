@@ -1,10 +1,10 @@
 <template>
   <section id="header">
     <div id="barreDuHaut">
-    
       <a href="https://www.cmaisonneuve.qc.ca/" target="_blank"
-        ><img class="imgMaisonneuve"" src="/medias/images/logo_college_maisonneuve.png"
-
+        ><img
+          class="imgMaisonneuve"
+          src="/medias/images/logo_college_maisonneuve.png"
       /></a>
       <router-link
         class="btnActuDessous hover:bg-blue-800 text-blue-100 font-bold p-0.5 pr-8 rounded-full"
@@ -15,7 +15,7 @@
           class="bg-black hover:bg-blue-900 text-blue-100 px-2 font-bold rounded-full"
           ><div class="icon"></div>
           Actualités
-          </span>
+        </span>
         <span class="titreActu">Jonhatan reviens à la vie</span>
       </router-link>
     </div>
@@ -331,39 +331,39 @@ nav {
       * {
         height: 80%;
       }
-        .btnActuDessous {
-          padding: 2px 30px 2px 2px;
-          width: 170px;
+      .btnActuDessous {
+        padding: 2px 30px 2px 2px;
+        width: 170px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgb(227, 227, 227);
+        opacity: 0.7;
+
+        transition: width 0.3s;
+        #btnActu {
           display: flex;
-          justify-content: flex-start;
+          justify-content: space-around;
           align-items: center;
-          background-color: rgb(227, 227, 227);
-          opacity: 0.7;
+          height: 100%;
+          width: 130px;
 
-          transition: width 0.3s;
-          #btnActu {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100%;
-            width: 130px;
-
-            .icon {
-              border-radius: 50%;
-              width: 10px;
-              height: 10px;
-              border: 2px solid red;
-              text-align: center;
-              position: relative;
-              animation: anim-glow 2s ease infinite;
-              background: red;
-            }
-          }
-          .titreActu {
-            display: none;
-            color: black;
+          .icon {
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            border: 2px solid red;
+            text-align: center;
+            position: relative;
+            animation: anim-glow 2s ease infinite;
+            background: red;
           }
         }
+        .titreActu {
+          display: none;
+          color: black;
+        }
+      }
       .btnActuDessous:hover {
         width: 30%;
       }

@@ -7,7 +7,7 @@
           src="medias/images/EleveClasse.PNG"
           alt="Photo d'un élève en classe"
         />
-        <button class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre"><a>Voir Cours</a></button>
+        <button class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre Cours"><a>Voir Cours</a></button>
       </div>
     </router-link>
     <router-link to="/profs">
@@ -17,7 +17,7 @@
           src="medias/images/Rencontre20ans.PNG"
           alt="Photo d'un professeur avec des anciens étudiants"
         />
-        <button class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre"><a>Voir Profs</a></button>
+        <button class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre Profs"><a>Voir Profs</a></button>
       </div>
     </router-link>
     <router-link to="/vie-etudiante">
@@ -27,7 +27,7 @@
           src="medias/images/Manette.PNG"
           alt="Manette en main"
         />
-        <button class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre"><a>Voir La Vie</a></button>
+        <button class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre Vie"><a>Voir La Vie</a></button>
       </div>
     </router-link>
   </section>
@@ -55,7 +55,7 @@ module.exports = {};
     margin: 0;
   }
 
-  a {
+  #trio a {
     color: #000000;
     text-decoration: none;
   }
@@ -63,22 +63,19 @@ module.exports = {};
 
 /*DEBUT TABLETTE-----------------------------------------------------*/
 @media (min-width: 600px) {
-  #imgCours,
-  #imgProfs,
-  #imgVie {
-  }
+  
   .uneImage {
     width: 700px;
     height: 450px;
-    object-fit: cover;
-    margin: 0;
   }
 }
 
 /*DEBUT DESKTOP-----------------------------------------------------*/
 @media (min-width: 1200px) {
+
   #trio {
     margin-top: 3em;
+    margin-bottom: 3em;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -98,7 +95,6 @@ module.exports = {};
     float: center;
     width: 450px !important;
     height: 700px !important;
-    object-fit: cover;
     margin: 5em;
   }
 
@@ -108,12 +104,29 @@ module.exports = {};
     padding: 0.6em;
     width: 10em;
     text-align: right;
-    font-family: CastIron;
+    font-family: "CastIron";
     letter-spacing: 0.2em;
     font-size: 1.5em;
     bottom: 0;
+    transition: width 0.2s ease-out, padding 0.2s ease-out, font-size 0.2s ease-out;
   }
 
+  .boutonCarre:hover{
+    width: 11em;
+    padding: 0.7em;
+    font-size: 1.6em;
+    transition: width 0.2s ease-in, padding 0.2s ease-in, font-size 0.2s ease-in;
+  
+  }
+  .Cours{
+    left:18%;
+  }
+  .Profs{
+    left:51%;
+  }
+  .Vie{
+    left:84%;
+  }
   #trio a {
     color: #000000;
     text-decoration: none;

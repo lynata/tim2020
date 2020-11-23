@@ -32,7 +32,7 @@
             </li>
             <li>
               <a href="index.html"
-                ><img src="/medias/images/logotimgris.png"
+                ><img class="logoTIM" src="/medias/images/logotimgris.png"
               /></a>
             </li>
             <li>
@@ -63,7 +63,7 @@ module.exports = {
 };
 </script>
 
-<style  lang='scss'>
+<style lang="scss" scoped>
 $fond: #101832;
 $bleuFond: #1c2c5c;
 $blanc: #e3e3e3;
@@ -74,17 +74,27 @@ html {
   background-color: $fond;
 }
 @font-face {
-  font-family: CastIron;
+  font-family: "CastIron";
   src: url("/medias/fonts/CastIron.otf") format("opentype");
 }
 
 @font-face {
-  font-family: Manrope;
+  font-family: "Manrope";
   src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 nav {
   display: none;
 }
+
+.logoTIM {
+  filter: none;
+}
+
+.logoTIM:hover {
+  filter: invert(66%) sepia(66%) saturate(1497%) hue-rotate(160deg)
+    brightness(106%) contrast(102%) drop-shadow(2px 2px 15px rgb(28, 44, 92));
+}
+
 #navMobile {
   background: linear-gradient(
     to bottom,

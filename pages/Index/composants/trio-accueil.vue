@@ -7,7 +7,7 @@
           src="medias/images/EleveClasse.PNG"
           alt="Photo d'un élève en classe"
         />
-        <button class="boutonNoirGauche boutonCarre"><a>Voir Cours</a></button>
+        <button class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre"><a>Voir Cours</a></button>
       </div>
     </router-link>
     <router-link to="/profs">
@@ -17,7 +17,7 @@
           src="medias/images/Rencontre20ans.PNG"
           alt="Photo d'un professeur avec des anciens étudiants"
         />
-        <button class="boutonNoirGauche boutonCarre"><a>Voir Profs</a></button>
+        <button class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre"><a>Voir Profs</a></button>
       </div>
     </router-link>
     <router-link to="/vie-etudiante">
@@ -27,7 +27,7 @@
           src="medias/images/Manette.PNG"
           alt="Manette en main"
         />
-        <button class="boutonNoirGauche boutonCarre"><a>Voir La Vie</a></button>
+        <button class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre"><a>Voir La Vie</a></button>
       </div>
     </router-link>
   </section>
@@ -54,10 +54,6 @@ module.exports = {};
     object-fit: cover;
     margin: 0;
   }
-
-  // .boutonArrondi{
-
-  // }
 
   a {
     color: #000000;

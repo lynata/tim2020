@@ -11,10 +11,8 @@
     <!-- Les reste a afficher dynamiquement -->
     <div>
       <a href="#"
-        ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+        ><img src="/medias/images/Professeurs/Manon.jpg" alt="Manon" />Manon
+        Bertrand</a
       >
     </div>
     <div>
@@ -140,23 +138,36 @@ $boxNoir: -5px 5px 0px 1px #000;
   display: flex;
   flex-direction: row;
   align-content: space-around;
-  width: 10vw;
-  margin: 0 0;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  div {
+    margin: 0.5em 1em;
+    text-align: center;
+  }
 
   img {
-    margin: 1em 1em 0.3em 1em;
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    overflow: hidden;
     -webkit-box-shadow: -5px 5px 0px 2px $bleu;
     box-shadow: -5px 5px 0px 2px $bleu;
   }
   a {
     text-decoration: none;
     color: #fff;
-    text-align: center;
     font-family: "CastIron";
     font-size: 2em;
+    text-align: center;
   }
   a:hover {
     color: $bleu;
+  }
+}
+@media (min-width: 1200px) {
+  #tousProfs {
+    margin: 0 10vw;
   }
 }
 </style>

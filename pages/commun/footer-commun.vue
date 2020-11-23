@@ -1,4 +1,5 @@
 <template>
+
    <section id="footer">
         <footer >
             <div id="contact">
@@ -50,11 +51,18 @@
     
                 <!-- Footer mini nav -->
                 <ul id="footerNav">
-                    <li><a href="/pages/cours.html">Cours</a></li>
-                    <li><a href="/pages/profs.html">Profs</a></li>
-                    <li><a href="/pages/projets.html">Projets</a></li>
-                    <li><a href="/pages/vieetudiante.html">Vie Etudiante</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><router-link to="/cours">
+                      <a href="/pages/cours.html">Cours</a>
+                    </router-link></li>
+                    <li><router-link to="/profs">
+                      <a href="/pages/profs.html">Profs</a>
+                    </router-link></li>
+                    <li><router-link to="/projets">
+                      <a href="/pages/projets.html">Projets</a>
+                    </router-link></li>
+                    <li><router-link to="/vie-etudiante">
+                      <a href="/pages/vieetudiante.html">Vie Etudiante</a>
+                    </router-link></li>
                 </ul>
                 <p id="droitAuteur">undefinedvariable2020</p>
             </div>
@@ -83,6 +91,10 @@ section#footer {
       background-color: #0b132b;
       padding-top: 1em;
       padding-bottom: 1em;
+    }
+    .btnScroll {
+      position: absolute;
+      margin: 0;
     }
   }
   h1 {

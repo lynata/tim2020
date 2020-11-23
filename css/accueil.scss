@@ -6,12 +6,12 @@ $boxBleu: -3px 3px 0px 1px $bleu;
 $boxNoir: -5px 5px 0px 1px #000;
 
 @font-face {
-  font-family: CastIron;
+  font-family: "CastIron";
   src: url("/medias/fonts/CastIron.otf") format("opentype");
 }
 
 @font-face {
-  font-family: Manrope;
+  font-family: "Manrope";
   src: url("/medias/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 
@@ -24,6 +24,9 @@ a:hover {
 }
 
 //DEBUT CSS - - - MOBILE FIRST      --------------------------------------------------------------------------------------------------------------------------------
+body{
+  background-color: $fond;
+}
 
 nav {
   background-color: $fond;
@@ -58,32 +61,8 @@ nav {
   transform: rotate(90deg);
 }
 
-// #checkNav:checked ~ #global {
-//   transform: translateY(100%);
-// }
-
-// #checkNav ~ #global {
-//   transform: translateY(0%);
-// }
-
 #checkNav {
   display: none;
-}
-
-#voirProjets {
-  background-color: $fond;
-}
-
-#inscription {
-  background-color: $bleuFond;
-}
-
-#info {
-  background-color: $fond;
-}
-
-#trio {
-  background-color: $fond;
 }
 
 #infoBloc {
@@ -91,11 +70,11 @@ nav {
   padding: 1em 1em 3em 1em;
   margin: 0 auto;
   background-color: $blanc;
-  font-family: Manrope;
+  font-family: "Manrope";
   box-shadow: $boxNoir;
 
   h1 {
-    font-family: CastIron;
+    font-family: "CastIron";
     font-size: 2em;
   }
 }
@@ -104,30 +83,12 @@ nav {
   display: none;
 }
 
-// #voirProjets {
-//   background-color: $fond;
-// }
-
-// #inscription {
-//   background-color: $bleuFond;
-// }
-
-#footer {
-  background-color: $fond;
-}
-// #footer {
-//   background-color: $fond;
-// }
-
 // FIN MOBILE FIRST
 
 //DEBUT TABLETTE    --------------------------------------------------------------------------------------------------------------------------------------
 
 @media (min-width: 600px) {
 
-  body {
-    background: red;
-  }
   #navMobile,
   #checkNav {
     display: none;
@@ -157,7 +118,6 @@ nav {
           font-family: CastIron;
           font-size: 2em;
         }
-
       }
     }
 
@@ -167,9 +127,6 @@ nav {
       z-index: 2;
       align-items: flex-end;
     }
-  }
-  #info {
-    background-color: $fond;
   }
   
   #infoBloc {
@@ -208,12 +165,8 @@ nav {
 
 //DEBUT GRANDS ECRANS
 @media (min-width: 1200px) {
-  body {
-    background: pink;
-  }
 
   #header {
-    background-color: $fond;
     color: #fff;
     #barreDuHaut {
         height: 55px;
@@ -229,7 +182,7 @@ nav {
 
         li {
           padding: 0.5em;
-          font-family: CastIron;
+          font-family: "CastIron";
           font-size: 2em;
         }
         #actif {
@@ -244,24 +197,19 @@ nav {
       }
     }
 
-        #caroussel {
-            height: 700px;
-            #caroussel-images {
-                height: 100%;
-                ul {
-                    height: 100%;
-                    li {
-                        height: 300px;
+#caroussel {
+    height: 700px;
+    #caroussel-images {
+        height: 100%;
+        ul {
+            height: 100%;
+            li {
+                height: 300px;
 
-                    }
-                }
             }
-
-    body {
-      background: pink;
+        }
     }
-
-  }
+}
 
   #voirProjets {
     display: flex;

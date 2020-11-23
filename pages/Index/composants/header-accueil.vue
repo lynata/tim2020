@@ -2,10 +2,13 @@
   <section id="header">
     <div id="barreDuHaut">
       <a href="https://www.cmaisonneuve.qc.ca/"
-        ><img class="test" src="/medias/images/logo_college_maisonneuve.png"
+        ><img
+          class="imgMaisonneuve"
+          src="/medias/images/logo_college_maisonneuve.png"
       /></a>
-      <button
+      <router-link
         class="btnActuDessous hover:bg-blue-800 text-blue-100 font-bold p-0.5 pr-8 rounded-full"
+        to="vie-etudiante"
       >
         <span
           id="btnActu"
@@ -14,7 +17,7 @@
           Actualités</span
         >
         <span class="titreActu">Jonhatan reviens à la vie</span>
-      </button>
+      </router-link>
     </div>
     <nav>
       <div>
@@ -348,6 +351,11 @@ nav {
         * {
           height: 80%;
         }
+        a {
+          .imgMaisonneuve {
+            height: 100%;
+          }
+        }
         .btnActuDessous {
           padding: 2px 30px 2px 2px;
           width: 10%;
@@ -461,7 +469,7 @@ nav {
 
 @keyframes anim-titreActu {
   0% {
-    transform: translate(0px);
+    transform: translate(-30px);
     opacity: 0;
   }
   100% {

@@ -30,20 +30,18 @@
           </div>
 
           <div class="information">
-            <h3>Professeur Pivot</h3>
+            <h3>Coordonnateur TIM</h3>
             <p>Premier Étage Secteur B</p>
-            <p>Bureau 1163</p>
-            <p>Tél.:514 254-7131 poste 4714</p>
-            <p>vtoroussian@cmaisonneuve.qc.ca</p>
+            <p>tel:(514) 254-7131 poste 40874</p>
+            <p>mdionne@cmaisonneuve.qc.ca</p>
           </div>
-        </div>
-
-        <!-- Google map -->
-        <div class="map-responsive">
+                  <!-- Google map -->
+        <div class="map-responsive information">
+          <h3>Google Map</h3>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.993657200302!2d-73.55574928416262!3d45.5504531357045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bb5caf62731%3A0xe4ee304f2ed7713c!2sCEGEP%20Maisonneuve!5e0!3m2!1sen!2sca!4v1604280023288!5m2!1sen!2sca"
             width="100%"
-            height="450"
+            height="250"
             frameborder="0"
             style="border: 0"
             allowfullscreen=""
@@ -51,6 +49,7 @@
             tabindex="0"
           >
           </iframe>
+        </div>
         </div>
       </div>
       <div id="footerEnd">
@@ -145,10 +144,6 @@ section#footer {
       margin: 0;
     }
   }
-  h1 {
-    font-family: CastIron;
-    font-size: 4em;
-  }
 
   h1,
   h3,
@@ -156,6 +151,15 @@ section#footer {
     color: white;
     display: flex;
     justify-content: center;
+  }
+
+  h1 {
+    font-family: CastIron;
+    font-size: 4em;
+  }
+
+  h3{
+    font-size: 2em;
   }
 
   #footerEnd {
@@ -185,7 +189,7 @@ section#footer {
       background-color: #3a506b;
       border-radius: 50%;
       margin: 0 0.5em;
-      font-size: 1.25em;
+      font-size: 1.75em;
     }
   }
 
@@ -215,7 +219,6 @@ section#footer {
       }
       .liste-contact {
         display: flex;
-        align-content: space-between;
         justify-content: space-evenly;
         padding-bottom: 4em;
       }
@@ -237,7 +240,7 @@ section#footer {
       display: flex;
       justify-content: space-evenly;
       border-top: white solid 2px;
-      border-bottom: white solid 2px;
+      font-size: 1.5em;
     }
   }
 }

@@ -236,11 +236,12 @@ section#footer {
         padding: 0;
       }
     }
+
     #footerNav {
       display: flex;
       justify-content: space-evenly;
       border-top: white solid 2px;
-      font-size: 1.5em;
+      font-size: 1.25em;
     }
   }
 }

@@ -35,9 +35,9 @@
             </router-link>
           </li>
           <li id="li3accueil" class="uk-animation-slide-right">
-            <!-- <router-link to="/projets"> -->
-            <a>Projets</a>
-            <!-- </router-link> -->
+            <router-link to="/projets">
+              <a>Projets</a>
+            </router-link>
           </li>
           <li id="actif">
             <a href="index.html"
@@ -45,9 +45,9 @@
             /></a>
           </li>
           <li class="uk-animation-slide-left">
-            <!-- <router-link to="/vie-etudiante"> -->
-            <a>Vie Etudiante</a>
-            <!-- </router-link> -->
+            <router-link to="/vie-etudiante">
+              <a>Vie Etudiante</a>
+            </router-link>
           </li>
           <li class="uk-animation-slide-left">
             <a href="#contact">Contact</a>

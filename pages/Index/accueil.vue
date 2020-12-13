@@ -9,8 +9,8 @@
   </div>
 </template>
 
-<script>
-module.exports = {
+<script lang="text/babel">
+export default {
   // name: 'accueil',
   components: {
     "menu-mobile-commun": httpVueLoader("/pages/commun/menu-mobile-commun.vue"),

@@ -1,84 +1,35 @@
 <template>
   <section id="tousProfs">
-    <div>
+    <div v-bind:key="index" v-for="(unProf, index) in lesProfs">
       <a href="#"
         ><img
-          src="/medias/images/Professeurs/Camille.jpg"
-          alt="Camille Semaan"
-        />Camille Semaan</a
+          :src="unProf.content.photo.filename"
+          :alt="unProf.content.nom"
+        />{{ unProf.content.nom }}</a
       >
     </div>
-    <ul id="listeProfs"></ul>
-    <!-- Les reste a afficher dynamiquement -->
-    <!-- <div>
-      <a href="#"
-        ><img src="/medias/images/Professeurs/Manon.jpg" alt="Manon" />Manon
-        Bertrand</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img src="/medias/images/Professeurs/Eddy.jpg" alt="" />Eddy Martin</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img src="/medias/images/Professeurs/Ahmed.jpeg" alt="" />Ahmed
-        Boudjani</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img src="/medias/images/Professeurs/Denis.jpg" alt="" />Denis
-        Pellerin</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img src="/medias/images/Professeurs/Dominic.jpg" alt="" />Dominic
-        Girard</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img src="/medias/images/Professeurs/Greg.jpg" alt="" />GrÉgory Bony</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img src="/medias/images/Professeurs/Johanne.jpg" alt="" />Johanne
-        MassÉ</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img src="/medias/images/Professeurs/Martin.jpg" alt="" />Martin
-        St-Pierre</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img src="/medias/images/Professeurs/Mathieu.jpg" alt="" />Mathieu
-        Dionne</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img src="/medias/images/Professeurs/Vahik.jpg" alt="" />Vahik
-        Toroussian</a
-      >
-    </div>
-    <div>
-      <a href="#"
-        ><img src="/medias/images/Professeurs/Vincent.jpg" alt="" />Vincent
-        Leblanc</a
-      >
-    </div> -->
+    <div><ul id="listeProfs"></ul></div>
   </section>
 </template>
 
 
-<script>
+<script lang="text/babel">
+export default{
+
+  data() {
+    return {
+      Storyblok: null,
+      lesProfs: []
+    }
+  },
+   created() {
+        let Storyblok = new StoryblokClient({
+                accessToken: 'N98tQRqdb63OJePlzQiCqgtt'
+            });
+      Storyblok.getAll("cdn/stories",{"starts_with": "professeurs/"})
+              .then(yeet => this.lesProfs = yeet);
+  }
+}
 </script>
 
 <style lang='scss' scoped>

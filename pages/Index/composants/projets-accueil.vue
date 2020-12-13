@@ -20,8 +20,8 @@
   </section>
 </template>
 
-<script>
-module.exports = {};
+<script lang="text/babel">
+export default {};
 </script>
 
 <style lang="scss" scoped>

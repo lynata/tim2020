@@ -7,7 +7,11 @@
           src="medias/images/EleveClasse.PNG"
           alt="Photo d'un élève en classe"
         />
-        <button class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre Cours"><a>Voir Cours</a></button>
+        <button
+          class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre Cours"
+        >
+          <a>Voir Cours</a>
+        </button>
       </div>
     </router-link>
     <router-link to="/profs">
@@ -17,7 +21,11 @@
           src="medias/images/Rencontre20ans.PNG"
           alt="Photo d'un professeur avec des anciens étudiants"
         />
-        <button class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre Profs"><a>Voir Profs</a></button>
+        <button
+          class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre Profs"
+        >
+          <a>Voir Profs</a>
+        </button>
       </div>
     </router-link>
     <router-link to="/vie-etudiante">
@@ -27,14 +35,18 @@
           src="medias/images/Manette.PNG"
           alt="Manette en main"
         />
-        <button class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre Vie"><a>Voir La Vie</a></button>
+        <button
+          class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre Vie"
+        >
+          <a>Voir La Vie</a>
+        </button>
       </div>
     </router-link>
   </section>
 </template>
 
-<script>
-module.exports = {};
+<script lang="text/babel">
+export default {};
 </script>
 
 <style lang='scss' scoped>
@@ -63,7 +75,6 @@ module.exports = {};
 
 /*DEBUT TABLETTE-----------------------------------------------------*/
 @media (min-width: 600px) {
-  
   .uneImage {
     width: 700px;
     height: 450px;
@@ -72,7 +83,6 @@ module.exports = {};
 
 /*DEBUT DESKTOP-----------------------------------------------------*/
 @media (min-width: 1200px) {
-
   #trio {
     margin-top: 3em;
     margin-bottom: 3em;
@@ -108,24 +118,24 @@ module.exports = {};
     letter-spacing: 0.2em;
     font-size: 1.5em;
     bottom: 0;
-    transition: width 0.2s ease-out, padding 0.2s ease-out, font-size 0.2s ease-out;
+    transition: width 0.2s ease-out, padding 0.2s ease-out,
+      font-size 0.2s ease-out;
   }
 
-  .boutonCarre:hover{
+  .boutonCarre:hover {
     width: 11em;
     padding: 0.7em;
     font-size: 1.6em;
     transition: width 0.2s ease-in, padding 0.2s ease-in, font-size 0.2s ease-in;
-  
   }
-  .Cours{
-    left:18%;
+  .Cours {
+    left: 18%;
   }
-  .Profs{
-    left:51%;
+  .Profs {
+    left: 51%;
   }
-  .Vie{
-    left:84%;
+  .Vie {
+    left: 84%;
   }
   #trio a {
     color: #000000;

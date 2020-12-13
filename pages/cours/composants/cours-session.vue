@@ -36,8 +36,8 @@
     <cours-4 v-if="cours4 == true"></cours-4>
   </section>
 </template>
-<script>
-module.exports = {
+<script lang="text/babel">
+export default {
   components: {
     cours1: httpVueLoader("../composants/cours-1.vue"),
     cours2: httpVueLoader("../composants/cours-2.vue"),

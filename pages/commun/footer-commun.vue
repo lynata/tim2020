@@ -39,7 +39,8 @@
 
         <!-- Google map -->
         <div class="map-responsive">
-          <iframe class="google_map"
+          <iframe
+            class="google_map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.993657200302!2d-73.55574928416262!3d45.5504531357045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bb5caf62731%3A0xe4ee304f2ed7713c!2sCEGEP%20Maisonneuve!5e0!3m2!1sen!2sca!4v1604280023288!5m2!1sen!2sca"
             width="100%"
             height="250"
@@ -112,8 +113,8 @@
   </section>
 </template>
 
-<script>
-module.exports = {};
+<script lang="text/babel">
+export default {};
 </script>
 
 <style lang='scss'>
@@ -153,7 +154,7 @@ section#footer {
     font-size: 4em;
   }
 
-  h3{
+  h3 {
     font-size: 2em;
   }
 
@@ -232,15 +233,14 @@ section#footer {
       }
     }
 
-    .google_map{
+    .google_map {
       width: 70%;
       display: flex;
       justify-content: center;
       margin: 0 auto;
       background-color: white;
-      
     }
-    .map-responsive{
+    .map-responsive {
       padding-bottom: 2em;
     }
 

@@ -7,8 +7,8 @@
 </template>
 
 
-<script>
-module.exports = {
+<script lang="text/babel">
+export default {
   // name: 'profs',
   components: {
     "header-commun": httpVueLoader("/pages/commun/header-commun.vue"),

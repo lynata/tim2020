@@ -50,8 +50,8 @@
   </div>
 </template>
 
-<script>
-module.exports = {
+<script lang="text/babel">
+export default {
   components: {
     "menu-mobile": httpVueLoader("/pages/commun/menu-mobile-commun.vue"),
   },

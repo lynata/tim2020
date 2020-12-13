@@ -8,8 +8,9 @@
         />Camille Semaan</a
       >
     </div>
+    <ul id="listeProfs"></ul>
     <!-- Les reste a afficher dynamiquement -->
-    <div>
+    <!-- <div>
       <a href="#"
         ><img src="/medias/images/Professeurs/Manon.jpg" alt="Manon" />Manon
         Bertrand</a
@@ -72,7 +73,7 @@
         ><img src="/medias/images/Professeurs/Vincent.jpg" alt="" />Vincent
         Leblanc</a
       >
-    </div>
+    </div> -->
   </section>
 </template>
 

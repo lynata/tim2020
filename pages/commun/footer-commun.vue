@@ -35,12 +35,13 @@
             <p>tel:(514) 254-7131 poste 40874</p>
             <p>mdionne@cmaisonneuve.qc.ca</p>
           </div>
-                  <!-- Google map -->
+        </div>
+      </div>
+        <!-- Google map -->
         <div class="map-responsive information">
-          <h3>Google Map</h3>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.993657200302!2d-73.55574928416262!3d45.5504531357045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bb5caf62731%3A0xe4ee304f2ed7713c!2sCEGEP%20Maisonneuve!5e0!3m2!1sen!2sca!4v1604280023288!5m2!1sen!2sca"
-            width="160%"
+            width="100%"
             height="250"
             frameborder="0"
             style="border: 0"
@@ -50,8 +51,6 @@
           >
           </iframe>
         </div>
-        </div>
-      </div>
       <div id="footerEnd">
         <img src="medias/images/logo/_LogoTIM_carré.png" alt="filter applied" />
         <!-- liens sociaux -->

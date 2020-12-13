@@ -12,12 +12,11 @@
       <h2 id="Titre3D">3D</h2>
       <img src="medias/images/projets/3d.png" alt="3D" />
       <router-link to="/projets">
-      <button class="boutonNoirGauche">
-        <a href="/pages/projets.html">Voir Projets</a>
-      </button>
-    </router-link>
+        <button class="boutonNoirGauche">
+          <a href="/pages/projets.html">Voir Projets</a>
+        </button>
+      </router-link>
     </div>
-    
   </section>
 </template>
 
@@ -32,7 +31,7 @@ module.exports = {};
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 5% 0;
+  margin: 20% 0;
 
   #TitreWeb,
   #TitreJeu,
@@ -76,7 +75,6 @@ module.exports = {};
     #Web,
     #Jeu,
     #3D {
-
       .boutonNoirGauche {
         align-self: center;
         width: 10em;

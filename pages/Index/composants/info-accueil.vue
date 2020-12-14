@@ -71,7 +71,7 @@ export default {};
   }
   #infoBloc {
     position: absolute;
-    top: -25vh;
+    top: -15vh;
     box-shadow: 0px 0px 4px 1px #000000;
   }
 }

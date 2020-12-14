@@ -108,7 +108,7 @@ export default {};
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 20% 0;
+  margin-top: 35vh;
 
   #TitreWeb,
   #TitreJeu,

@@ -96,7 +96,43 @@ export default {};
     align-items: center;
     position: relative;
   }
-  #imgCours,
+  a:hover #ImgCours {
+    filter: brightness(50%);
+    transition: filter 0.2s ease-out;
+    button {
+      width: 11em;
+      padding: 0.7em;
+      font-size: 1.6em;
+      margin-bottom: 2%;
+      transition: width 0.2s ease-in, padding 0.2s ease-in,
+        font-size 0.2s ease-in, margin-bottom, 0.2s ease-in;
+    }
+  }
+  a:hover #ImgProfs {
+    filter: brightness(50%);
+    transition: filter 0.2s ease-out;
+    button {
+      width: 11em;
+      padding: 0.7em;
+      font-size: 1.6em;
+      margin-bottom: 2%;
+      transition: width 0.2s ease-in, padding 0.2s ease-in,
+        font-size 0.2s ease-in, margin-bottom, 0.2s ease-in;
+    }
+  }
+  a:hover #ImgVie {
+    filter: brightness(50%);
+    transition: filter 0.2s ease-out;
+    button {
+      width: 9em;
+      padding: 0.7em 0.2em 0.7em 0.7em;
+      font-size: 1.6em;
+      margin-bottom: 2%;
+      transition: width 0.2s ease-in, padding 0.2s ease-in,
+        font-size 0.2s ease-in, margin-bottom, 0.2s ease-in;
+    }
+  }
+
   #imgProfs,
   #imgVie {
     display: flex;
@@ -125,12 +161,6 @@ export default {};
       font-size 0.2s ease-out;
   }
 
-  .boutonCarre:hover {
-    width: 11em;
-    padding: 0.7em;
-    font-size: 1.6em;
-    transition: width 0.2s ease-in, padding 0.2s ease-in, font-size 0.2s ease-in;
-  }
   .Cours {
     left: 18%;
   }
@@ -138,12 +168,12 @@ export default {};
     left: 51%;
   }
   .Vie {
-    left: 84%;
+    left: 83%;
   }
   #trio a {
     color: #000000;
     text-decoration: none;
-    cursor: default;
+    cursor: pointer;
   }
 }
 </style>

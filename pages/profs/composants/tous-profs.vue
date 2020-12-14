@@ -19,7 +19,7 @@ export default{
   data() {
     return {
       Storyblok: null,
-      lesProfs: []
+      lesProfs: [],
     }
   },
    created() {

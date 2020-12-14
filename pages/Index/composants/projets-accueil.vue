@@ -27,6 +27,81 @@ export default {};
 <style lang="scss" scoped>
 //MOBILE---------------------------------------------------------------------------------------
 
+
+//not done
+// #voirProjets{
+//   width: 100%;
+//   margin: 0;
+//   padding: 0;
+//   #Web{
+//     display: none;
+//   }
+//   #TroisD{
+//     display: none; 
+//     #Titre3D{
+//       display: block;
+//     }
+//   }
+//   #Jeu{
+//     margin-top: 15%;
+//     margin-bottom: 15%;
+//     // display: flex;
+//       #imgJeu{
+//       width: 300px;
+//       margin-left: auto;
+//       margin-right: auto;
+//     }
+//     #TitreJeu{
+//       display: none;
+//     }
+//   }
+//   #voirProj{
+//     position: absolute;
+//     border: solid red 1px;
+//     left: 40%;
+//     bottom: 0.5%;
+//   }
+// }
+
+// // TABLETTE----------------------------------------------------------------------------------
+// @media (min-width: 600px) {
+//   #voirProjets {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     #Web{
+//       margin: 0;
+//       display: block !important;
+//       border: 1px solid red;
+//       #imgWeb{
+//         margin: 5% auto 0;
+//         width: 600px;
+//       }
+//     }
+//     #TroisD{
+//       margin: 0;
+//       display: block !important; 
+//       border: 1px solid red;
+//       #img3d{
+//         margin: 0 auto;
+//         width: 600px;
+//       }
+//     }
+//     #Jeu{
+//       margin: auto;
+//       padding: 0;
+//       border: 1px solid red;
+//       #imgJeu{
+//         width: 600px !important;
+//         margin: 0 auto;
+//       }
+//       #TitreJeu{
+//         display: block !important;
+//       }
+//     }
+//   }
+// }
+
 #voirProjets {
   display: flex;
   justify-content: center;

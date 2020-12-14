@@ -40,6 +40,9 @@ $boxBleu: -3px 3px 0px 1px $bleu;
 $boxNoir: -5px 5px 0px 1px #000;
 
 div {
+  background-image: url("/medias/images/halfTone/HalftoneClean.png");
+  background-size: 17em;
+  background-repeat: repeat-x;
   position: fixed;
   padding-top: 20vh;
   top: 0%;

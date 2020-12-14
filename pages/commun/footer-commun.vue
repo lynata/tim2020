@@ -107,7 +107,7 @@
             </router-link>
           </li>
         </ul>
-        <p id="droitAuteur">undefined variable 2020</p>
+        <p id="droitAuteur"><a href="../../medias/images/hellmo.gif" target="_blank">undefined variable 2020</a></p>
       </div>
     </footer>
   </section>
@@ -134,7 +134,7 @@ section#footer {
     background-color: #090c16;
     display: flex;
     flex-direction: column;
-    background-image: url("/medias/images/halfTone/Halftone-Effect-Background_2.png");
+    background-image: url("/medias/images/halfTone/HalftoneClean.png");
     background-size: 17em;
     background-repeat: repeat-x;
 
@@ -167,7 +167,7 @@ section#footer {
   }
 
   #footerEnd {
-    background-image: url("/medias/images/halfTone/Halftone-Effect-Background_2.png");
+    background-image: url("/medias/images/halfTone/HalftoneClean.png");
     background-size: 17em;
     background-repeat: repeat-x;
   }
@@ -204,6 +204,10 @@ section#footer {
     margin-bottom: 0;
     padding-bottom: 0.3em;
     opacity: 0.3;
+    a{
+      text-decoration:none;
+      cursor: default;
+    }
   }
 }
 

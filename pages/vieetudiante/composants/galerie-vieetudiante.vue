@@ -27,18 +27,29 @@ $bleu: #2cd9ff;
 
 /* MOBILE FIRST--------------------------------------------------------------------------------------------- */
 #galerie-ve{
-  background-color: $fond;
+  background-image: linear-gradient($fond,$bleu);
   width: 100%;
   height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  align-content:space-around;
 }
 
 #titre-galerie, #annee-galerie{
   font-family: "CastIron";
   color: $bleu;
+  font-size:3.5em;
 }
 
 
 #imgs-galerie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    align-content:space-around;
     img{
         width: 35em;
         height: 25em;

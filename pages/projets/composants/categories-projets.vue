@@ -40,53 +40,56 @@
       </a>
     </div>
     <div id="projetTout">
+      <h1 class="titreProjet">Projets Web</h1>
       <div id="projetWeb">
-        <h1 class="titreProjet">Projets Web</h1>
         <img src="medias/images/projets/web/web.png" alt="web1">
-        <img src="" alt="">
+        <img src="medias/images/projets/web/georges.png" alt="">
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
       </div>
+      <h1 class="titreProjet">Projets Jeu</h1>
       <div id="projetJeu">
-        <h1 class="titreProjet">Projets Jeu</h1>
         <img src="medias/images/projets/jeu/jeu.png" alt="jeu1">
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
       </div>
+      <h1 class="titreProjet">Projets 3D</h1>
       <div id="projet3d">
-        <h1 class="titreProjet">Projets 3D</h1>
         <img src="medias/images/projets/3d/bruh.jpg" alt="3d1">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="medias/images/projets/3d/alesExTete2.png" alt="">
+        <img src="medias/images/projets/3d/Aster2.png" alt="">
+        <img src="medias/images/projets/3d/BoudriasGaboriau_Philippe_tp1.jpeg" alt="">
+        <img src="medias/images/projets/3d/DaoustMaxime_portal_gun.jpeg" alt="">
+        <img src="medias/images/projets/3d/Ducharme.pjg" alt="">
       </div>
+      <h1 class="titreProjet">Projets Image numÉrique</h1>
       <div id="projetImg">
-        <h1 class="titreProjet">Projets Image numÉrique</h1>
         <img src="medias/images/projets/img/illustra.png" alt="img1">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="medias/images/projets/img/nutella.jpg" alt="nutella">
+        <img src="medias/images/projets/img/PatryClaudiaTP2.jpg" alt="Van Goghhhh">
+        <img src="medias/images/projets/img/Patry_Anim_TP2A.png" alt="horns">
+        <img src="medias/images/projets/img/Patry_TP1_Logo_web.png" alt="cowjs">
       </div>
+      <h1 class="titreProjet">Projets VidÉo</h1>
       <div id="projetVideo">
-        <h1 class="titreProjet">Projets VidÉo</h1>
         <img src="medias/images/projets/video/lastOtaku.png" alt="vid1">
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
       </div>
+      <h1 class="titreProjet">Projets Design</h1>
       <div id="projetDesign">
-        <h1 class="titreProjet">Projets Design</h1>
         <img src="medias/images/projets/design/design.png" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="medias/images/projets/design/ClaudiaFin.jpg" alt="">
+        <img src="medias/images/projets/design/claudiaFinal.jpg" alt="">
+        <img src="medias/images/projets/design/claudiaS1.jpg" alt="">
+        <img src="medias/images/projets/design/claudiaS2.jpg" alt="">
+        <img src="medias/images/projets/design/claudiaS3.jpg" alt="">
+        <img src="medias/images/projets/design/claudiaS4.jpg" alt="">
       </div>
     </div>
     
@@ -147,9 +150,14 @@ $boxNoir: -5px 5px 0px 1px #000;
     #projetVideo,
     #projetDesign{
       margin-top: 5vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
       img{
         max-width: 150px;
         max-height: 150px;
+        padding: 2vh;
       }
     }
   }

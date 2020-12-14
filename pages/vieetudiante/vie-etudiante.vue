@@ -2,7 +2,7 @@
   <div>
     <header-commun></header-commun>
     <info-vieetudiante></info-vieetudiante>
-    <evenements-vieetudiante></evenements-vieetudiante>
+    <nouvelles-vieetudiante></nouvelles-vieetudiante>
     <centre-aide-vieetudiante></centre-aide-vieetudiante>
     <galerie-vieetudiante></galerie-vieetudiante>
     <footer-commun></footer-commun>
@@ -18,8 +18,8 @@ export default {
     "info-vieetudiante": httpVueLoader(
       "/pages/vieetudiante/composants/info-vieetudiante.vue"
     ),
-    "evenements-vieetudiante": httpVueLoader(
-      "/pages/vieetudiante/composants/evenements-vieetudiante.vue"
+    "nouvelles-vieetudiante": httpVueLoader(
+      "/pages/vieetudiante/composants/nouvelles-vieetudiante.vue"
     ),
     "centre-aide-vieetudiante": httpVueLoader(
       "/pages/vieetudiante/composants/centre-aide-vieetudiante.vue"
@@ -38,12 +38,11 @@ $blanc: #e3e3e3;
 $bleu: #2cd9ff;
 
 /* MOBILE FIRST--------------------------------------------------------------------------------------------- */
-#body{
+#body {
   background-color: $fond;
 }
 
 /* VERSION DESKTOP------------------------------------------------------------------------------------------ */
 @media (min-width: 1200px) {
-
 }
 </style>

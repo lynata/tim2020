@@ -26,7 +26,9 @@ $boxBleu: -3px 3px 0px 1px $bleu;
 
 /* MOBILE FIRST--------------------------------------------------------------------------------------------- */
 #info-ve {
-  background-color: $fond;
+  background-image: linear-gradient($fond, $bleu);
+  display: flex;
+  justify-content: center;
 }
 #info {
   background-color: $blanc;

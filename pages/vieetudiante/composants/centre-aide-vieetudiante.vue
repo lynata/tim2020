@@ -2,7 +2,7 @@
   <section id="centre-aide-ve">
       <h1 id="titre-centre-aide">Centre d'aide</h1>
       <img src="/medias/images/GregExplique.PNG" alt="Élève est aidé par un professeur">
-      <p id="desc-centre-aide">Besoin d’aide pour vos projets? Des étudiants experts dans leur domaine sont ici pour vous aider. Leur tutorat est disponible tout les mardis et les jeudis dans le local B1152. Venez nous voir!</p>
+      <p id="desc-centre-aide">Besoin d’aide dans vos projets? Nos étudiants experts dans leur domaine sont ici pour vous aider! Ils sont disponible tous les mardis et les jeudis dans le local B1152. Venez nous voir!</p>
   </section>
 </template>
 
@@ -17,24 +17,36 @@ $blanc: #e3e3e3;
 $bleu: #2cd9ff;
 
 /* MOBILE FIRST--------------------------------------------------------------------------------------------- */
+
 #centre-aide-ve{
-  background-color: $fond;
-  width: 100%;
-  height:100%;
+  background-image: linear-gradient($bleu,$fond);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  align-content:space-around
   
 }
 
 #titre-centre-aide{
   font-family: "CastIron";
-  color: $bleu;
+  color: $blanc;
+  font-size:3.5em;
 }
 
+#desc-centre-aide{
+    font-family: 'manrope';
+    text-align: justify;
+    color: $blanc;
+    padding:1.5em;
+}
 
 img{
-    width: 35em;
-    height: 25em;
+    width: 27em;
+    height: 17em;
     object-fit: cover;
     margin: 0;
+    box-shadow: -8px -8px 0px 1px $bleu;
 }
 
 

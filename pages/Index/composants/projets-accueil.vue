@@ -1,5 +1,8 @@
 <template>
-  <section id="voirProjets">
+  <section
+    id="voirProjets"
+    uk-scrollspy="cls: uk-animation-slide-bottom-small; target: div; delay: 100; repeat: false"
+  >
     <div id="Web">
       <h2 id="TitreWeb">Web</h2>
       <img src="medias/images/projets/web/web.png" alt="Web" />
@@ -27,7 +30,6 @@ export default {};
 <style lang="scss" scoped>
 //MOBILE---------------------------------------------------------------------------------------
 
-
 //not done
 // #voirProjets{
 //   width: 100%;
@@ -37,7 +39,7 @@ export default {};
 //     display: none;
 //   }
 //   #TroisD{
-//     display: none; 
+//     display: none;
 //     #Titre3D{
 //       display: block;
 //     }
@@ -80,7 +82,7 @@ export default {};
 //     }
 //     #TroisD{
 //       margin: 0;
-//       display: block !important; 
+//       display: block !important;
 //       border: 1px solid red;
 //       #img3d{
 //         margin: 0 auto;

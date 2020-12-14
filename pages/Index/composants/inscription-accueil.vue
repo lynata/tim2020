@@ -3,7 +3,7 @@
     <h2 id="TitreInscription">Inscription</h2>
     <div
       id="boutonsInscription"
-      uk-scrollspy="target: > a; cls: uk-animation-slide-left; delay: 100; repeat: falses"
+      uk-scrollspy="target: > a; cls: uk-animation-slide-left; delay: 100; repeat: false"
     >
       <a href="https://admission.sram.qc.ca/" class="boutonArrondi"
         >Je suis sûr-e!</a

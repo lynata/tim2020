@@ -4,6 +4,7 @@
       <!-- boutons-->
       <div
         uk-switcher="animation: uk-animation-fade; toggle: > *"
+        uk-scrollspy="cls: uk-animation-scale-down; target: button; delay: 100; repeat: false"
         id="infoBoutons"
         class="uk-button-group"
       >

@@ -1,45 +1,48 @@
 <template>
   <section id="filtre">
-    <h1>Cours</h1>
-    <div uk-filter="target: .js-filter">
-      <ul class="uk-subnav uk-subnav-pill" id="btnFiltre">
-        <li id="btnAll" uk-filter-control>
-          <i><a href="#">Tous</a></i>
-        </li>
-        <li uk-filter-control="[data-tags*='art']">
-          <a href="#"><i class="fas fa-palette"></i></a>
-        </li>
-        <!-- art -->
-        <li uk-filter-control="[data-tags*='design']">
-          <a href="#"><i class="fas fa-pencil-ruler"></i></a>
-        </li>
-        <!-- design -->
-        <li uk-filter-control="[data-tags*='prog']">
-          <a href="#"><i class="fas fa-code"></i></a>
-        </li>
-        <!-- prog -->
-        <li uk-filter-control="[data-tags*='jeu']">
-          <a href="#"><i class="fas fa-gamepad"></i></a>
-        </li>
-        <!-- jeu -->
-        <li uk-filter-control="[data-tags*='scena']">
-          <a href="#"><i class="fas fa-book-reader"></i></a>
-        </li>
-        <!-- scena -->
-        <li uk-filter-control="[data-tags*='profess']">
-          <a href="#"><i class="fas fa-user-tie"></i></a>
-        </li>
-        <!-- profess -->
-      </ul>
-      <!-- <div id="sess1">
-                <h2>Session 1</h2>
-                <ul  class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center">
-                    <li data-tags="scena">Création Vidéo</li>
-                    <li data-tags="art">Conception graphique et imagerie matricielle</li>
-                    <li data-tags="prog">Mise en page web</li>
-                    <li data-tags="art scena">Animation et interactivité en jeu</li>
-                </ul>
-            </div> -->
+    <div id="tete">
+      <h1>Cours</h1>
+      <div uk-filter="target: .js-filter">
+        <ul class="uk-subnav uk-subnav-pill" id="btnFiltre">
+          <!-- Tout -->
+          <li id="btnAll" uk-filter-control>
+            <i><a href="#">Tout</a></i>
+          </li>
+          <!-- art -->
+          <li uk-filter-control="[data-tags*='art']">
+            <a href="#"><i class="fas fa-palette"></i></a>
+          </li>
+          <!-- design -->
+          <li uk-filter-control="[data-tags*='design']">
+            <a href="#"><i class="fas fa-pencil-ruler"></i></a>
+          </li>
+          <!-- prog -->
+          <li uk-filter-control="[data-tags*='prog']">
+            <a href="#"><i class="fas fa-code"></i></a>
+          </li>
+          <!-- jeu -->
+          <li uk-filter-control="[data-tags*='jeu']">
+            <a href="#"><i class="fas fa-gamepad"></i></a>
+          </li>
+          <!-- scena -->
+          <li uk-filter-control="[data-tags*='scena']">
+            <a href="#"><i class="fas fa-book-reader"></i></a>
+          </li>
+          <!-- profess -->
+          <li uk-filter-control="[data-tags*='profess']">
+            <a href="#"><i class="fas fa-user-tie"></i></a>
+          </li>
+        </ul>
+    </div>
+    <!-- <div id="sess1">
+        <h2>Session 1</h2>
+        <ul  class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center">
+            <li data-tags="scena">Création Vidéo</li>
+            <li data-tags="art">Conception graphique et imagerie matricielle</li>
+            <li data-tags="prog">Mise en page web</li>
+            <li data-tags="art scena">Animation et interactivité en jeu</li>
+        </ul>
+    </div> -->
 
         <!-- SESSION 1 -->
         <section class="session">
@@ -197,6 +200,22 @@
             </li>
           </ul>
 
+          <!-- SESSION 6 -->
+          <section class="session">
+          <h1>Session 6</h1>
+          <ul class="js-filter">
+            <li data-tags="profess">
+              <h2>Stage</h2>
+              <span class="flecheCours" v-on:click="cours1 = !cours1"
+                >Voir ce cours</span>
+            </li>
+            <li data-tags="profess">
+              <h2>Projet de fin d'études</h2>
+              <span class="flecheCours" v-on:click="cours1 = !cours1"
+                >Voir ce cours</span>
+            </li>
+          </ul>
+
           <cours-1 v-if="cours1 == true"></cours-1>
 
           <cours-2 v-if="cours2 == true"></cours-2>
@@ -273,7 +292,7 @@ $boxNoir: -5px 5px 0px 1px #000;
 }
 
 #filtre {
-  margin-top: 30%;
+  // margin-top: 30%;
   background-color: $fond;
   h1 {
     font-family: Castiron;
@@ -286,7 +305,6 @@ $boxNoir: -5px 5px 0px 1px #000;
     background-color: $fond;
     display: flex;
     justify-content: center;
-
     li {
       // display: flex;
       // justify-content: center;
@@ -314,30 +332,34 @@ $boxNoir: -5px 5px 0px 1px #000;
     }
   }
 
-  #sess1 {
-    margin: 2vw;
-    h2 {
-      font-family: Castiron;
-      font-size: 5vw;
-      color: white;
-    }
-    li {
-      width: 100%;
-      background-color: rgb(209, 209, 209);
-      margin: 0;
-      border: black 1px solid;
-      padding: 2vw;
-      font-family: Manrope;
-    }
-  }
+  // #sess1 {
+  //   margin: 2vw;
+  //   h2 {
+  //     font-family: Castiron;
+  //     font-size: 5vw;
+  //     color: white;
+  //   }
+  //   li {
+  //     width: 100%;
+  //     background-color: rgb(209, 209, 209);
+  //     margin: 0;
+  //     border: black 1px solid;
+  //     padding: 2vw;
+  //     font-family: Manrope;
+  //   }
+  // }
+
+  //  #tete{
+  //     position: fixed;
+  //     border: solid red 1px;
+  //   }
 }
 
 
 // Desktop
 @media (min-width: 1200px) {
   #filtre {
-    margin-top: 0 !important;
-
+    // margin-top: 0 !important;
     #btnFiltre {
       margin: 0;
       li {
@@ -346,6 +368,10 @@ $boxNoir: -5px 5px 0px 1px #000;
           // font-family: Manrope;
           // font-weight: bold;
         }
+      }
+      a:hover,
+      a:target{
+        color: $bleu;
       }
     }
     #sess1 {

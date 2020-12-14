@@ -44,13 +44,13 @@
     <div id="projetJeu">
       <h1 class="titreProjet">Projets Jeu</h1>
     </div>
-    <div key="projet3d">
+    <div id="projet3d">
       <h1 class="titreProjet">Projets 3D</h1>
     </div>
-    <div key="projetVideo">
+    <div id="projetVideo">
       <h1 class="titreProjet">Projets VidÉo</h1>
     </div>
-    <div key="projetDesign">
+    <div id="projetDesign">
       <h1 class="titreProjet">Projets Design</h1>
     </div>
   </section>

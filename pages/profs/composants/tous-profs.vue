@@ -81,6 +81,7 @@ html {
     font-family: "CastIron";
     font-size: 2em;
     text-align: center;
+    text-transform: uppercase;
   }
   a:hover {
     color: $bleu;

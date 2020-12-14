@@ -2,6 +2,9 @@
   <div>
     <header-commun></header-commun>
     <session-1></session-1>
+    <session-2></session-2>
+    <session-3></session-3>
+    <session-4></session-4>
     <session-5></session-5>
     <session-6></session-6>
     <footer-commun></footer-commun>
@@ -15,6 +18,15 @@ export default {
     "header-commun": httpVueLoader("/pages/commun/header-commun.vue"),
     "session-1": httpVueLoader(
       "/pages/cours/composants/session-1.vue"
+    ),
+    "session-2": httpVueLoader(
+      "/pages/cours/composants/session-2.vue"
+    ),
+    "session-3": httpVueLoader(
+      "/pages/cours/composants/session-3.vue"
+    ),
+    "session-4": httpVueLoader(
+      "/pages/cours/composants/session-4.vue"
     ),
      "session-5": httpVueLoader(
       "/pages/cours/composants/session-5.vue"

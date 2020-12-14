@@ -97,13 +97,6 @@ export default {};
     position: relative;
   }
 
-  a:hover #ImgVie img,
-  a:hover #ImgProfs img,
-  a:hover #ImgCours img {
-    filter: brightness(50%);
-    transition: filter 0.2s ease-out;
-  }
-
   #imgProfs,
   #imgVie {
     display: flex;

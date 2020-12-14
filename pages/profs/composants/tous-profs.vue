@@ -33,7 +33,7 @@ export default{
 </script>
 
 <style lang='scss' scoped>
-$fond: #101832;
+$fond: #090c16;
 $bleuFond: #1c2c5c;
 $blanc: #e3e3e3;
 $bleu: #2cd9ff;

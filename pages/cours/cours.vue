@@ -22,10 +22,10 @@ export default {
 </script>
 
 <style scoped>
-body {
-  background-color: #101832;
-}
-div {
-  background-color: #1c2c5c;
-}
+/* body {
+  background-color: #090c16;
+} */
+/* div {
+  background-color: #090c16;
+} */
 </style>

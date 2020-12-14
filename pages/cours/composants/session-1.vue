@@ -7,7 +7,7 @@
         <section class="session">
           <h1>Session 1</h1>
           <ul uk-accordion class="js-filter">
-            <li>
+            <li data-tags="scena">
               <h2>Création vidéo</h2>
               <span class="flecheCours uk-accordion-title"
                 >Voir ce cours</span>
@@ -26,172 +26,34 @@
         associées.</p>
         </div>
             </li>
-            <li>
+            <li data-tags="art">
               <h2>Conception graphique et Imagerie matricielle</h2>
-              <span class="flecheCours">
-                Voir ce cours</span>
+              <span class="flecheCours uk-accordion-title">Voir ce cours</span>
+                <div class="uk-accordion-content">
+                  <p>Ce cours initie l'étudiant aux rudiments de la conception et de la communication graphique ainsi qu'au traitement des images fixes matricielles. On y aborde les notions de base sur le langage graphique, la couleur, le mode d’organisation picturale en lien avec le design d’une image ou d’une interface. L’apprentissage d’un processus de conception structuré et de techniques d’idéation permet à l’étudiant de faire émerger des concepts créatifs respectant des objectifs de communication précis et le public cible.</p>
+                  <p>L'étudiant est amené à exploiter de façon créative et efficace les diverses fonctions d’un logiciel de traitement de l'image numérique, à utiliser des techniques de montage et de découpage d’images et à appliquer des effets spéciaux diversifiés. Le cours aborde plus particulièrement les notions de photoréalisme ainsi que des techniques de travail permettant l’intégration harmonieuse d’images dans d’autres logiciels multimédias. De plus, les méthodes de travail pour la réalisation de maquettes graphiques d’un document multimédia sont abordées.</p>
+                  <p>Les particularités de la fonction de travail liées au design graphique et au traitement des images fixes sont présentées, de même que les compétences techniques et comportementales associées.</p>
+                </div>
             </li>
-            <li>
+            <li data-tags="web prog">
               <h2>Mise en page web</h2>
-              <span class="flecheCours">
+              <span class="flecheCours uk-accordion-title">
                 Voir ce cours</span>
+                <div class="uk-accordion-content">
+                  <p>Dans ce cours, l'étudiant apprend les techniques de mise en page Web en utilisant les langages de balisage et de feuilles de styles. L’étudiant apprend également à analyser et schématiser l’arborescence d’un site Web, à reproduire des maquettes sous forme de pages Web, et à créer des pages Web en intégrant les différents types de médias. L’introduction à un outil de gestion de code source est également couverte dans ce cours.</p>
+                  <p>Les particularités de la fonction de travail associées au domaine du Web sont présentées, de même que les compétences techniques et comportementales associées.</p>
+                </div>
             </li>
-            <li>
+            <li data-tags="jeu prog art">
               <h2>Animation et interactivité en jeu</h2>
-              <span class="flecheCours">
+              <span class="flecheCours uk-accordion-title">
                 Voir ce cours</span>
+                <div class="uk-accordion-content">
+                  <p>Ce cours est consacré aux concepts de base nécessaires à la création d’un jeu numérique. Le cours porte, d’une part, sur l’animation des médias : l’étudiant y apprend à importer et à intégrer des médias dans un environnement de création de jeu. De plus, il se familiarise avec les techniques de création d’animations à partir d’images simples et des feuilles de « sprites ». D’autre part, le cours couvre la gestion des interactions : l’étudiant y est initié aux concepts de base de l’interactivité dans un contexte de jeu, ainsi qu’aux techniques de conception, de codification et de vérification des algorithmes nécessaires à cette fin.</p>
+                  <p>Dans ce cours, l’étudiant est également initié à l’environnement matériel et technologique dans lequel il évoluera tout au long de sa formation et de sa carrière. Les particularités de la fonction de travail liées au domaine du jeu sont présentées, de même que les compétences techniques et comportementales associées.</p>
+                </div>
             </li>
           </ul>
-      
-
-          <!-- SESSION 2 -->
-          <section class="session">
-          <h1>Session 2</h1>
-          <ul class="js-filter">
-            <li>
-              <h2>Effets spéciaux et animation</h2>
-              <span class="flecheCours" v-on:click="s2c1 = !s2c1"
-                >Voir ce cours</span>
-            </li>
-            <li>
-              <h2>Conception graphique et Imagerie vectorielle</h2>
-              <span class="flecheCours">
-                Voir ce cours</span>
-            </li>
-            <li>
-              <h2>Animation et Interactivité Web</h2>
-              <span class="flecheCours">
-                Voir ce cours</span>
-            </li>
-            <li data-tags="prog jeu scena">
-              <h2>Création de jeu 2D</h2>
-              <span class="flecheCours">
-                Voir ce cours</span>
-            </li>
-          </ul>
-          <sess2cours1 v-if="s2c1 == true"></sess2cours1>
-
-          <!-- SESSION 3 -->
-          <section class="session">
-          <h1>Session 3</h1>
-          <ul class="js-filter">
-            <li>
-              <h2>Imagerie 3D</h2>
-              <span class="flecheCours" v-on:click="s2c1 = !s2c1"
-                >Voir ce cours</span>
-            </li>
-            <li>
-              <h2>Design d'interactivité</h2>
-              <span class="flecheCours">
-                Voir ce cours</span>
-            </li>
-            <li>
-              <h2>Création de sites Web dynamiques</h2>
-              <span class="flecheCours">
-                Voir ce cours</span>
-            </li>
-            <li data-tags="prog jeu scena">
-              <h2>Création de jeu 3D</h2>
-              <span class="flecheCours">
-                Voir ce cours</span>
-            </li>
-          </ul>
-
-          <!-- SESSION 4 -->
-          <section class="session">
-          <h1>Session 4</h1>
-          <ul class="js-filter">
-            <li data-tags="profess">
-              <h2>Gestion de projets multimédias</h2>
-              <span class="flecheCours"
-                >Voir ce cours</span>
-            </li>
-            <li data-tags="design prog">
-              <h2>Conception d'Interfaces et développement Web</h2>
-              <span class="flecheCours">
-                Voir ce cours</span>
-            </li>
-            <li data-tags="prog profess scena jeu">
-              <h2>Création de jeu en équipe</h2>
-              <span class="flecheCours">
-                Voir ce cours</span>
-            </li>
-            <!-- choix -->
-            <h2 class="choix" >Choix de 1 cours parmi :</h2>
-            <li data-tags="design ">
-              <h2>Interfaces Web réactives et animées</h2>
-              <span class="flecheCours"
-                >Voir ce cours</span>
-            </li>
-            <li data-tags="scena art ">
-              <h2>Animation 3D</h2>
-              <span class="flecheCours"
-                >Voir ce cours</span>
-            </li>
-          </ul>
-
-          <!-- SESSION 5 -->
-          <section class="session">
-          <h1>Session 5</h1>
-          <ul class="js-filter">
-            <li data-tags="profess">
-              <h2>Méthodes de recherche er préparation au marché au travail</h2>
-              <span class="flecheCours"
-                >Voir ce cours</span>
-            </li>
-            <li data-tags="profess">
-              <h2>Communication et dynamique d'une équipe de travail</h2>
-              <span class="flecheCours">
-                Voir ce cours</span>
-            </li>
-            <li data-tags="prog profess">
-              <h2>Projet Web en équipe</h2>
-              <span class="flecheCours">
-                Voir ce cours</span>
-            </li>
-            <!-- choix 1 -->
-            <h2 class="choix" >Choix de 1 cours parmi :</h2>
-            <li data-tags="jeu art scena">
-              <h2>Expérimentation en jeu - volet création</h2>
-              <span class="flecheCours"
-                >Voir ce cours</span>
-            </li>
-            <li data-tags="scena prog jeu">
-              <h2>Expérimentation en jeu - volet programmation</h2>
-              <span class="flecheCours"
-                >Voir ce cours</span>
-            </li>
-            <!-- choix 2 -->
-            <h2 class="choix" >Choix de 1 cours parmi :</h2>
-            <li data-tags="profess art">
-              <h2>Technologies émergentes et avancées - Volet création</h2>
-              <span class="flecheCours"
-                >Voir ce cours</span>
-            </li>
-            <li data-tags="profess prog">
-              <h2>Technologies émergentes et avancées - Volet programmation</h2>
-              <span class="flecheCours"
-                >Voir ce cours</span>
-            </li>
-          </ul>
-
-          <!-- SESSION 6 -->
-          <section class="session">
-          <h1>Session 6</h1>
-          <ul class="js-filter">
-            <li data-tags="profess">
-              <h2>Stage</h2>
-              <span class="flecheCours"
-                >Voir ce cours</span>
-            </li>
-            <li data-tags="profess">
-              <h2>Projet de fin d'études</h2>
-              <span class="flecheCours"
-                >Voir ce cours</span>
-            </li>
-          </ul>
-
-
       </section>
     </div>
   </section>

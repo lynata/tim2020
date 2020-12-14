@@ -160,7 +160,6 @@
               </p>
             </div>
           </li>
-          -->
         </ul>
       </section>
     </div>

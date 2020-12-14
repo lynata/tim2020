@@ -252,13 +252,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$fond: #101832;
-$bleuFond: #1c2c5c;
+$fond: #090c16;
+$bleuFond: #090c16;
 $blanc: #e3e3e3;
 $bleu: #2cd9ff;
 $boxBleu: -3px 3px 0px 1px $bleu;
 $boxNoir: -5px 5px 0px 1px #000;
-.session{
+.session {
   position: relative;
   font-family: "ManRope";
   background-color: $bleuFond;
@@ -285,7 +285,7 @@ $boxNoir: -5px 5px 0px 1px #000;
   //   color: $bleu;
   //   font-family: Castiron;
   // }
-  .choix{
+  .choix {
     font-family: Castiron;
     color: $bleu;
   }
@@ -320,7 +320,7 @@ $boxNoir: -5px 5px 0px 1px #000;
       }
 
       a:hover,
-      a:target{
+      a:target {
         color: $bleu;
       }
 
@@ -355,7 +355,6 @@ $boxNoir: -5px 5px 0px 1px #000;
   //   }
 }
 
-
 // Desktop
 @media (min-width: 1200px) {
   #filtre {
@@ -370,7 +369,7 @@ $boxNoir: -5px 5px 0px 1px #000;
         }
       }
       a:hover,
-      a:target{
+      a:target {
         color: $bleu;
       }
     }

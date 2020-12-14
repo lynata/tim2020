@@ -27,7 +27,7 @@
       <!-- bloc d'info -->
       <ul class="uk-switcher">
         <li>
-          <h1>Technique d'intÉgration multimÉdia</h1>
+          <h1>Techniques d'intÉgration multimÉdia</h1>
           Maisonneuve est le seul cégep sur l’Île de Montréal à offrir ce
           programme qui vous offre une immersion dans le monde du jeu 2D/3D, du
           Web, des technologies mobiles et des médias numériques, tout en

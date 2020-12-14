@@ -20,11 +20,15 @@ export default {
 };
 </script>
 
-<style scoped>
-/* body {
-  background-color: #090c16;
-} */
-/* div {
-  background-color: #090c16;
-} */
+<style lang="scss" scoped>
+$fond: #090c16;
+$bleuFond: #1c2c5c;
+$blanc: #e3e3e3;
+$bleu: #2cd9ff;
+$boxBleu: -3px 3px 0px 1px $bleu;
+$boxNoir: -5px 5px 0px 1px #000;
+#filtre li {
+  padding: 1em;
+  box-shadow: $boxBleu;
+}
 </style>

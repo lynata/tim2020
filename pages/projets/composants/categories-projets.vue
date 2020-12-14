@@ -39,7 +39,7 @@
         </div>
       </a>
     </div>
-    <div id="prejetTout">
+    <div id="projetTout">
       <div id="projetWeb">
         <h1 class="titreProjet">Projets Web</h1>
         <img src="medias/images/projets/web/web.png" alt="web1">
@@ -138,14 +138,15 @@ $boxNoir: -5px 5px 0px 1px #000;
     }
   }
   #projetTout{
-    display: flex;
-    flex-wrap: nowrap;
+    // display: flex;
+    // flex-wrap: nowrap;
     #projetWeb,
     #projetJeu,
     #projet3d,
     #projetImg,
     #projetVideo,
     #projetDesign{
+      margin-top: 5vh;
       img{
         max-width: 150px;
         max-height: 150px;
@@ -180,8 +181,8 @@ $boxNoir: -5px 5px 0px 1px #000;
       #projetVideo,
       #projetDesign{
         img{
-          max-width: 250px !important;
-          max-height: 250px !important;
+          max-width: 300px !important;
+          max-height: 300px !important;
         }
       }
     }
@@ -190,21 +191,21 @@ $boxNoir: -5px 5px 0px 1px #000;
 
 /* FIN STYLE TABLETTE---------------------------------------------------------------------- */
 /* DEBUT STYLE GRAND ECRAN ------------------------------------------------------------------- */
-// @media (min-width: 1200px) {
-//   #projetTout{
-//     #projetWeb,
-//     #projetJeu,
-//     #projet3d,
-//     #projetImg,
-//     #projetVideo,
-//     #projetDesign{
-//       img{
-//         max-width: 250px !important;
-//         max-height: 250px !important;
-//       }
-//     }
-//   }
-// }
+@media (min-width: 1200px) {
+  #projetTout{
+    #projetWeb,
+    #projetJeu,
+    #projet3d,
+    #projetImg,
+    #projetVideo,
+    #projetDesign{
+      img{
+        max-width: 400px !important;
+        max-height: 400px !important;
+      }
+    }
+  }
+}
 
 // #categories {
 //   position: relative;

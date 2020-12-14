@@ -31,6 +31,10 @@ $bleu: #2cd9ff;
   color: $bleu;
 }
 
+#desc-info{
+  font-family: 'manrope';
+  color: $blanc;
+}
 
 /* VERSION DESKTOP------------------------------------------------------------------------------------------ */
 @media (min-width: 1200px) {

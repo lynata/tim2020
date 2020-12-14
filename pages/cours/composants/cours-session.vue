@@ -1,5 +1,7 @@
 <template>
-  <section id="session">
+<p></p>
+  <!-- <section id="session">
+    <h1>Session 1</h1>
     <ul class="js-filter">
       <li data-tags="scena">
         <h2>Création vidéo</h2>
@@ -34,56 +36,56 @@
     <cours-3 v-if="cours3 == true"></cours-3>
 
     <cours-4 v-if="cours4 == true"></cours-4>
-  </section>
+  </section> -->
 </template>
-<script lang="text/babel">
-export default {
-  components: {
-    cours1: httpVueLoader("../composants/cours-1.vue"),
-    cours2: httpVueLoader("../composants/cours-2.vue"),
-    cours3: httpVueLoader("../composants/cours-3.vue"),
-    cours4: httpVueLoader("../composants/cours-4.vue"),
-  },
-  data() {
-    return {
-      cours1: false,
-      cours2: false,
-      cours3: false,
-      cours4: false,
-    };
-  },
-};
+// <script lang="text/babel">
+// export default {
+//   components: {
+//     cours1: httpVueLoader("../composants/cours-1.vue"),
+//     cours2: httpVueLoader("../composants/cours-2.vue"),
+//     cours3: httpVueLoader("../composants/cours-3.vue"),
+//     cours4: httpVueLoader("../composants/cours-4.vue"),
+//   },
+//   data() {
+//     return {
+//       cours1: false,
+//       cours2: false,
+//       cours3: false,
+//       cours4: false,
+//     };
+//   },
+// };
 </script>
 
 <style lang="scss" scoped>
-$fond: #101832;
-$bleuFond: #1c2c5c;
-$blanc: #e3e3e3;
-$bleu: #2cd9ff;
-$boxBleu: -3px 3px 0px 1px $bleu;
-$boxNoir: -5px 5px 0px 1px #000;
-#session {
-  position: relative;
-  font-family: "ManRope";
-  background-color: $bleuFond;
-  .coursPopup {
-    position: absolute;
-    background-color: $bleuFond;
-    width: 50%;
-    top: -1em;
-    left: 25%;
-    padding: 1em 2em;
-    color: #fff;
-    li {
-      background-color: $bleuFond;
-      box-shadow: none;
-      color: #fff;
-    }
-  }
-  li {
-    background-color: $blanc;
-    box-shadow: $boxNoir;
-    margin: 1em;
-  }
-}
+// $fond: #101832;
+// $bleuFond: #1c2c5c;
+// $blanc: #e3e3e3;
+// $bleu: #2cd9ff;
+// $boxBleu: -3px 3px 0px 1px $bleu;
+// $boxNoir: -5px 5px 0px 1px #000;
+// #session {
+//   position: relative;
+//   font-family: "ManRope";
+//   background-color: $bleuFond;
+//   .coursPopup {
+//     position: absolute;
+//     background-color: $bleuFond;
+//     width: 50%;
+//     top: -1em;
+//     left: 25%;
+//     padding: 1em 2em;
+//     color: #fff;
+//     li {
+//       background-color: $bleuFond;
+//       box-shadow: none;
+//       color: #fff;
+//     }
+//   }
+//   li {
+//     background-color: $blanc;
+//     box-shadow: $boxNoir;
+//     margin: 1em;
+//   }
+// }
 </style>

@@ -31,11 +31,20 @@ $bleu: #2cd9ff;
   color: $bleu;
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 #desc-info{
   font-family: 'manrope';
   color: $blanc;
 }
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> d10dcd1cf5ae75151aaa21e77acb9c7a1ffe5aa8
+>>>>>>> Stashed changes
 /* VERSION DESKTOP------------------------------------------------------------------------------------------ */
 @media (min-width: 1200px) {
 

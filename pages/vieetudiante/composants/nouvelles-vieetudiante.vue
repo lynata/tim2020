@@ -29,6 +29,10 @@ $bleu: #2cd9ff;
   background-image: linear-gradient($bleu, $fond);
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> c6cf55e7a279c917b8bd214148223524c7f07329
   display: flex;
   flex-direction: column;
   justify-content: center;

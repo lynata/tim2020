@@ -9,6 +9,7 @@
         />
         <button
           class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre Cours"
+          uk-scrollspy="cls: uk-animation-scale-up; repeat: false"
         >
           <a>Voir Cours</a>
         </button>
@@ -23,6 +24,7 @@
         />
         <button
           class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre Profs"
+          uk-scrollspy="cls: uk-animation-scale-up; repeat: false"
         >
           <a>Voir Profs</a>
         </button>
@@ -37,6 +39,7 @@
         />
         <button
           class="transition delay-50 duration-300 ease-in-out boutonNoirGauche boutonCarre Vie"
+          uk-scrollspy="cls: uk-animation-scale-up; repeat: false"
         >
           <a>Voir La Vie</a>
         </button>

@@ -1,4 +1,4 @@
-$fond: #101832;
+$fond: #090c16;
 $bleuFond: #1c2c5c;
 $blanc: #e3e3e3;
 $bleu: #2cd9ff;
@@ -25,7 +25,7 @@ a:hover {
 
 //DEBUT CSS - - - MOBILE FIRST      -------------------------------------------------------------------------------------------------------------------------------
 
-body{
+body {
   background-color: $fond;
 }
 
@@ -89,7 +89,6 @@ nav {
 //DEBUT TABLETTE    --------------------------------------------------------------------------------------------------------------------------------------
 
 @media (min-width: 600px) {
-
   #navMobile,
   #checkNav {
     display: none;
@@ -129,21 +128,21 @@ nav {
       align-items: flex-end;
     }
   }
-  
+
   #infoBloc {
     width: 60vw;
     padding: 1em 4em 1em 1em;
     margin-left: 2em;
     position: relative;
   }
-  
+
   #infoBoutons {
     display: flex;
     flex-flow: column;
     position: absolute;
     right: -5.5em;
     top: 0;
-  
+
     button {
       background-color: $bleuFond;
       padding: 10px;
@@ -154,23 +153,21 @@ nav {
       letter-spacing: 0.08em;
       box-shadow: $boxBleu;
     }
-  
+
     button:hover {
       background-color: $fond;
     }
   }
-  
 }
 
 //FIN TABLETTE        ----------------------------------------------------------------------------------------------------------------------------------------------
 
 //DEBUT GRANDS ECRANS
 @media (min-width: 1200px) {
-
   #header {
     color: #fff;
     #barreDuHaut {
-        height: 55px;
+      height: 55px;
     }
     nav {
       display: flex;
@@ -198,61 +195,61 @@ nav {
       }
     }
 
-#caroussel {
-    height: 700px;
-    #caroussel-images {
+    #caroussel {
+      height: 700px;
+      #caroussel-images {
         height: 100%;
         ul {
-            height: 100%;
-            li {
-                height: 300px;
-
-            }
+          height: 100%;
+          li {
+            height: 300px;
+          }
         }
-    }
-}
-
-  #voirProjets {
-    display: flex;
-    justify-content: space-around;
-
-    div {
-      align-items: center;
-    }
-
-    h2 {
-      color: white;
-    }
-
-    button {
-      padding: 0.5em;
-      background-color: $bleu;
-      box-shadow: $bleuFond;
-    }
-
-    button h3 {
-      color: $bleuFond;
-    }
-
-    button a:hover {
-      color: $bleu;
-    }
-  }
-
-  #inscription {
-    div {
-      display: flex;
-      flex-direction: column;
-      float: left;
-
-      button {
-        justify-content: space-evenly;
       }
     }
 
-    img {
-      float: right;
+    #voirProjets {
+      display: flex;
+      justify-content: space-around;
+
+      div {
+        align-items: center;
+      }
+
+      h2 {
+        color: white;
+      }
+
+      button {
+        padding: 0.5em;
+        background-color: $bleu;
+        box-shadow: $bleuFond;
+      }
+
+      button h3 {
+        color: $bleuFond;
+      }
+
+      button a:hover {
+        color: $bleu;
+      }
     }
+
+    #inscription {
+      div {
+        display: flex;
+        flex-direction: column;
+        float: left;
+
+        button {
+          justify-content: space-evenly;
+        }
+      }
+
+      img {
+        float: right;
+      }
+    }
+  }
 }
-} }
 //FIN GRANDS ECRANS

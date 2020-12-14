@@ -71,21 +71,7 @@
       <ul id="caroussel-images" class="uk-slideshow-items">
         <li>
           <img
-            src="/medias/images/Caroussel_Accueil/GregExplique_diapo.PNG"
-            alt=""
-            uk-cover
-          />
-        </li>
-        <li>
-          <img
-            src="/medias/images/Caroussel_Accueil/profsHeureux_diapo.PNG"
-            alt=""
-            uk-cover
-          />
-        </li>
-        <li>
-          <img
-            src="/medias/images/Caroussel_Accueil/elevesEcoutent2_diapo.png"
+            src="/medias/images/Caroussel_Accueil/elevesEcoutent_diapo.png"
             alt=""
             uk-cover
           />
@@ -316,7 +302,7 @@ nav {
   }
 
   #caroussel {
-    height: 700px !important;
+    height: 82vh !important;
     #caroussel-images {
       height: 100% !important;
       ul {
@@ -342,7 +328,7 @@ nav {
       // background-size: 50vw;
       // background-repeat: repeat-x;
       // background-blend-mode: multiply;
-      height: 60px;
+      height: 8vh;
       * {
         height: 80%;
       }
@@ -357,7 +343,6 @@ nav {
         align-items: center;
         background-color: rgb(227, 227, 227);
         opacity: 0.7;
-
         transition: width 0.3s;
         #btnActu {
           display: flex;
@@ -396,6 +381,7 @@ nav {
     display: flex;
     align-items: center;
     background-color: $bleuFond;
+    height: 10vh;
     ul {
       margin: 0 auto;
       text-align: center;

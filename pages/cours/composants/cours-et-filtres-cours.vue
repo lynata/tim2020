@@ -7,14 +7,14 @@
         <section class="session">
           <h1>Session 1</h1>
           <ul uk-accordion class="js-filter">
-            <li  data-tags="scena">
+            <li>
               <h2>Création vidéo</h2>
               <span class="flecheCours uk-accordion-title"
                 >Voir ce cours</span>
                 <div class="uk-accordion-content">
             <p>Ce cours initie l’étudiant au traitement des images en mouvement, au
-        traitement du son ainsi qu'aux bases de la scénarisation linéaire.
-        L’étudiant apprend à utiliser les périphériques associés au traitement
+        traitement du son ainsi qu'aux bases de la scénarisation linéaire.</p>
+       <p> L’étudiant apprend à utiliser les périphériques associés au traitement
         du son et de la vidéo et à exploiter de façon créative les fonctions des
         logiciels de traitement vidéo et sonore. Les techniques de montage
         (structure narrative, affinage de coupe, correction de couleur, etc.)
@@ -26,17 +26,17 @@
         associées.</p>
         </div>
             </li>
-            <li data-tags="art">
+            <li>
               <h2>Conception graphique et Imagerie matricielle</h2>
               <span class="flecheCours">
                 Voir ce cours</span>
             </li>
-            <li data-tags="prog">
+            <li>
               <h2>Mise en page web</h2>
               <span class="flecheCours">
                 Voir ce cours</span>
             </li>
-            <li data-tags="art scena">
+            <li>
               <h2>Animation et interactivité en jeu</h2>
               <span class="flecheCours">
                 Voir ce cours</span>
@@ -48,17 +48,17 @@
           <section class="session">
           <h1>Session 2</h1>
           <ul class="js-filter">
-            <li data-tags="art scena">
+            <li>
               <h2>Effets spéciaux et animation</h2>
               <span class="flecheCours" v-on:click="s2c1 = !s2c1"
                 >Voir ce cours</span>
             </li>
-            <li data-tags="art">
+            <li>
               <h2>Conception graphique et Imagerie vectorielle</h2>
               <span class="flecheCours">
                 Voir ce cours</span>
             </li>
-            <li data-tags="prog">
+            <li>
               <h2>Animation et Interactivité Web</h2>
               <span class="flecheCours">
                 Voir ce cours</span>
@@ -75,17 +75,17 @@
           <section class="session">
           <h1>Session 3</h1>
           <ul class="js-filter">
-            <li data-tags="art">
+            <li>
               <h2>Imagerie 3D</h2>
               <span class="flecheCours" v-on:click="s2c1 = !s2c1"
                 >Voir ce cours</span>
             </li>
-            <li data-tags="art">
+            <li>
               <h2>Design d'interactivité</h2>
               <span class="flecheCours">
                 Voir ce cours</span>
             </li>
-            <li data-tags="prog">
+            <li>
               <h2>Création de sites Web dynamiques</h2>
               <span class="flecheCours">
                 Voir ce cours</span>

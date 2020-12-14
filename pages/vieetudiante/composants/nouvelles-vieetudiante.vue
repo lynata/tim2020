@@ -1,13 +1,13 @@
 <template>
-  <section id="event-ve">
-    <h1 id="titre-event">Nouvelles</h1>
+  <section id="nouv-ve">
+    <h1 id="titre-nouv">Nouvelles</h1>
     <img
       src="/medias/images/Rencontre20ans.PNG"
       alt="Évènement 20 ans - Professeur avec anciens élèves"
     />
-    <h2 id="nom-event">TIM XX</h2>
-    <h2 id="date-event">17 octobre 2019</h2>
-    <p id="desc-event">
+    <h2 id="nom-nouv">TIM XX</h2>
+    <h2 id="date-nouv">17 octobre 2019</h2>
+    <p id="desc-nouv">
       On fête les 20 ans du tim! Un évènement spectaculaire où tout les anciens
       étudiants ont été invités pour célébré l'ancinneté du programme TIM!
     </p>
@@ -20,43 +20,60 @@ export default {};
 
 <style lang="scss" scoped>
 $fond: #090c16;
-$bleuFond: #1c2c5c;
+$bleuFonce: #1c2c5c;
 $blanc: #e3e3e3;
 $bleu: #2cd9ff;
 
 /* MOBILE FIRST--------------------------------------------------------------------------------------------- */
-#event-ve {
-  background-image: linear-gradient($bleu, $fond);
-  width: 100%;
-  height: 100%;
-<<<<<<< HEAD
-=======
-
->>>>>>> c6cf55e7a279c917b8bd214148223524c7f07329
+#nouv-ve {
+  background-image: url("/medias/images/halfTone/HalftoneClean.png");
+  background-size: 17em;
+  background-repeat: repeat-x;
+  background-color: $fond;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: space-around;
 }
 
-#desc-event {
-  font-family: "manrope";
-}
-
-#titre-event {
+#titre-nouv, #nom-nouv, #date-nouv{
   font-family: "CastIron";
+  margin:0;
+}
+
+#titre-nouv{
+  color: $blanc;
+  font-size: 3.5em;
+}
+
+#nom-nouv{
   color: $bleu;
+  font-size: 3.5em;  
+}
+
+#date-nouv{
+  color: $bleu;
+  font-size: 2.5em;
+}
+
+#desc-nouv {
+  font-family: "manrope";
+  text-align: justify;
+  color: $blanc;
+  padding: 1.5em;
+  margin:0;
 }
 
 img {
-  width: 35em;
-  height: 25em;
+  width: 27em;
+  height: 17em;
   object-fit: cover;
   margin: 0;
+  box-shadow: 8px 8px 0px 1px $bleu;
 }
 
 /* VERSION DESKTOP------------------------------------------------------------------------------------------ */
 @media (min-width: 1200px) {
+
 }
 </style>

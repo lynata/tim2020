@@ -21,13 +21,17 @@ export default {};
 
 <style lang="scss" scoped>
 $fond: #090c16;
-$bleuFond: #1c2c5c;
+$bleuFonce: #1c2c5c;
 $blanc: #e3e3e3;
 $bleu: #2cd9ff;
+$boxBleu: 5px 5px 0px 1px $bleu;
 
 /* MOBILE FIRST--------------------------------------------------------------------------------------------- */
 #galerie-ve{
-  background-image: linear-gradient($fond,$bleu);
+  background-image: url("/medias/images/halfTone/HalftoneClean.png");
+  background-size: 17em;
+  background-repeat: repeat-x;
+  background-color: $fond;
   width: 100%;
   height:100%;
   display: flex;
@@ -39,33 +43,52 @@ $bleu: #2cd9ff;
 
 #titre-galerie, #annee-galerie{
   font-family: "CastIron";
-  color: $bleu;
-  font-size:3.5em;
+  margin:0;
 }
 
+#titre-galerie{
+   color: $blanc;
+   font-size:3.5em;
+}
+
+#annee-galerie{
+   color: $bleu;
+   font-size:2.5em;
+}
 
 #imgs-galerie {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    align-content:space-around;
+    align-content:center;
     img{
-        width: 35em;
-        height: 25em;
+        width: 27em;
+        height: 17em;
         object-fit: cover;
-        margin: 0;
+        margin: 1.5em;
+        box-shadow:$boxBleu;
     }
 }
 
 /* VERSION DESKTOP------------------------------------------------------------------------------------------ */
 @media (min-width: 1200px) {
-
-#imgs-galerie {
-    img{
-        float: center;
-    }
+#titre-galerie{
+   color: $blanc;
+   font-size:4em;
 }
 
+#annee-galerie{
+   color: $bleu;
+   font-size:3em;
+}
+
+#imgs-galerie {
+    flex-wrap:wrap;
+    img{
+        width: 32em;
+        height: 20em;
+    }
+}
 }
 </style>

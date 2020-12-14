@@ -19,14 +19,14 @@ export default {};
 
 <style lang="scss" scoped>
 $fond: #090c16;
-$bleuFond: #1c2c5c;
+$bleuFonce: #1c2c5c;
 $blanc: #e3e3e3;
 $bleu: #2cd9ff;
-$boxBleu: -3px 3px 0px 1px $bleu;
+$boxBleu: -5px 5px 0px 1px $bleuFonce;
 
 /* MOBILE FIRST--------------------------------------------------------------------------------------------- */
 #info-ve {
-  background-image: linear-gradient($fond, $bleu);
+  background-image: linear-gradient($bleu, $fond);
   display: flex;
   justify-content: center;
 }
@@ -34,28 +34,27 @@ $boxBleu: -3px 3px 0px 1px $bleu;
   background-color: $blanc;
   width: 90vw;
   box-shadow: $boxBleu;
+  text-align: justify;
   margin: 4em 0 2em 1em;
   padding: 1em;
 }
 
 #titre-info {
   font-family: "CastIron";
-  color: $bleu;
+  color: $bleuFonce;
 }
 
 
 #desc-info{
   font-family: 'manrope';
-  color: $blanc;
+  color: $fond;
 }
 
 
 /* VERSION DESKTOP------------------------------------------------------------------------------------------ */
 @media (min-width: 1200px) {
   #info {
-    background-color: #0000;
-    width: 70vw;
-    box-shadow: $boxBleu;
+    width: 20vw;
     margin: 4em 0 2em 1em;
     padding: 2em;
   }

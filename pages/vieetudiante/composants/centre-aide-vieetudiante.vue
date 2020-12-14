@@ -12,7 +12,7 @@ export default {};
 
 <style lang="scss" scoped>
 $fond: #090c16;
-$bleuFond: #1c2c5c;
+$bleuFonce: #1c2c5c;
 $blanc: #e3e3e3;
 $bleu: #2cd9ff;
 
@@ -46,7 +46,7 @@ img{
     height: 17em;
     object-fit: cover;
     margin: 0;
-    box-shadow: -8px -8px 0px 1px $bleu;
+    box-shadow: -8px -8px 0px 1px $bleuFonce;
 }
 
 

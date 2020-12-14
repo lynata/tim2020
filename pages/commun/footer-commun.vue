@@ -120,10 +120,10 @@ export default {};
 <style lang='scss'>
 section#footer {
   color: white;
-  background-color: #0b132b;
+  background-color: #090c16;
 
   #contact {
-    background-color: #1c2c5c;
+    background-color: #090c16;
     display: flex;
     flex-direction: column;
     background-image: url("/medias/images/halfTone/Halftone-Effect-Background_2.png");
@@ -131,7 +131,7 @@ section#footer {
     background-repeat: repeat-x;
 
     .information:nth-child(2) {
-      background-color: #0b132b;
+      background-color: #090c16;
       padding-top: 1em;
       padding-bottom: 1em;
     }

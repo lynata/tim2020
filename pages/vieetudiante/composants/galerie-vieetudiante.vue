@@ -1,7 +1,7 @@
 <template>
   <section id="galerie-ve">
     <h1 id="titre-galerie">Galerie</h1>
-    <h2 id="annee-galerie"></h2>
+    <h2 id="annee-galerie">2018-2021</h2>
     <div id="imgs-galerie">
       <img src="/medias/images/timscuits.PNG" />
       <img src="/medias/images/elevesEcoutent.PNG" />
@@ -32,10 +32,11 @@ $bleu: #2cd9ff;
   height:100%;
 }
 
-#titre-galerie{
+#titre-galerie, #annee-galerie{
   font-family: "CastIron";
   color: $bleu;
 }
+
 
 #imgs-galerie {
     img{

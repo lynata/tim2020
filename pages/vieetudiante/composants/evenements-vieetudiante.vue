@@ -4,7 +4,7 @@
       <img src="/medias/images/Rencontre20ans.PNG" alt="Évènement 20 ans - Professeur avec anciens élèves">
       <h2 id="nom-event">TIM XX</h2>
       <h2 id="date-event">17 octobre 2019</h2>
-      <p id="desc-event">On fête les 20 ans du tim! Un évènement spectaculaire où tout les anciens étudiants ont été invités pour célébré l'ancinneté du programme TIM!</p>
+      <p id="desc-event">On fête les 20 ans du tim! Un évènement spectaculaire où tout les anciens étudiants ont été invités pour célébré l'ancienneté du programme TIM!</p>
   </section>
 </template>
 
@@ -25,13 +25,20 @@ $bleu: #2cd9ff;
   height:100%;
 }
 
-#desc-event{
-    font-family: 'manrope';
-}
 
 #titre-event{
   font-family: "CastIron";
   color: $bleu;
+}
+
+#nom-event,#date-event{
+    font-family: "CastIron";
+    color: $blanc;
+}
+
+#desc-event{
+    font-family: 'manrope';
+    color: $blanc;
 }
 
 img{

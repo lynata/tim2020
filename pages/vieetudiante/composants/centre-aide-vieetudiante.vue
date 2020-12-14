@@ -29,6 +29,10 @@ $bleu: #2cd9ff;
   color: $bleu;
 }
 
+#desc-centre-aide{
+    font-family: 'manrope';
+    color: $blanc;
+}
 
 img{
     width: 35em;

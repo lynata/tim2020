@@ -122,6 +122,14 @@ section#footer {
   color: white;
   background-color: #090c16;
 
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  a:hover {
+    color: #2cd9ff;
+  }
+
   #contact {
     background-color: #090c16;
     display: flex;

@@ -206,11 +206,18 @@ nav {
   display: none;
 }
 
+#btnActu {
+  display: none;
+}
+
 // FIN MOBILE FIRST -------------------------------------------------------------------------------------------------------------------------------------------
 
 //DEBUT TABLETTE
 
 @media (min-width: 600px) {
+  #btnActu {
+    display: block;
+  }
   .logoTIM {
     filter: none;
     padding: 0.1em;

@@ -52,4 +52,7 @@ $boxNoir: -5px 5px 0px 1px #000;
   box-shadow: $boxBleu;
   margin: 1em 2em;
 }
+html {
+  background-color: $fond;
+}
 </style>

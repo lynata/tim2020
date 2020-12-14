@@ -1,49 +1,105 @@
 <template>
   <section id="filtre">
     <div id="tete">
-      <h1>Cours</h1>
-        <!-- SESSION 2 -->
-        <section class="session">
+      <!-- SESSION 2 -->
+      <section class="session">
         <h1>Session 2</h1>
-        <ul class="js-filter">
-        <li data-tags="art">
+        <ul uk-accordion class="js-filter">
+          <li data-tags="art">
             <h2>Effets spéciaux et animation</h2>
-            <span class="flecheCours uk-accordion-title">
-            Voir ce cours</span>
+            <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
-                <p>Ce cours permet d'approfondir la formation de l’étudiant en matière de traitement d’images en mouvement et de traitement sonore. L’étudiant poursuit son apprentissage des techniques de prise de vues avec des caméras virtuelles. Il développe sa capacité à utiliser des techniques d’effets spéciaux visuels : animations graphiques, initiation à l’environnement 3D, caméras et lumières virtuelles, composition numérique et techniques d’écran vert.</p>
-                <p>L'étudiant est amené à appliquer adéquatement les techniques d'optimisation des fichiers sonores et vidéo en fonction de différents modes de diffusion et d’intégration à un projet multimédia</p>
+              <p>
+                Ce cours permet d'approfondir la formation de l’étudiant en
+                matière de traitement d’images en mouvement et de traitement
+                sonore. L’étudiant poursuit son apprentissage des techniques de
+                prise de vues avec des caméras virtuelles. Il développe sa
+                capacité à utiliser des techniques d’effets spéciaux visuels :
+                animations graphiques, initiation à l’environnement 3D, caméras
+                et lumières virtuelles, composition numérique et techniques
+                d’écran vert.
+              </p>
+              <p>
+                L'étudiant est amené à appliquer adéquatement les techniques
+                d'optimisation des fichiers sonores et vidéo en fonction de
+                différents modes de diffusion et d’intégration à un projet
+                multimédia
+              </p>
             </div>
-        </li>
-        <li data-tags="art">
+          </li>
+          <li data-tags="art">
             <h2>Conception graphique et Imagerie vectorielle</h2>
-            <span class="flecheCours uk-accordion-title">
-            Voir ce cours</span>
+            <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
-                <p>Dans ce cours, l’étudiant poursuit l’apprentissage des notions liées à la conception, à la communication graphique et au traitement des images fixes vectorielles.</p>
-                <p>L’étudiant développe un concept créatif décliné en plusieurs volets. L'étudiant apprend à utiliser la typographie selon les règles de l’art. Il a l'opportunité d'approfondir sa maîtrise de la communication graphique afin de produire un message adapté au public cible.</p>
-                <p>Pour ce faire, le cours aborde la conception d'illustrations et des techniques de travail permettant l’intégration harmonieuse d’images dans d’autres logiciels multimédias. L'étudiant apprendra à créer des agencements graphiques et typographiques comme des logos, des icônes web ainsi que des éléments de jeu en 2D</p>
-                <p>Enfin, l’étudiant est amené à argumenter et justifier ses choix créatifs.</p>
+              <p>
+                Dans ce cours, l’étudiant poursuit l’apprentissage des notions
+                liées à la conception, à la communication graphique et au
+                traitement des images fixes vectorielles.
+              </p>
+              <p>
+                L’étudiant développe un concept créatif décliné en plusieurs
+                volets. L'étudiant apprend à utiliser la typographie selon les
+                règles de l’art. Il a l'opportunité d'approfondir sa maîtrise de
+                la communication graphique afin de produire un message adapté au
+                public cible.
+              </p>
+              <p>
+                Pour ce faire, le cours aborde la conception d'illustrations et
+                des techniques de travail permettant l’intégration harmonieuse
+                d’images dans d’autres logiciels multimédias. L'étudiant
+                apprendra à créer des agencements graphiques et typographiques
+                comme des logos, des icônes web ainsi que des éléments de jeu en
+                2D
+              </p>
+              <p>
+                Enfin, l’étudiant est amené à argumenter et justifier ses choix
+                créatifs.
+              </p>
             </div>
-        </li>
-        <li data-tags="web prog art">
+          </li>
+          <li data-tags="web prog art">
             <h2>Animation et Interactivité Web</h2>
-            <span class="flecheCours uk-accordion-title">
-            Voir ce cours</span>
+            <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
-                <p>Ce cours permet à l'étudiant d'acquérir les compétences de base requises pour programmer l'interactivité de l'interface-utilisateur d'une application multimédia en ligne. Les notions abordées dans les cours « 582-1W1 Mise en page Web » et « 582-1J1 Animation et interactivité en jeu » sont approfondies en les appliquant dans un contexte de création de sites Web interactifs, exécutables sur un poste client.</p>
-                <p>L'étudiant apprend à créer et afficher des éléments graphiques par programmation et à appliquer des effets de transition et d'animation. L'accent est mis sur la gestion d'événements, le développement d'interfaces interactives et l'adaptabilité multiplateformes. L'étudiant apprend enfin à installer et utiliser les outils de développement adéquats pour améliorer sa productivité dans le contexte de la chaîne de production Web.</p>
+              <p>
+                Ce cours permet à l'étudiant d'acquérir les compétences de base
+                requises pour programmer l'interactivité de
+                l'interface-utilisateur d'une application multimédia en ligne.
+                Les notions abordées dans les cours « 582-1W1 Mise en page Web »
+                et « 582-1J1 Animation et interactivité en jeu » sont
+                approfondies en les appliquant dans un contexte de création de
+                sites Web interactifs, exécutables sur un poste client.
+              </p>
+              <p>
+                L'étudiant apprend à créer et afficher des éléments graphiques
+                par programmation et à appliquer des effets de transition et
+                d'animation. L'accent est mis sur la gestion d'événements, le
+                développement d'interfaces interactives et l'adaptabilité
+                multiplateformes. L'étudiant apprend enfin à installer et
+                utiliser les outils de développement adéquats pour améliorer sa
+                productivité dans le contexte de la chaîne de production Web.
+              </p>
             </div>
-        </li>
-        <li data-tags="prog jeu scena">
+          </li>
+          <li data-tags="prog jeu scena">
             <h2>Création de jeu 2D</h2>
-            <span class="flecheCours uk-accordion-title">
-            Voir ce cours</span>
+            <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
-                <p>Dans ce cours, l’étudiant approfondit la programmation graphique et s’initie aux concepts de base d'un moteur de jeu. Le cours permet d'approfondir la maîtrise de la structure d'affichage ainsi que le contrôle de l'animation et de l'interactivité.</p>
-                <p>Par la création d'un prototype simple, l'étudiant apprend les concepts de base reliés à l'intégration d'un jeu ou d'une application interactive en exploitant les principales classes intégrées d’objets graphiques et médiatiques et en créant ses propres classes d’objets.</p>
+              <p>
+                Dans ce cours, l’étudiant approfondit la programmation graphique
+                et s’initie aux concepts de base d'un moteur de jeu. Le cours
+                permet d'approfondir la maîtrise de la structure d'affichage
+                ainsi que le contrôle de l'animation et de l'interactivité.
+              </p>
+              <p>
+                Par la création d'un prototype simple, l'étudiant apprend les
+                concepts de base reliés à l'intégration d'un jeu ou d'une
+                application interactive en exploitant les principales classes
+                intégrées d’objets graphiques et médiatiques et en créant ses
+                propres classes d’objets.
+              </p>
             </div>
-        </li>
+          </li>
         </ul>
       </section>
     </div>

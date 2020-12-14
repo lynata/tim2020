@@ -96,41 +96,12 @@ export default {};
     align-items: center;
     position: relative;
   }
-  a:hover #ImgCours {
+
+  a:hover #ImgVie img,
+  a:hover #ImgProfs img,
+  a:hover #ImgCours img {
     filter: brightness(50%);
     transition: filter 0.2s ease-out;
-    button {
-      width: 11em;
-      padding: 0.7em;
-      font-size: 1.6em;
-      margin-bottom: 2%;
-      transition: width 0.2s ease-in, padding 0.2s ease-in,
-        font-size 0.2s ease-in, margin-bottom, 0.2s ease-in;
-    }
-  }
-  a:hover #ImgProfs {
-    filter: brightness(50%);
-    transition: filter 0.2s ease-out;
-    button {
-      width: 11em;
-      padding: 0.7em;
-      font-size: 1.6em;
-      margin-bottom: 2%;
-      transition: width 0.2s ease-in, padding 0.2s ease-in,
-        font-size 0.2s ease-in, margin-bottom, 0.2s ease-in;
-    }
-  }
-  a:hover #ImgVie {
-    filter: brightness(50%);
-    transition: filter 0.2s ease-out;
-    button {
-      width: 9em;
-      padding: 0.7em 0.2em 0.7em 0.7em;
-      font-size: 1.6em;
-      margin-bottom: 2%;
-      transition: width 0.2s ease-in, padding 0.2s ease-in,
-        font-size 0.2s ease-in, margin-bottom, 0.2s ease-in;
-    }
   }
 
   #imgProfs,

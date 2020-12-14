@@ -107,7 +107,7 @@
             </router-link>
           </li>
         </ul>
-        <p id="droitAuteur">undefinedvariable2020</p>
+        <p id="droitAuteur">undefined variable 2020</p>
       </div>
     </footer>
   </section>
@@ -182,7 +182,7 @@ section#footer {
       align-items: center;
       width: 2em;
       height: 2em;
-      background-color: #3a506b;
+      background-color: #1c2c5c;
       border-radius: 50%;
       margin: 0 0.5em;
       font-size: 1.75em;
@@ -195,7 +195,7 @@ section#footer {
   #droitAuteur {
     margin-bottom: 0;
     padding-bottom: 0.3em;
-    opacity: 0.6;
+    opacity: 0.3;
   }
 }
 
@@ -246,9 +246,14 @@ section#footer {
 
     #footerNav {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       border-top: white solid 2px;
+      opacity: 0.5;
       font-size: 1.25em;
+
+      a {
+        padding: 0 0.8em;
+      }
     }
   }
 }

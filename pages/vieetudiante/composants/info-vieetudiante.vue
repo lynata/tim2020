@@ -43,23 +43,13 @@ $boxBleu: -3px 3px 0px 1px $bleu;
   color: $bleu;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
+
 #desc-info{
   font-family: 'manrope';
   color: $blanc;
 }
 
-<<<<<<< Updated upstream
-=======
->>>>>>> d10dcd1cf5ae75151aaa21e77acb9c7a1ffe5aa8
->>>>>>> Stashed changes
-=======
->>>>>>> c6cf55e7a279c917b8bd214148223524c7f07329
+
 /* VERSION DESKTOP------------------------------------------------------------------------------------------ */
 @media (min-width: 1200px) {
   #info {

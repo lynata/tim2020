@@ -73,7 +73,7 @@
           <ul class="js-filter">
             <li data-tags="art scena">
               <h2>Effets spéciaux et animation</h2>
-              <span class="flecheCours" v-on:click="cours1 = !cours1"
+              <span class="flecheCours" v-on:click="s2c1 = !s2c1"
                 >Voir ce cours</span>
             </li>
             <li data-tags="art">
@@ -93,6 +93,110 @@
             </li>
           </ul>
 
+          <!-- SESSION 3 -->
+          <section class="session">
+          <h1>Session 3</h1>
+          <ul class="js-filter">
+            <li data-tags="art">
+              <h2>Imagerie 3D</h2>
+              <span class="flecheCours" v-on:click="s2c1 = !s2c1"
+                >Voir ce cours</span>
+            </li>
+            <li data-tags="art">
+              <h2>Design d'interactivité</h2>
+              <span class="flecheCours" v-on:click="cours2 = !cours2">
+                Voir ce cours</span>
+            </li>
+            <li data-tags="prog">
+              <h2>Création de sites Web dynamiques</h2>
+              <span class="flecheCours" v-on:click="cours3 = !cours3">
+                Voir ce cours</span>
+            </li>
+            <li data-tags="prog jeu scena">
+              <h2>Création de jeu 3D</h2>
+              <span class="flecheCours" v-on:click="cours4 = !cours4">
+                Voir ce cours</span>
+            </li>
+          </ul>
+
+          <!-- SESSION 4 -->
+          <section class="session">
+          <h1>Session 4</h1>
+          <ul class="js-filter">
+            <li data-tags="profess">
+              <h2>Gestion de projets multimédias</h2>
+              <span class="flecheCours" v-on:click="cours1 = !cours1"
+                >Voir ce cours</span>
+            </li>
+            <li data-tags="design prog">
+              <h2>Conception d'Interfaces et développement Web</h2>
+              <span class="flecheCours" v-on:click="cours2 = !cours2">
+                Voir ce cours</span>
+            </li>
+            <li data-tags="prog profess scena jeu">
+              <h2>Création de jeu en équipe</h2>
+              <span class="flecheCours" v-on:click="cours3 = !cours3">
+                Voir ce cours</span>
+            </li>
+            <!-- choix -->
+            <h2 class="choix" >Choix de 1 cours parmi :</h2>
+            <li data-tags="design ">
+              <h2>Interfaces Web réactives et animées</h2>
+              <span class="flecheCours" v-on:click="cours1 = !cours1"
+                >Voir ce cours</span>
+            </li>
+            <li data-tags="scena art ">
+              <h2>Animation 3D</h2>
+              <span class="flecheCours" v-on:click="cours1 = !cours1"
+                >Voir ce cours</span>
+            </li>
+          </ul>
+
+          <!-- SESSION 5 -->
+          <section class="session">
+          <h1>Session 5</h1>
+          <ul class="js-filter">
+            <li data-tags="profess">
+              <h2>Méthodes de recherche er préparation au marché au travail</h2>
+              <span class="flecheCours" v-on:click="cours1 = !cours1"
+                >Voir ce cours</span>
+            </li>
+            <li data-tags="profess">
+              <h2>Communication et dynamique d'une équipe de travail</h2>
+              <span class="flecheCours" v-on:click="cours2 = !cours2">
+                Voir ce cours</span>
+            </li>
+            <li data-tags="prog profess">
+              <h2>Projet Web en équipe</h2>
+              <span class="flecheCours" v-on:click="cours3 = !cours3">
+                Voir ce cours</span>
+            </li>
+            <!-- choix 1 -->
+            <h2 class="choix" >Choix de 1 cours parmi :</h2>
+            <li data-tags="jeu art scena">
+              <h2>Expérimentation en jeu - volet création</h2>
+              <span class="flecheCours" v-on:click="cours1 = !cours1"
+                >Voir ce cours</span>
+            </li>
+            <li data-tags="scena prog jeu">
+              <h2>Expérimentation en jeu - volet programmation</h2>
+              <span class="flecheCours" v-on:click="cours1 = !cours1"
+                >Voir ce cours</span>
+            </li>
+            <!-- choix 2 -->
+            <h2 class="choix" >Choix de 1 cours parmi :</h2>
+            <li data-tags="profess art">
+              <h2>Technologies émergentes et avancées - Volet création</h2>
+              <span class="flecheCours" v-on:click="cours1 = !cours1"
+                >Voir ce cours</span>
+            </li>
+            <li data-tags="profess prog">
+              <h2>Technologies émergentes et avancées - Volet programmation</h2>
+              <span class="flecheCours" v-on:click="cours1 = !cours1"
+                >Voir ce cours</span>
+            </li>
+          </ul>
+
           <cours-1 v-if="cours1 == true"></cours-1>
 
           <cours-2 v-if="cours2 == true"></cours-2>
@@ -100,6 +204,8 @@
           <cours-3 v-if="cours3 == true"></cours-3>
 
           <cours-4 v-if="cours4 == true"></cours-4>
+
+          <sess2cours1 v-if="s2c1 == true"></sess2cours1>
       </section>
     </div>
   </section>
@@ -112,6 +218,7 @@ export default {
     cours2: httpVueLoader("../composants/cours-2.vue"),
     cours3: httpVueLoader("../composants/cours-3.vue"),
     cours4: httpVueLoader("../composants/cours-4.vue"),
+    s2c1 : httpVueLoader("../composants/sess2cours1.vue"),
   },
   data() {
     return {
@@ -119,6 +226,7 @@ export default {
       cours2: false,
       cours3: false,
       cours4: false,
+      s2c1: false,
     };
   },
 };
@@ -158,6 +266,10 @@ $boxNoir: -5px 5px 0px 1px #000;
   //   color: $bleu;
   //   font-family: Castiron;
   // }
+  .choix{
+    font-family: Castiron;
+    color: $bleu;
+  }
 }
 
 #filtre {
@@ -189,7 +301,8 @@ $boxNoir: -5px 5px 0px 1px #000;
         justify-content: center;
       }
 
-      a:hover {
+      a:hover,
+      a:target{
         color: $bleu;
       }
 

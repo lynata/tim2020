@@ -1,7 +1,6 @@
 <template>
   <section id="filtre">
     <div id="tete">
-      <h1>Cours</h1>
       <!-- SESSION 4 -->
       <section class="session">
         <h1>Session 4</h1>
@@ -78,10 +77,9 @@
               </p>
             </div>
           </li>
-          <!-- choix -->
-          <h2 class="choix">Choix de 1 cours parmi :</h2>
+
           <li data-tags="design ">
-            <h2>Interfaces Web réactives et animées</h2>
+            <h2>Choix de cours: Interfaces Web réactives et animées</h2>
             <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
               <p>
@@ -101,7 +99,7 @@
             </div>
           </li>
           <li data-tags="scena art ">
-            <h2>Animation 3D</h2>
+            <h2>Choix de cours: Animation 3D</h2>
             <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
               <p>

@@ -82,10 +82,9 @@
               </p>
             </div>
           </li>
-          <!-- choix 1 -->
-          <!-- <li><h2 class="choix">Choix de 1 cours parmi :</h2></li> -->
+
           <li data-tags="jeu design">
-            <h2>Expérimentation en jeu - volet création</h2>
+            <h2>Choix de cours: Expérimentation en jeu - volet création</h2>
             <span class="flecheCours uk-accordion-title">Voir ce cours</span>
             <div class="uk-accordion-content">
               <p>
@@ -106,7 +105,9 @@
             </div>
           </li>
           <li data-tags="prog jeu">
-            <h2>Expérimentation en jeu - volet programmation</h2>
+            <h2>
+              Choix de cours: Expérimentation en jeu - volet programmation
+            </h2>
             <span class="flecheCours uk-accordion-title">Voir ce cours</span>
             <div class="uk-accordion-content">
               <p>
@@ -124,10 +125,12 @@
               </p>
             </div>
           </li>
-          <!-- choix 2 -->
-          <h2 class="choix">Choix de 1 cours parmi :</h2>
+
           <li data-tags="design">
-            <h2>Technologies émergentes et avancées - Volet création</h2>
+            <h2>
+              Choix de cours: Technologies émergentes et avancées - Volet
+              création
+            </h2>
             <span class="flecheCours uk-accordion-title">Voir ce cours</span>
             <div class="uk-accordion-content">
               <p>
@@ -141,7 +144,10 @@
             </div>
           </li>
           <li data-tags="prog">
-            <h2>Technologies émergentes et avancées - Volet programmation</h2>
+            <h2>
+              Choix de cours: Technologies émergentes et avancées - Volet
+              programmation
+            </h2>
             <span class="flecheCours uk-accordion-title">Voir ce cours</span>
             <div class="uk-accordion-content">
               <p>

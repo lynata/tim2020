@@ -1,8 +1,6 @@
 <template>
   <section id="filtre">
     <div id="tete">
-      <h1>Cours</h1>
-      <!-- SESSION 3 -->
       <section class="session">
         <h1>Session 3</h1>
         <ul uk-accordion class="js-filter">

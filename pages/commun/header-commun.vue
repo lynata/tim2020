@@ -34,8 +34,13 @@
             </li>
             <li>
               <a href="index.html"
-                ><img class="logoTIM" src="/medias/images/logotimgris.png"
-              /></a>
+                ><img
+                  class="logoTIM"
+                  src="/medias/images/logotimgris.png"
+                  target="_blank"
+                  href=""
+                />
+              </a>
             </li>
             <li>
               <router-link to="/vie-etudiante">
@@ -45,7 +50,7 @@
               </router-link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" uk-scroll>Contact</a>
             </li>
           </ul>
         </div>

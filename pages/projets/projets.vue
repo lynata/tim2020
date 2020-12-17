@@ -8,15 +8,13 @@
 
 <script lang="text/babel">
 export default {
-  // name: 'projets',
+   name: 'projets',
   components: {
     "header-commun": httpVueLoader("/pages/commun/header-commun.vue"),
     "footer-commun": httpVueLoader("/pages/commun/footer-commun.vue"),
-    "categories-projets": httpVueLoader(
-      "/pages/projets/composants/categories-projets.vue"
-    ),
-  },
-};
+    "categories-projets": httpVueLoader( "/pages/projets/composants/categories-projets.vue" )
+}
+}
 </script>
 
 <style scoped>

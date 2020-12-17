@@ -23,7 +23,10 @@
       <a href="#projetImg">
         <div>
           <h2 id="titreImg">Imagerie</h2>
-          <img src="medias/images/projets/img/illustra.png" alt="Illustration/Image" />
+          <img
+            src="medias/images/projets/img/illustra.png"
+            alt="Illustration/Image"
+          />
         </div>
       </a>
       <a href="#projetVideo">
@@ -42,57 +45,68 @@
     <div id="projetTout">
       <h1 class="titreProjet">Projets Web</h1>
       <div id="projetWeb">
-        <img src="medias/images/projets/web/web.png" alt="web1">
-        <img src="medias/images/projets/web/georges.png" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="medias/images/projets/web/web.png" alt="web1" />
+        <img src="medias/images/projets/web/georges.png" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
       </div>
       <h1 class="titreProjet">Projets Jeu</h1>
       <div id="projetJeu">
-        <img src="medias/images/projets/jeu/jeu.png" alt="jeu1">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="medias/images/projets/jeu/jeu.png" alt="jeu1" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
       </div>
       <h1 class="titreProjet">Projets 3D</h1>
       <div id="projet3d">
-        <img src="medias/images/projets/3d/bruh.jpg" alt="3d1">
-        <img src="medias/images/projets/3d/alesExTete2.png" alt="">
-        <img src="medias/images/projets/3d/Aster2.png" alt="">
-        <img src="medias/images/projets/3d/BoudriasGaboriau_Philippe_tp1.jpeg" alt="">
-        <img src="medias/images/projets/3d/DaoustMaxime_portal_gun.jpeg" alt="">
-        <img src="medias/images/projets/3d/Ducharme.pjg" alt="">
+        <img src="medias/images/projets/3d/bruh.jpg" alt="3d1" />
+        <img src="medias/images/projets/3d/alesExTete2.png" alt="" />
+        <img src="medias/images/projets/3d/Aster2.png" alt="" />
+        <img
+          src="medias/images/projets/3d/BoudriasGaboriau_Philippe_tp1.jpeg"
+          alt=""
+        />
+        <img
+          src="medias/images/projets/3d/DaoustMaxime_portal_gun.jpeg"
+          alt=""
+        />
+        <img src="medias/images/projets/3d/Ducharme.pjg" alt="" />
       </div>
       <h1 class="titreProjet">Projets Image numÉrique</h1>
       <div id="projetImg">
-        <img src="medias/images/projets/img/illustra.png" alt="img1">
-        <img src="medias/images/projets/img/nutella.jpg" alt="nutella">
-        <img src="medias/images/projets/img/PatryClaudiaTP2.jpg" alt="Van Goghhhh">
-        <img src="medias/images/projets/img/Patry_Anim_TP2A.png" alt="horns">
-        <img src="medias/images/projets/img/Patry_TP1_Logo_web.png" alt="cowjs">
+        <img src="medias/images/projets/img/illustra.png" alt="img1" />
+        <img src="medias/images/projets/img/nutella.jpg" alt="nutella" />
+        <img
+          src="medias/images/projets/img/PatryClaudiaTP2.jpg"
+          alt="Van Goghhhh"
+        />
+        <img src="medias/images/projets/img/Patry_Anim_TP2A.png" alt="horns" />
+        <img
+          src="medias/images/projets/img/Patry_TP1_Logo_web.png"
+          alt="cowjs"
+        />
       </div>
       <h1 class="titreProjet">Projets VidÉo</h1>
       <div id="projetVideo">
-        <img src="medias/images/projets/video/lastOtaku.png" alt="vid1">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="medias/images/projets/video/lastOtaku.png" alt="vid1" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
       </div>
       <h1 class="titreProjet">Projets Design</h1>
       <div id="projetDesign">
-        <img src="medias/images/projets/design/design.png" alt="">
-        <img src="medias/images/projets/design/ClaudiaFin.jpg" alt="">
-        <img src="medias/images/projets/design/claudiaFinal.jpg" alt="">
-        <img src="medias/images/projets/design/claudiaS1.jpg" alt="">
-        <img src="medias/images/projets/design/claudiaS2.jpg" alt="">
-        <img src="medias/images/projets/design/claudiaS3.jpg" alt="">
-        <img src="medias/images/projets/design/claudiaS4.jpg" alt="">
+        <img src="medias/images/projets/design/design.png" alt="" />
+        <img src="medias/images/projets/design/ClaudiaFin.jpg" alt="" />
+        <img src="medias/images/projets/design/claudiaFinal.jpg" alt="" />
+        <img src="medias/images/projets/design/claudiaS1.jpg" alt="" />
+        <img src="medias/images/projets/design/claudiaS2.jpg" alt="" />
+        <img src="medias/images/projets/design/claudiaS3.jpg" alt="" />
+        <img src="medias/images/projets/design/claudiaS4.jpg" alt="" />
       </div>
     </div>
-    
   </section>
 </template>
 
@@ -102,25 +116,25 @@ export default {};
 
 <style lang='scss'>
 /* DEBUT STYLE MOBILE FIRST -------------------------------------------------------------------------------------------------------------------------------------- */
-$fond: #101832;
+$fond: #090c16;
 $bleuFond: #1c2c5c;
 $blanc: #e3e3e3;
 $bleu: #2cd9ff;
 $boxBleu: -3px 3px 0px 1px $bleu;
 $boxNoir: -5px 5px 0px 1px #000;
-#projets{
+#projets {
   background-color: $fond;
-  .titreProjet{
+  .titreProjet {
     background-color: $fond;
     color: $bleu;
     font-family: Castiron;
   }
-  #categories{
+  #categories {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 2vw;
-    a div img{
+    a div img {
       width: 100px;
       height: 70px;
     }
@@ -129,7 +143,7 @@ $boxNoir: -5px 5px 0px 1px #000;
     #titreImg,
     #titre3D,
     #titreVideo,
-    #titreDesign{
+    #titreDesign {
       color: white;
       position: absolute;
       // margin-top: 6vw;
@@ -140,7 +154,7 @@ $boxNoir: -5px 5px 0px 1px #000;
       font-size: medium;
     }
   }
-  #projetTout{
+  #projetTout {
     // display: flex;
     // flex-wrap: nowrap;
     #projetWeb,
@@ -148,13 +162,13 @@ $boxNoir: -5px 5px 0px 1px #000;
     #projet3d,
     #projetImg,
     #projetVideo,
-    #projetDesign{
+    #projetDesign {
       margin-top: 5vh;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
-      img{
+      img {
         max-width: 150px;
         max-height: 150px;
         padding: 2vh;
@@ -167,8 +181,8 @@ $boxNoir: -5px 5px 0px 1px #000;
 /*DEBUT TABLETTE    -------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media (min-width: 600px) {
-  #categories{
-    div img{
+  #categories {
+    div img {
       width: 200px !important;
       height: 150px !important;
     }
@@ -177,18 +191,18 @@ $boxNoir: -5px 5px 0px 1px #000;
     #titre3D,
     #titreImg,
     #titreVideo,
-    #titreDesign{
+    #titreDesign {
       margin-left: 8vw !important;
       font-size: 3vh !important;
     }
-    #projetTout{
+    #projetTout {
       #projetWeb,
       #projetJeu,
       #projet3d,
       #projetImg,
       #projetVideo,
-      #projetDesign{
-        img{
+      #projetDesign {
+        img {
           max-width: 300px !important;
           max-height: 300px !important;
         }
@@ -200,14 +214,14 @@ $boxNoir: -5px 5px 0px 1px #000;
 /* FIN STYLE TABLETTE---------------------------------------------------------------------- */
 /* DEBUT STYLE GRAND ECRAN ------------------------------------------------------------------- */
 @media (min-width: 1200px) {
-  #projetTout{
+  #projetTout {
     #projetWeb,
     #projetJeu,
     #projet3d,
     #projetImg,
     #projetVideo,
-    #projetDesign{
-      img{
+    #projetDesign {
+      img {
         max-width: 400px !important;
         max-height: 400px !important;
       }

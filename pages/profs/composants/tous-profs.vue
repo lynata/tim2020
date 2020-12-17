@@ -3,8 +3,8 @@
     <div v-bind:key="index" v-for="(unProf, index) in lesProfs">
       <a href="#"
         ><img
-          :src="unProf.content.photo.filename"
-          :alt="unProf.content.nom"
+          v-bind:src="unProf.content.photo.filename"
+          v-bind:alt="unProf.content.nom"
         />{{ unProf.content.nom }}</a
       >
     </div>

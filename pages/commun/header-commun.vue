@@ -17,17 +17,19 @@
           <ul>
             <li>
               <router-link to="/cours">
-                <a>Cours</a>
+                <a v-bind:class="{ pageActuelle: leUrl == '/cours' }">Cours</a>
               </router-link>
             </li>
             <li>
               <router-link to="/profs">
-                <a>Profs</a>
+                <a v-bind:class="{ pageActuelle: leUrl == '/profs' }">Profs</a>
               </router-link>
             </li>
             <li>
               <router-link to="/projets">
-                <a>Projets</a>
+                <a v-bind:class="{ pageActuelle: leUrl == '/projets' }"
+                  >Projets</a
+                >
               </router-link>
             </li>
             <li>
@@ -37,7 +39,9 @@
             </li>
             <li>
               <router-link to="/vie-etudiante">
-                <a>Vie Etudiante</a>
+                <a v-bind:class="{ pageActuelle: leUrl == '/vie-etudiante' }"
+                  >Vie Etudiante</a
+                >
               </router-link>
             </li>
             <li>
@@ -52,14 +56,16 @@
 
 <script lang="text/babel">
 export default {
+
   components: {
     "menu-mobile": httpVueLoader("/pages/commun/menu-mobile-commun.vue"),
   },
   data() {
     return {
       clickMenu: false,
+      leUrl : this.$route.path
     };
-  },
+  }
 };
 </script>
 
@@ -125,6 +131,10 @@ nav {
 }
 #checkNav {
   display: none;
+}
+
+.pageActuelle {
+  color: $bleu !important;
 }
 
 //FIN MOBILE FIRST------------------------------------

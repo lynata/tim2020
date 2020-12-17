@@ -1,7 +1,7 @@
 <template>
   <section id="header">
     <div id="barreDuHaut">
-      <a href="https://www.cmaisonneuve.qc.ca/" target="_blank"
+      <a href="https://www.cmaisonneuve.qc.ca/" target="_blank" uk-scroll
         ><img
           class="imgMaisonneuve"
           src="/medias/images/logo_college_maisonneuve.png"
@@ -50,7 +50,7 @@
             </router-link>
           </li>
           <li class="uk-animation-slide-left">
-            <a href="#contact">Contact</a>
+            <a href="#contact" uk-scroll>Contact</a>
           </li>
         </ul>
       </div>

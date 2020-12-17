@@ -1,8 +1,8 @@
 <template>
-  <section id="footer">
+  <section id="footer" target="_blank">
     <footer>
       <div id="contact">
-        <a class="flecheScroll" href="#target" uk-scroll>
+        <a class="flecheScroll" href="#" uk-scroll>
           <i class="fas fa-angle-up"></i>
         </a>
         <h1>Nous joindre</h1>
@@ -107,7 +107,11 @@
             </router-link>
           </li>
         </ul>
-        <p id="droitAuteur"><a href="../../medias/images/hellmo.gif" target="_blank">undefined variable 2020</a></p>
+        <p id="droitAuteur">
+          <a href="../../medias/images/hellmo.gif" target="_blank"
+            >undefined variable 2020</a
+          >
+        </p>
       </div>
     </footer>
   </section>
@@ -204,8 +208,8 @@ section#footer {
     margin-bottom: 0;
     padding-bottom: 0.3em;
     opacity: 0.3;
-    a{
-      text-decoration:none;
+    a {
+      text-decoration: none;
       cursor: default;
     }
   }

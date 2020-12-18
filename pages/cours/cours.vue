@@ -1,14 +1,28 @@
 <template>
-  <div>
-    <div id="filtrage" uk-filter="target: .js-filter">
-      <header-commun></header-commun>
-      <session-1></session-1>
-      <session-2></session-2>
-      <session-3></session-3>
-      <session-4></session-4>
-      <session-5></session-5>
-      <session-6></session-6>
-    </div>
+  <div id="filtrage" uk-filter="target: .js-filter">
+    <header-commun></header-commun>
+    <ul class="uk-subnav uk-subnav-pill">
+      <li uk-filter-control="[data-tags*='Tous']"><a href="#">Tous</a></li>
+      <li uk-filter-control="[data-tags*='Web']"><a href="#">Web</a></li>
+      <li uk-filter-control="[data-tags*='Jeu']"><a href="#">Jeux vidéo</a></li>
+      <li uk-filter-control="[data-tags*='3D']"><a href="#">3D</a></li>
+      <li uk-filter-control="[data-tags*='Design']"><a href="#">Design</a></li>
+      <li uk-filter-control="[data-tags*='Prog']">
+        <a href="#">Programmation</a>
+      </li>
+      <li uk-filter-control="[data-tags*='VideoSon']">
+        <a href="#">Vidéo et son</a>
+      </li>
+      <li uk-filter-control="[data-tags*='ImageArt']">
+        <a href="#">Image et art numériques</a>
+      </li>
+    </ul>
+    <session-1></session-1>
+    <session-2></session-2>
+    <session-3></session-3>
+    <session-4></session-4>
+    <session-5></session-5>
+    <session-6></session-6>
     <footer-commun></footer-commun>
   </div>
 </template>

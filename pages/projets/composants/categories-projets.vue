@@ -44,7 +44,11 @@
     </div>
     <div id="projetTout">
       <h1 class="titreProjet">Projets Web</h1>
-      <div id="projetWeb">
+      <div
+        id="projetWeb"
+        class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center"
+        uk-grid
+      >
         <img src="medias/images/projets/web/web.png" alt="web1" />
         <img src="medias/images/projets/web/georges.png" alt="" />
         <img src="" alt="" />
@@ -52,7 +56,11 @@
         <img src="" alt="" />
       </div>
       <h1 class="titreProjet">Projets Jeu</h1>
-      <div id="projetJeu">
+      <div
+        id="projetJeu"
+        class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center"
+        uk-grid
+      >
         <img src="medias/images/projets/jeu/jeu.png" alt="jeu1" />
         <img src="" alt="" />
         <img src="" alt="" />
@@ -60,7 +68,11 @@
         <img src="" alt="" />
       </div>
       <h1 class="titreProjet">Projets 3D</h1>
-      <div id="projet3d">
+      <div
+        id="projet3d"
+        class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center"
+        uk-grid
+      >
         <img src="medias/images/projets/3d/bruh.jpg" alt="3d1" />
         <img src="medias/images/projets/3d/alesExTete2.png" alt="" />
         <img src="medias/images/projets/3d/Aster2.png" alt="" />
@@ -75,7 +87,11 @@
         <img src="medias/images/projets/3d/Ducharme.pjg" alt="" />
       </div>
       <h1 class="titreProjet">Projets Image numÉrique</h1>
-      <div id="projetImg">
+      <div
+        id="projetImg"
+        class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center"
+        uk-grid
+      >
         <img src="medias/images/projets/img/illustra.png" alt="img1" />
         <img src="medias/images/projets/img/nutella.jpg" alt="nutella" />
         <img
@@ -89,7 +105,11 @@
         />
       </div>
       <h1 class="titreProjet">Projets VidÉo</h1>
-      <div id="projetVideo">
+      <div
+        id="projetVideo"
+        class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center"
+        uk-grid
+      >
         <img src="medias/images/projets/video/lastOtaku.png" alt="vid1" />
         <img src="" alt="" />
         <img src="" alt="" />
@@ -97,7 +117,11 @@
         <img src="" alt="" />
       </div>
       <h1 class="titreProjet">Projets Design</h1>
-      <div id="projetDesign">
+      <div
+        id="projetDesign"
+        class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center"
+        uk-grid
+      >
         <img src="medias/images/projets/design/design.png" alt="" />
         <img src="medias/images/projets/design/ClaudiaFin.jpg" alt="" />
         <img src="medias/images/projets/design/claudiaFinal.jpg" alt="" />
@@ -137,6 +161,7 @@ $boxNoir: -5px 5px 0px 1px #000;
     a div img {
       width: 100px;
       height: 70px;
+      border-style: none !important;
     }
     #titreWeb,
     #titreJeu,

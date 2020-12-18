@@ -5,7 +5,7 @@
       <section class="session">
         <h1>Session 2</h1>
         <ul uk-accordion class="js-filter">
-          <li data-tags="art">
+          <li data-tags="Tous VideoSon">
             <h2>Effets spéciaux et animation</h2>
             <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
@@ -27,7 +27,7 @@
               </p>
             </div>
           </li>
-          <li data-tags="art">
+          <li data-tags="Tous ImageArt Design">
             <h2>Conception graphique et Imagerie vectorielle</h2>
             <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
@@ -57,7 +57,7 @@
               </p>
             </div>
           </li>
-          <li data-tags="web prog art">
+          <li data-tags="Tous Web Prog">
             <h2>Animation et Interactivité Web</h2>
             <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
@@ -81,7 +81,7 @@
               </p>
             </div>
           </li>
-          <li data-tags="prog jeu scena">
+          <li data-tags="Tous Jeu  Prog">
             <h2>Création de jeu 2D</h2>
             <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">

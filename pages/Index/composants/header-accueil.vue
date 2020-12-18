@@ -21,7 +21,10 @@
         >
       </router-link>
     </div>
-    <nav>
+    <nav
+      style="z-index: 980"
+      uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom; offset: 25"
+    >
       <div>
         <ul>
           <li class="uk-animation-slide-right">
@@ -219,8 +222,9 @@ nav {
     display: block;
   }
   .logoTIM {
+    max-width: 70%;
     filter: none;
-    padding: 0.1em;
+    margin-left: 10%;
     transition: padding 0.2s ease-out;
   }
 

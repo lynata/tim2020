@@ -5,7 +5,7 @@
       <section class="session">
         <h1>Session 5</h1>
         <ul uk-accordion class="js-filter">
-          <li>
+          <li data-tags="Tous">
             <h2>Méthodes de recherche et préparation au marché du travail</h2>
             <span class="flecheCours uk-accordion-title">Voir ce cours</span>
             <div class="uk-accordion-content">
@@ -30,7 +30,7 @@
             </div>
           </li>
 
-          <li>
+          <li data-tags="Tous">
             <h2>Communication et dynamique d’une équipe de travail</h2>
             <span class="flecheCours uk-accordion-title">Voir ce cours</span>
             <div class="uk-accordion-content">
@@ -53,7 +53,7 @@
             </div>
           </li>
 
-          <li data-tags="prog">
+          <li data-tags="Tous Web Design Prog">
             <h2>Projet Web en équipe</h2>
             <span class="flecheCours uk-accordion-title">Voir ce cours</span>
             <div class="uk-accordion-content">
@@ -83,7 +83,7 @@
             </div>
           </li>
 
-          <li data-tags="jeu design">
+          <li data-tags="Tous Jeu Design">
             <h2>Choix de cours: Expérimentation en jeu - volet création</h2>
             <span class="flecheCours uk-accordion-title">Voir ce cours</span>
             <div class="uk-accordion-content">
@@ -104,7 +104,7 @@
               </p>
             </div>
           </li>
-          <li data-tags="prog jeu">
+          <li data-tags="Tous Jeu Prog">
             <h2>
               Choix de cours: Expérimentation en jeu - volet programmation
             </h2>
@@ -126,7 +126,7 @@
             </div>
           </li>
 
-          <li data-tags="design">
+          <li data-tags="Tous Design">
             <h2>
               Choix de cours: Technologies émergentes et avancées - Volet
               création
@@ -143,7 +143,7 @@
               </p>
             </div>
           </li>
-          <li data-tags="prog">
+          <li data-tags="Tous Prog">
             <h2>
               Choix de cours: Technologies émergentes et avancées - Volet
               programmation

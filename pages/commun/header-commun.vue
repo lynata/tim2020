@@ -12,7 +12,10 @@
 
     <section id="header">
       <div id="bgHautNav"></div>
-      <nav>
+      <nav
+        style="z-index: 980"
+        uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom"
+      >
         <div>
           <ul>
             <li>

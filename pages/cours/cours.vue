@@ -1,6 +1,23 @@
 <template>
-  <div>
+  <div id="filtrage" uk-filter="target: .js-filter">
     <header-commun></header-commun>
+    <h1>Cours</h1>
+    <ul class="uk-subnav uk-subnav-pill">
+      <li uk-filter-control="[data-tags*='Tous']"><a href="#">Tous</a></li>
+      <li uk-filter-control="[data-tags*='Web']"><a href="#">Web</a></li>
+      <li uk-filter-control="[data-tags*='Jeu']"><a href="#">Jeux vidéo</a></li>
+      <li uk-filter-control="[data-tags*='3D']"><a href="#">3D</a></li>
+      <li uk-filter-control="[data-tags*='Design']"><a href="#">Design</a></li>
+      <li uk-filter-control="[data-tags*='Prog']">
+        <a href="#">Programmation</a>
+      </li>
+      <li uk-filter-control="[data-tags*='VideoSon']">
+        <a href="#">Vidéo et son</a>
+      </li>
+      <li uk-filter-control="[data-tags*='ImageArt']">
+        <a href="#">Image et art numériques</a>
+      </li>
+    </ul>
     <session-1></session-1>
     <session-2></session-2>
     <session-3></session-3>
@@ -47,6 +64,12 @@ $blanc: #e3e3e3;
 $bleu: #2cd9ff;
 $boxBleu: -3px 3px 0px 1px $bleu;
 $boxNoir: -5px 5px 0px 1px #000;
+h1 {
+  font-family: Castiron;
+  color: $bleu;
+  font-size: 9vw;
+  margin-left: 1.5vw;
+}
 #filtre li {
   padding: 1em;
   box-shadow: $boxBleu;
@@ -54,5 +77,8 @@ $boxNoir: -5px 5px 0px 1px #000;
 }
 html {
   background-color: $fond;
+}
+.uk-subnav-pill > .uk-active > a {
+  background-color: $bleu !important;
 }
 </style>

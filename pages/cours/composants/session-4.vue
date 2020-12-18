@@ -5,7 +5,7 @@
       <section class="session">
         <h1>Session 4</h1>
         <ul uk-accordion class="js-filter">
-          <li data-tags="profess">
+          <li data-tags="Tous">
             <h2>Gestion de projets multimédias</h2>
             <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
@@ -29,7 +29,7 @@
               </p>
             </div>
           </li>
-          <li data-tags="design prog">
+          <li data-tags="Tous Web Design Prog">
             <h2>Conception d'Interfaces et développement Web</h2>
             <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
@@ -55,7 +55,7 @@
               </p>
             </div>
           </li>
-          <li data-tags="prog profess scena jeu">
+          <li data-tags="Tous Jeu Design Prog 3D ImageArt">
             <h2>Création de jeu en équipe</h2>
             <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
@@ -78,7 +78,7 @@
             </div>
           </li>
 
-          <li data-tags="design ">
+          <li data-tags="Tous Web Prog">
             <h2>Choix de cours: Interfaces Web réactives et animées</h2>
             <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">
@@ -98,7 +98,7 @@
               </p>
             </div>
           </li>
-          <li data-tags="scena art ">
+          <li data-tags="Tous 3D VideoSon">
             <h2>Choix de cours: Animation 3D</h2>
             <span class="flecheCours uk-accordion-title"> Voir ce cours</span>
             <div class="uk-accordion-content">

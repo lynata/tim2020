@@ -1,5 +1,5 @@
 <template>
-  <section id="tousProfs">
+  <section id="tousProfs" class="uk-animation-slide-bottom-small">
     <div v-bind:key="index" v-for="(unProf, index) in lesProfs" uk-lightbox>
       <a
         href="../../../medias/images/Professeurs/Vahik Toroussian.jpg"

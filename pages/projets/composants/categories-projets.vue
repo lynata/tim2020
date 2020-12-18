@@ -1,7 +1,7 @@
 <template>
   <section id="projets">
     <h1 class="titreProjet">Projets</h1>
-    <div id="categories">
+    <div id="categories" class="uk-animation-slide-bottom-small">
       <a href="#projetWeb">
         <div>
           <h2 id="titreWeb">Web</h2>
@@ -48,7 +48,9 @@
         id="projetWeb"
         class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center"
         uk-grid
+        uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 200"
       >
+        >
         <img src="medias/images/projets/web/web.png" alt="web1" />
         <img src="medias/images/projets/web/georges.png" alt="" />
         <img src="" alt="" />
@@ -57,6 +59,7 @@
       </div>
       <h1 class="titreProjet">Projets Jeu</h1>
       <div
+        uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 200"
         id="projetJeu"
         class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center"
         uk-grid
@@ -69,6 +72,7 @@
       </div>
       <h1 class="titreProjet">Projets 3D</h1>
       <div
+        uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 200"
         id="projet3d"
         class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center"
         uk-grid
@@ -88,6 +92,7 @@
       </div>
       <h1 class="titreProjet">Projets Image numÉrique</h1>
       <div
+        uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 200"
         id="projetImg"
         class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center"
         uk-grid
@@ -106,6 +111,7 @@
       </div>
       <h1 class="titreProjet">Projets VidÉo</h1>
       <div
+        uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 200"
         id="projetVideo"
         class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center"
         uk-grid
@@ -118,6 +124,7 @@
       </div>
       <h1 class="titreProjet">Projets Design</h1>
       <div
+        uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 200"
         id="projetDesign"
         class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center"
         uk-grid

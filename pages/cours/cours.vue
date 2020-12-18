@@ -1,8 +1,12 @@
 <template>
-  <div id="filtrage" uk-filter="target: .js-filter">
+  <div
+    id="filtrage"
+    uk-filter="target: .js-filter"
+    class="uk-animation-slide-bottom-small"
+  >
     <header-commun></header-commun>
     <h1>Cours</h1>
-    <ul class="uk-subnav uk-subnav-pill">
+    <ul class="uk-subnav uk-subnav-pill uk-animation-slide-right">
       <li uk-filter-control="[data-tags*='Tous']"><a href="#">Tous</a></li>
       <li uk-filter-control="[data-tags*='Web']"><a href="#">Web</a></li>
       <li uk-filter-control="[data-tags*='Jeu']"><a href="#">Jeux vidéo</a></li>

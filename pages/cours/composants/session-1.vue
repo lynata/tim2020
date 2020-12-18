@@ -1,8 +1,6 @@
 <template>
   <section id="filtre">
     <div id="tete">
-      <h1>Cours</h1>
-
       <!-- SESSION 1 -->
       <section class="session">
         <h1>Session 1</h1>
@@ -166,12 +164,6 @@ $boxNoir: -5px 5px 0px 1px #000;
 #filtre {
   // margin-top: 30%;
   background-color: $fond;
-  h1 {
-    font-family: Castiron;
-    color: $bleu;
-    font-size: 6vw;
-    margin-left: 1.5vw;
-  }
   #btnFiltre {
     // margin-top: 15vh;
     background-color: $fond;

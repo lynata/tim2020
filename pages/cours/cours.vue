@@ -1,6 +1,7 @@
 <template>
   <div id="filtrage" uk-filter="target: .js-filter">
     <header-commun></header-commun>
+    <h1>Cours</h1>
     <ul class="uk-subnav uk-subnav-pill">
       <li uk-filter-control="[data-tags*='Tous']"><a href="#">Tous</a></li>
       <li uk-filter-control="[data-tags*='Web']"><a href="#">Web</a></li>
@@ -63,6 +64,12 @@ $blanc: #e3e3e3;
 $bleu: #2cd9ff;
 $boxBleu: -3px 3px 0px 1px $bleu;
 $boxNoir: -5px 5px 0px 1px #000;
+h1 {
+  font-family: Castiron;
+  color: $bleu;
+  font-size: 9vw;
+  margin-left: 1.5vw;
+}
 #filtre li {
   padding: 1em;
   box-shadow: $boxBleu;
@@ -70,5 +77,8 @@ $boxNoir: -5px 5px 0px 1px #000;
 }
 html {
   background-color: $fond;
+}
+.uk-subnav-pill > .uk-active > a {
+  background-color: $bleu !important;
 }
 </style>

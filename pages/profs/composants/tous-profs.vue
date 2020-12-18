@@ -1,7 +1,13 @@
 <template>
   <section id="tousProfs">
-    <div v-bind:key="index" v-for="(unProf, index) in lesProfs">
-      <a href="#"
+    <div v-bind:key="index" v-for="(unProf, index) in lesProfs" uk-lightbox>
+      <a
+        href="../../../medias/images/Professeurs/Vahik Toroussian.jpg"
+        data-caption="J’enseigne au Collège de Maisonneuve depuis 10 ans où j’occupe d’ailleurs le rôle de coordonnateur du programme des Techniques d’intégration multimédia.
+
+J’ai fait mes études à l’Université de Montréal et obtenu une maîtrise en traitement de l’image. Ma spécialité est en programmation sur support et j’entends vous faire apprécier l’incroyable potentiel de ce volet multimédia.
+
+Ce qui vous attend : des travaux pratiques sous forme de jeux (casse-tête, quêtes, etc.) et la création de prototypes de jeux avec Virtools. Message à ceux qui aiment bien équilibrer travail et activité physique : je suis toujours disponible pour une partie de soccer… à bon entendeur salut!"
         ><img
           v-bind:src="unProf.content.photo.filename"
           v-bind:alt="unProf.content.nom"

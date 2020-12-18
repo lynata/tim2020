@@ -9,7 +9,7 @@
     <h2 id="date-nouv">17 octobre 2019</h2>
     <p id="desc-nouv">
       On fête les 20 ans du tim! Un évènement spectaculaire où tout les anciens
-      étudiants ont été invités pour célébré l'ancinneté du programme TIM!
+      étudiants ont été invités pour célébré l'ancienneté du programme TIM!
     </p>
   </section>
 </template>
